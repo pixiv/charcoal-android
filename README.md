@@ -24,6 +24,6 @@
 
 ## Documentation
 
-- [Android View](https://stunning-tribble-424d88ed.pages.github.io/android_view/)
-- [Jetpack Compose](https://stunning-tribble-425d88ed.pages.github.io/compose/)
+- [Android View](https://pixiv.github.io/charcoal-android/android_view/)
+- [Jetpack Compose](https://pixiv.github.io/charcoal-android/compose/)
 
