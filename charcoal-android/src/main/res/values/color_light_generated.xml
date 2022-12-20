@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="charcoal_color_transparent_light">#00000000</color>
+    <color name="charcoal_color_background1_light">#ffffffff</color>
+    <color name="charcoal_color_background2_light">#fff5f5f5</color>
+    <color name="charcoal_color_icon6_light">#47ffffff</color>
+    <color name="charcoal_color_link1_light">#ff3d7699</color>
+    <color name="charcoal_color_link2_light">#5cffffff</color>
+    <color name="charcoal_color_surface1_light">#ffffffff</color>
+    <color name="charcoal_color_surface2_light">#05000000</color>
+    <color name="charcoal_color_surface3_light">#0a000000</color>
+    <color name="charcoal_color_surface4_light">#52000000</color>
+    <color name="charcoal_color_surface6_light">#e0000000</color>
+    <color name="charcoal_color_surface7_light">#05000000</color>
+    <color name="charcoal_color_surface8_light">#e0000000</color>
+    <color name="charcoal_color_surface9_light">#ffffffff</color>
+    <color name="charcoal_color_surface10_light">#29000000</color>
+    <color name="charcoal_color_text1_light">#ff1f1f1f</color>
+    <color name="charcoal_color_text2_light">#ff474747</color>
+    <color name="charcoal_color_text3_light">#ff858585</color>
+    <color name="charcoal_color_text4_light">#ffadadad</color>
+    <color name="charcoal_color_text5_light">#ffffffff</color>
+    <color name="charcoal_color_brand_light">#ff0096fa</color>
+    <color name="charcoal_color_assertive_light">#ffff2b00</color>
+    <color name="charcoal_color_warning_light">#ffffaf0f</color>
+    <color name="charcoal_color_success_light">#ffb1cc29</color>
+    <color name="charcoal_color_updated_item_light">#0a0096fa</color>
+    <color name="charcoal_color_border_light">#14000000</color>
+</resources>

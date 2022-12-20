@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Charcoal.CompoundButton.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="useMaterialThemeColors">false</item>
+        <item name="buttonTint">@color/charcoal_compound_button_button_tint_color_selector</item>
+    </style>
+
+    <style name="Widget.Charcoal.CompoundButton.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="useMaterialThemeColors">false</item>
+        <item name="buttonTint">@color/charcoal_compound_button_button_tint_color_selector</item>
+    </style>
+
+    <style name="Widget.Charcoal.Button.Primary.M" parent="Base.Widget.Charcoal.Button.Primary">
+        <item name="android:minHeight">@dimen/charcoal_button_m_height</item>
+    </style>
+
+    <style name="Widget.Charcoal.Button.Primary.S" parent="Base.Widget.Charcoal.Button.Primary">
+        <item name="android:minHeight">@dimen/charcoal_button_s_height</item>
+        <item name="android:paddingLeft">@dimen/charcoal_button_s_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/charcoal_button_s_padding_horizontal</item>
+    </style>
+
+    <style name="Widget.Charcoal.Button.Default.M" parent="Base.Widget.Charcoal.Button.Default">
+        <item name="android:minHeight">@dimen/charcoal_button_m_height</item>
+    </style>
+
+    <style name="Widget.Charcoal.Button.Default.S" parent="Base.Widget.Charcoal.Button.Default">
+        <item name="android:minHeight">@dimen/charcoal_button_s_height</item>
+        <item name="android:paddingLeft">@dimen/charcoal_button_s_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/charcoal_button_s_padding_horizontal</item>
+    </style>
+
+    <style name="Widget.Charcoal.Button.DefaultOverlay.M" parent="Base.Widget.Charcoal.Button.DefaultOverlay">
+        <item name="android:minHeight">@dimen/charcoal_button_m_height</item>
+    </style>
+
+    <style name="Widget.Charcoal.Button.DefaultOverlay.S" parent="Base.Widget.Charcoal.Button.DefaultOverlay">
+        <item name="android:minHeight">@dimen/charcoal_button_s_height</item>
+        <item name="android:paddingLeft">@dimen/charcoal_button_s_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/charcoal_button_s_padding_horizontal</item>
+    </style>
+
+    <style name="Widget.Charcoal.Button.Navigation.M" parent="Base.Widget.Charcoal.Button.Navigation">
+        <item name="android:minHeight">@dimen/charcoal_button_m_height</item>
+    </style>
+
+    <style name="Widget.Charcoal.Button.Navigation.S" parent="Base.Widget.Charcoal.Button.Navigation">
+        <item name="android:minHeight">@dimen/charcoal_button_s_height</item>
+        <item name="android:paddingLeft">@dimen/charcoal_button_s_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/charcoal_button_s_padding_horizontal</item>
+    </style>
+
+    <style name="Widget.Charcoal.Button.Link" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="rippleColor">?attr/colorCharcoalSurface10</item>
+        <item name="android:textColor">?attr/colorCharcoalText1</item>
+        <item name="android:minHeight">@dimen/charcoal_button_m_height</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Pixiv.Button.Link</item>
+    </style>
+
+    <style name="Widget.Charcoal.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">?attr/colorCharcoalSurface1</item>
+        <item name="titleTextColor">?attr/colorCharcoalText1</item>
+        <item name="subtitleTextColor">?attr/colorCharcoalText1</item>
+        <item name="navigationIconTint">?attr/colorCharcoalText3</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Charcoal.Regular.20</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.Charcoal.Regular.14</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Charcoal.Toolbar</item>
+        <item name="popupTheme">@style/ThemeOverlay.Charcoal.Toolbar.OverflowMenu</item>
+    </style>
+
+    <style name="Widget.Charcoal.Toolbar.Overlay">
+        <item name="titleTextColor">?attr/colorCharcoalText5</item>
+        <item name="subtitleTextColor">?attr/colorCharcoalText5</item>
+        <item name="navigationIconTint">?attr/colorCharcoalText5</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Charcoal.Toolbar.Overlay</item>
+    </style>
+
+    <style name="Widget.Charcoal.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:background">?attr/colorCharcoalSurface1</item>
+        <item name="tabIndicatorColor">?attr/colorCharcoalBrand</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">?attr/colorCharcoalText1</item>
+        <item name="tabTextAppearance">@style/TextAppearance.Charcoal.Regular.14</item>
+        <item name="tabTextColor">?attr/colorCharcoalText3</item>
+        <item name="tabRippleColor">?attr/colorCharcoalSurface10</item>
+    </style>
+
+</resources>

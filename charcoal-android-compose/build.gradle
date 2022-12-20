@@ -1,0 +1,115 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'maven-publish'
+    id 'org.jetbrains.dokka'
+}
+
+group = "net.pixiv.charcoal-android"
+version = findProperty('CHARCOAL_RELEASE_VERSION') ?: System.getenv('CHARCOAL_RELEASE_VERSION') ?: ""
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    buildFeatures {
+        buildConfig false
+        compose true
+    }
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion "${composeCompilerVersion}"
+    }
+}
+
+dependencies {
+    api project(":charcoal-android")
+
+    implementation deps.androidX.activity.compose
+    implementation deps.androidX.compose.compiler
+    implementation deps.androidX.compose.ui
+    implementation deps.androidX.compose.uiTooling
+    implementation deps.androidX.compose.material
+    implementation deps.kotlinX.serialization
+
+    testImplementation deps.junit
+
+    androidTestImplementation deps.androidX.test.junit
+    androidTestImplementation deps.androidX.test.espresso
+}
+
+def getRepositoryUrl() {
+    def releasesRepoUrl = findProperty('NEXUS_MAVEN_RELEASE_REPOSITORY') ?: System.getenv('NEXUS_MAVEN_RELEASE_REPOSITORY') ?: ""
+    def snapshotsRepoUrl = findProperty('NEXUS_MAVEN_SNAPSHOT_REPOSITORY') ?: System.getenv('NEXUS_MAVEN_SNAPSHOT_REPOSITORY') ?: ""
+    return uri(version.toString().endsWith("SNAPSHOT") ? snapshotsRepoUrl : releasesRepoUrl)
+}
+
+def getRepositoryUsername() {
+    return findProperty('NEXUS_MAVEN_USERNAME') ?: System.getenv('NEXUS_MAVEN_USERNAME') ?: ""
+}
+
+def getRepositoryPassword() {
+    return findProperty('NEXUS_MAVEN_PASSWORD') ?: System.getenv('NEXUS_MAVEN_PASSWORD') ?: ""
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                artifact androidSourcesJar
+
+                groupId = "net.pixiv.charcoal-android"
+                artifactId = "charcoal-android-compose"
+                version = version
+            }
+        }
+        repositories {
+            maven {
+                url = getRepositoryUrl()
+
+                credentials {
+                    username = getRepositoryUsername()
+                    password = getRepositoryPassword()
+                }
+            }
+        }
+    }
+}
+
+task androidSourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from android.sourceSets.main.java.srcDirs
+}
+
+dokkaHtml.configure {
+    dokkaSourceSets {
+        named("main") {
+            noAndroidSdkLink.set(false)
+        }
+    }
+}

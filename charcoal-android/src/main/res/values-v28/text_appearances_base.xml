@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.V28.TextAppearance.Charcoal" parent="">
+        <item name="android:fallbackLineSpacing">false</item>
+    </style>
+
+    <style name="Base.TextAppearance.Charcoal" parent="Base.V28.TextAppearance.Charcoal" />
+
+</resources>

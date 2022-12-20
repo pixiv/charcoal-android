@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Widget.Charcoal.Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">@dimen/charcoal_button_m_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/charcoal_button_m_padding_horizontal</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="rippleColor">?attr/colorCharcoalSurface10</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Pixiv.Button</item>
+    </style>
+
+    <style name="Base.Widget.Charcoal.Button.Primary">
+        <item name="backgroundTint">@color/charcoal_primary_button_bg_color_selector</item>
+        <item name="android:textColor">?attr/colorCharcoalText5</item>
+    </style>
+
+    <style name="Base.Widget.Charcoal.Button.Default">
+        <item name="backgroundTint">@color/charcoal_default_button_bg_color_selector</item>
+        <item name="android:textColor">?attr/colorCharcoalText2</item>
+    </style>
+
+    <style name="Base.Widget.Charcoal.Button.DefaultOverlay">
+        <item name="backgroundTint">@color/charcoal_default_overlay_button_bg_color_selector</item>
+        <item name="android:textColor">?attr/colorCharcoalText5</item>
+    </style>
+
+    <style name="Base.Widget.Charcoal.Button.Navigation">
+        <item name="backgroundTint">?attr/colorCharcoalSurface6</item>
+        <item name="android:textColor">?attr/colorCharcoalText5</item>
+    </style>
+</resources>

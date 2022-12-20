@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdk versions.compileSdk
+
+    buildFeatures {
+        viewBinding true
+        buildConfig false
+        compose true
+    }
+
+    defaultConfig {
+        applicationId "net.pixiv.charcoal.android.catalog"
+        minSdk versions.minSdk
+        targetSdk versions.targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion "${composeCompilerVersion}"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+}
+
+repositories {
+    maven { url "https://www.jitpack.io" }
+}
+
+dependencies {
+    implementation project(':charcoal-android')
+    implementation project(':charcoal-android-compose')
+
+    implementation deps.androidX.appCompat
+    implementation deps.androidX.activity.compose
+    implementation deps.androidX.compose.ui
+    implementation deps.androidX.compose.uiTooling
+    implementation deps.androidX.compose.material
+    implementation deps.androidX.recyclerView
+    implementation deps.androidX.material
+    implementation deps.androidX.constraintLayout
+    implementation deps.groupie.core
+    implementation deps.groupie.viewBinding
+    implementation deps.viewBindingKtx
+
+    testImplementation deps.junit
+
+    androidTestImplementation deps.androidX.test.junit
+    androidTestImplementation deps.androidX.test.espresso
+}

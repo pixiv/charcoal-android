@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Charcoal.Light" parent="@style/Theme.MaterialComponents.Light">
+        <!-- region Charcoal token attributes -->
+        <!-- Brand -->
+        <item name="colorCharcoalBrand">@color/charcoal_color_brand_light</item>
+        <item name="colorCharcoalBrandDark">@color/charcoal_brand_dark</item>
+
+        <!-- Semantic -->
+        <item name="colorCharcoalAssertive">@color/charcoal_color_assertive_light</item>
+        <item name="colorCharcoalWarning">@color/charcoal_color_warning_light</item>
+        <item name="colorCharcoalSuccess">@color/charcoal_color_success_light</item>
+        <item name="colorCharcoalUpdatedItem">@color/charcoal_color_updated_item_light</item>
+        <item name="colorCharcoalLike">@color/charcoal_like</item>
+        <item name="colorCharcoalPremium">@color/charcoal_premium</item>
+        <item name="colorCharcoalMarker">@color/charcoal_marker</item>
+
+        <!-- Surface -->
+        <item name="colorCharcoalBackground1">@color/charcoal_color_background1_light</item>
+        <item name="colorCharcoalBackground2">@color/charcoal_color_background2_light</item>
+
+        <item name="colorCharcoalSurface1">@color/charcoal_color_surface1_light</item>
+        <item name="colorCharcoalSurface2">@color/charcoal_color_surface2_light</item>
+        <item name="colorCharcoalSurface3">@color/charcoal_color_surface3_light</item>
+        <item name="colorCharcoalSurface4">@color/charcoal_color_surface4_light</item>
+        <item name="colorCharcoalSurface6">@color/charcoal_color_surface6_light</item>
+        <item name="colorCharcoalSurface9">@color/charcoal_color_surface9_light</item>
+        <item name="colorCharcoalSurface10">@color/charcoal_color_surface10_light</item>
+
+        <!-- On Surface -->
+        <item name="colorCharcoalLink1">@color/charcoal_color_link1_light</item>
+
+        <item name="colorCharcoalText1">@color/charcoal_color_text1_light</item>
+        <item name="colorCharcoalText2">@color/charcoal_color_text2_light</item>
+        <item name="colorCharcoalText3">@color/charcoal_color_text3_light</item>
+        <item name="colorCharcoalText4">@color/charcoal_color_text4_light</item>
+        <item name="colorCharcoalText5">@color/charcoal_color_text5_light</item>
+
+        <item name="colorCharcoalIcon6">@color/charcoal_color_icon6_light</item>
+
+        <item name="colorCharcoalBorder">@color/charcoal_color_border_light</item>
+        <!-- endregion -->
+
+        <!-- region Material Theming color -->
+        <item name="colorPrimary">?attr/colorCharcoalBrand</item>
+        <item name="colorPrimaryVariant">?attr/colorCharcoalBrandDark</item>
+        <item name="colorOnPrimary">?attr/colorCharcoalText5</item>
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="colorOnSecondary">?attr/colorOnPrimary</item>
+        <item name="android:colorBackground">?attr/colorCharcoalBackground1</item>
+        <item name="colorOnBackground">?attr/colorCharcoalText2</item>
+        <item name="colorSurface">?attr/colorCharcoalSurface1</item>
+        <item name="colorOnSurface">?attr/colorCharcoalText2</item>
+        <item name="colorError">?attr/colorCharcoalAssertive</item>
+        <item name="colorOnError">?attr/colorOnPrimary</item>
+        <!-- endregion -->
+
+        <!-- region AppCompat Theme -->
+        <item name="colorPrimaryDark">?attr/colorPrimaryVariant</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <!-- endregion -->
+
+        <item name="tabStyle">@style/Widget.Charcoal.TabLayout</item>
+        <item name="toolbarStyle">@style/Widget.Charcoal.Toolbar</item>
+        <item name="radioButtonStyle">@style/Widget.Charcoal.CompoundButton.RadioButton</item>
+        <item name="checkboxStyle">@style/Widget.Charcoal.CompoundButton.CheckBox</item>
+        <item name="dialogTheme">@style/ThemeOverlay.Charcoal.Dialog</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.Charcoal.Dialog.Alert</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Charcoal.BottomSheetDialog</item>
+        <item name="android:listDivider">@drawable/shape_charcoal_divider</item>
+
+        <item name="textAppearanceButton">@style/TextAppearance.Charcoal.Bold.14</item>
+
+        <item name="viewInflaterClass">net.pixiv.charcoal.android.view.viewInflater.CharcoalViewInflater</item>
+    </style>
+
+    <style name="Theme.Charcoal.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

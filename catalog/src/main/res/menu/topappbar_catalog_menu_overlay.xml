@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/menu_edit"
+        android:title="Edit"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_close"
+        android:icon="@drawable/ic_charcoal_close"
+        android:title="Close"
+        app:iconTint="?attr/colorCharcoalText5"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_popup1"
+        android:title="popup1"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_popup2"
+        android:title="popup2"
+        app:showAsAction="never" />
+</menu>

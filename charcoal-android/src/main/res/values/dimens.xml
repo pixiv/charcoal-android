@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="charcoal_disabled_state_alpha">0.32</dimen>
+
+    <dimen name="charcoal_background_dim_amount">0.32</dimen>
+
+    <!-- region Typography -->
+    <dimen name="charcoal_typography_10_font_size">10sp</dimen>
+    <dimen name="charcoal_typography_10_line_height">18sp</dimen>
+    <!-- endregion -->
+
+    <!-- region Components Button -->
+    <dimen name="charcoal_button_m_height">40dp</dimen>
+    <dimen name="charcoal_button_s_height">32dp</dimen>
+    <dimen name="charcoal_button_m_padding_horizontal">24dp</dimen>
+    <dimen name="charcoal_button_s_padding_horizontal">16dp</dimen>
+    <!-- endregion -->
+</resources>

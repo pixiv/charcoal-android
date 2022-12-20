@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TODO: デフォルトの背景色を設定したほうがよいかも？ 設定する場合はおそらく android:windowBackground を使う。 -->
+    <style name="ThemeOverlay.Charcoal.Dialog" parent="@style/ThemeOverlay.AppCompat.Dialog">
+        <item name="android:backgroundDimAmount">@dimen/charcoal_background_dim_amount</item>
+    </style>
+
+    <style name="ThemeOverlay.Charcoal.Dialog.Alert" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:textColor">?attr/colorCharcoalText1</item>
+        <item name="android:textColorPrimary">?attr/colorCharcoalText2</item>
+        <item name="android:windowBackground">@drawable/shape_charcoal_dialog_background</item>
+        <item name="android:backgroundDimAmount">@dimen/charcoal_background_dim_amount</item>
+    </style>
+
+    <!-- TODO: デフォルトの背景色を設定したほうがよいかも？ 設定する場合はおそらく android:colorBackground を使う。 -->
+    <!-- TODO: Material Components ベースの Theme を parent に指定する。Window Insets に対応できるが、タブレットなどで表示サイズが変わるので要検証。 -->
+    <style name="ThemeOverlay.Charcoal.BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:backgroundDimAmount">@dimen/charcoal_background_dim_amount</item>
+    </style>
+
+    <style name="ThemeOverlay.Charcoal.Dialog.CharcoalDialog">
+        <item name="android:windowBackground">@drawable/shape_charcoal_charcoal_dialog_background</item>
+    </style>
+
+    <style name="ThemeOverlay.Charcoal.Toolbar" parent="">
+        <item name="colorControlNormal">?attr/colorCharcoalText3</item>
+        <item name="actionMenuTextColor">?attr/colorCharcoalText3</item>
+    </style>
+
+    <style name="ThemeOverlay.Charcoal.Toolbar.Overlay" parent="">
+        <item name="colorControlNormal">?attr/colorCharcoalText5</item>
+        <item name="actionMenuTextColor">?attr/colorCharcoalText5</item>
+    </style>
+
+    <style name="ThemeOverlay.Charcoal.Toolbar.OverflowMenu" parent="">
+        <item name="android:textColorPrimary">?attr/colorCharcoalText1</item>
+    </style>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.pixiv.charcoal.android.catalog">
+
+    <application
+        android:name=".CatalogApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Charcoal.DayNight.NoActionBar">
+        <activity
+            android:name=".toolbar.ToolbarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".typography.TypographyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".radioButton.RadioButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".checkBox.CheckBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".charcoalSwitch.CharcoalSwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".button.ButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dialog.DialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tabLayout.TabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.CatalogComposeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.CharcoalTopAppBarComposeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.CharcoalRadioButtonComposeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.CharcoalTypographyComposeActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

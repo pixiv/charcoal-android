@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Charcoal.DayNight.Bridge" parent="Theme.Charcoal.Dark.Bridge" />
+
+    <style name="Theme.Charcoal.DayNight.NoActionBar.Bridge" parent="Theme.Charcoal.Dark.NoActionBar.Bridge" />
+</resources>

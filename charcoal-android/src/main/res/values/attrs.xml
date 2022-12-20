@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <attr name="colorCharcoalBrand" format="color" />
+    <attr name="colorCharcoalBrandDark" format="color" />
+
+    <!-- Semantic -->
+    <attr name="colorCharcoalAssertive" format="color" />
+    <attr name="colorCharcoalWarning" format="color" />
+    <attr name="colorCharcoalSuccess" format="color" />
+    <attr name="colorCharcoalUpdatedItem" format="color" />
+    <attr name="colorCharcoalLike" format="color" />
+    <attr name="colorCharcoalPremium" format="color" />
+    <attr name="colorCharcoalMarker" format="color" />
+
+    <!-- Surface -->
+    <attr name="colorCharcoalBackground1" format="color" />
+    <attr name="colorCharcoalBackground2" format="color" />
+
+    <attr name="colorCharcoalSurface1" format="color" />
+    <attr name="colorCharcoalSurface2" format="color" />
+    <attr name="colorCharcoalSurface3" format="color" />
+    <attr name="colorCharcoalSurface4" format="color" />
+    <attr name="colorCharcoalSurface6" format="color" />
+    <attr name="colorCharcoalSurface9" format="color" />
+    <attr name="colorCharcoalSurface10" format="color" />
+
+    <!-- On Surface -->
+    <attr name="colorCharcoalLink1" format="color" />
+
+    <attr name="colorCharcoalText1" format="color" />
+    <attr name="colorCharcoalText2" format="color" />
+    <attr name="colorCharcoalText3" format="color" />
+    <attr name="colorCharcoalText4" format="color" />
+    <attr name="colorCharcoalText5" format="color" />
+
+    <attr name="colorCharcoalIcon6" format="color" />
+    <attr name="colorCharcoalBorder" format="color" />
+</resources>

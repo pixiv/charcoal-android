@@ -1,0 +1,1 @@
+-keep class net.pixiv.charcoal.android.view.viewInflater.CharcoalViewInflater

@@ -1,0 +1,4 @@
+rootProject.name = "charcoal-android"
+include ':charcoal-android'
+include ':charcoal-android-compose'
+include ':catalog'

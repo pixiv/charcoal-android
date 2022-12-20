@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearance.Pixiv.Button" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/charcoal_border_radius_oval</item>
+    </style>
+
+    <style name="ShapeAppearance.Pixiv.Button.Link">
+        <item name="cornerSize">@dimen/charcoal_border_radius_8</item>
+    </style>
+</resources>

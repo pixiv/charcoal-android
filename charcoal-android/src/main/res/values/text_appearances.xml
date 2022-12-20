@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Charcoal.Regular.10" parent="Base.TextAppearance.Charcoal.Regular">
+        <item name="android:textSize">@dimen/charcoal_typography_10_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_10_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Bold.10" parent="Base.TextAppearance.Charcoal.Bold">
+        <item name="android:textSize">@dimen/charcoal_typography_10_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_10_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Mono.10" parent="Base.TextAppearance.Charcoal.Mono">
+        <item name="android:textSize">@dimen/charcoal_typography_10_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_10_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.BoldMono.10" parent="Base.TextAppearance.Charcoal.BoldMono">
+        <item name="android:textSize">@dimen/charcoal_typography_10_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_10_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Regular.12" parent="Base.TextAppearance.Charcoal.Regular">
+        <item name="android:textSize">@dimen/charcoal_typography_12_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_12_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Bold.12" parent="Base.TextAppearance.Charcoal.Bold">
+        <item name="android:textSize">@dimen/charcoal_typography_12_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_12_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Mono.12" parent="Base.TextAppearance.Charcoal.Mono">
+        <item name="android:textSize">@dimen/charcoal_typography_12_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_12_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.BoldMono.12" parent="Base.TextAppearance.Charcoal.BoldMono">
+        <item name="android:textSize">@dimen/charcoal_typography_12_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_12_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Regular.14" parent="Base.TextAppearance.Charcoal.Regular">
+        <item name="android:textSize">@dimen/charcoal_typography_14_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_14_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Bold.14" parent="Base.TextAppearance.Charcoal.Bold">
+        <item name="android:textSize">@dimen/charcoal_typography_14_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_14_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Mono.14" parent="Base.TextAppearance.Charcoal.Mono">
+        <item name="android:textSize">@dimen/charcoal_typography_14_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_14_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.BoldMono.14" parent="Base.TextAppearance.Charcoal.BoldMono">
+        <item name="android:textSize">@dimen/charcoal_typography_14_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_14_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Regular.16" parent="Base.TextAppearance.Charcoal.Regular">
+        <item name="android:textSize">@dimen/charcoal_typography_16_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_16_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Bold.16" parent="Base.TextAppearance.Charcoal.Bold">
+        <item name="android:textSize">@dimen/charcoal_typography_16_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_16_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Mono.16" parent="Base.TextAppearance.Charcoal.Mono">
+        <item name="android:textSize">@dimen/charcoal_typography_16_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_16_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.BoldMono.16" parent="Base.TextAppearance.Charcoal.BoldMono">
+        <item name="android:textSize">@dimen/charcoal_typography_16_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_16_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Regular.20" parent="Base.TextAppearance.Charcoal.Regular">
+        <item name="android:textSize">@dimen/charcoal_typography_20_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_20_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Bold.20" parent="Base.TextAppearance.Charcoal.Bold">
+        <item name="android:textSize">@dimen/charcoal_typography_20_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_20_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.Mono.20" parent="Base.TextAppearance.Charcoal.Mono">
+        <item name="android:textSize">@dimen/charcoal_typography_20_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_20_line_height</item>
+    </style>
+
+    <style name="TextAppearance.Charcoal.BoldMono.20" parent="Base.TextAppearance.Charcoal.BoldMono">
+        <item name="android:textSize">@dimen/charcoal_typography_20_font_size</item>
+        <item name="lineHeight">@dimen/charcoal_typography_20_line_height</item>
+    </style>
+
+</resources>

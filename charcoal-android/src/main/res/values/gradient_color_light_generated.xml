@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="charcoal_gradient_color_surface5_0_light">#52000000</color>
+    <color name="charcoal_gradient_color_surface5_100_light">#00000000</color>
+    <color name="charcoal_gradient_color_call_to_action_0_light">#ffd1ff1a</color>
+    <color name="charcoal_gradient_color_call_to_action_100_light">#ff1ad1ff</color>
+</resources>

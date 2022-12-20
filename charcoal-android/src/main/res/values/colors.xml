@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="charcoal_brand_dark">#007DD1</color>
+
+    <!-- Semantic -->
+    <color name="charcoal_link_enabled">#3D7699</color>
+    <color name="charcoal_like">#FF4060</color>
+    <color name="charcoal_premium">#FD9E16</color>
+    <color name="charcoal_marker">#CC2954</color>
+
+    <!-- Sub -->
+    <color name="charcoal_white">@android:color/white</color>
+    <color name="charcoal_black">@android:color/black</color>
+    <color name="charcoal_black_fade_00">#05000000</color>
+    <color name="charcoal_black_fade_10">#0A000000</color>
+    <color name="charcoal_black_fade_20">#14000000</color>
+    <color name="charcoal_black_fade_30">#29000000</color>
+    <color name="charcoal_black_fade_40">#52000000</color>
+    <color name="charcoal_black_fade_50">#7A000000</color>
+    <color name="charcoal_black_fade_60">#A3000000</color>
+    <color name="charcoal_black_fade_80">#CC000000</color>
+    <color name="charcoal_black_fade_90">#E0000000</color>
+    <color name="charcoal_gray_00">#FAFAFA</color>
+    <color name="charcoal_gray_10">#F5F5F5</color>
+    <color name="charcoal_gray_20">#EBEBEB</color>
+    <color name="charcoal_gray_30">#D6D6D6</color>
+    <color name="charcoal_gray_40">#ADADAD</color>
+    <color name="charcoal_gray_50">#858585</color>
+    <color name="charcoal_gray_80">#333333</color>
+    <color name="charcoal_gray_90">#1F1F1F</color>
+    <color name="charcoal_white_fade_00">#1FFFFFFF</color>
+    <color name="charcoal_white_fade_10">#33FFFFFF</color>
+    <color name="charcoal_white_fade_20">#47FFFFFF</color>
+    <color name="charcoal_white_fade_30">#5CFFFFFF</color>
+    <color name="charcoal_white_fade_40">#85FFFFFF</color>
+    <color name="charcoal_white_fade_50">#ADFFFFFF</color>
+    <color name="charcoal_white_fade_60">#D6FFFFFF</color>
+</resources>

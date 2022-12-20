@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.TextAppearance.Charcoal" parent="" />
+
+    <style name="Base.TextAppearance.Charcoal.Regular">
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Base.TextAppearance.Charcoal.Bold" parent="Base.TextAppearance.Charcoal.Regular">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Base.TextAppearance.Charcoal.Mono">
+        <item name="fontFamily">@font/charcoal_roboto_mono</item>
+    </style>
+
+    <style name="Base.TextAppearance.Charcoal.BoldMono">
+        <item name="fontFamily">@font/charcoal_roboto_mono_bold</item>
+    </style>
+
+</resources>

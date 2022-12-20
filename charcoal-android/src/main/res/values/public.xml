@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region Color -->
+    <public name="charcoal_brand" type="color" />
+    <public name="charcoal_brand_dark" type="color" />
+    <public name="charcoal_link_enabled" type="color" />
+    <public name="charcoal_assertive" type="color" />
+    <public name="charcoal_warning" type="color" />
+    <public name="charcoal_success" type="color" />
+    <public name="charcoal_like" type="color" />
+    <public name="charcoal_premium" type="color" />
+    <public name="charcoal_marker" type="color" />
+    <public name="charcoal_call_to_action_gradation_start" type="color" />
+    <public name="charcoal_call_to_action_gradation_end" type="color" />
+    <public name="charcoal_white" type="color" />
+    <public name="charcoal_black" type="color" />
+    <public name="charcoal_black_fade_00" type="color" />
+    <public name="charcoal_black_fade_10" type="color" />
+    <public name="charcoal_black_fade_20" type="color" />
+    <public name="charcoal_black_fade_30" type="color" />
+    <public name="charcoal_black_fade_40" type="color" />
+    <public name="charcoal_black_fade_50" type="color" />
+    <public name="charcoal_black_fade_60" type="color" />
+    <public name="charcoal_black_fade_80" type="color" />
+    <public name="charcoal_black_fade_90" type="color" />
+    <public name="charcoal_gray_00" type="color" />
+    <public name="charcoal_gray_10" type="color" />
+    <public name="charcoal_gray_20" type="color" />
+    <public name="charcoal_gray_30" type="color" />
+    <public name="charcoal_gray_40" type="color" />
+    <public name="charcoal_gray_50" type="color" />
+    <public name="charcoal_gray_80" type="color" />
+    <public name="charcoal_gray_90" type="color" />
+    <public name="charcoal_white_fade_00" type="color" />
+    <public name="charcoal_white_fade_10" type="color" />
+    <public name="charcoal_white_fade_20" type="color" />
+    <public name="charcoal_white_fade_30" type="color" />
+    <public name="charcoal_white_fade_40" type="color" />
+    <public name="charcoal_white_fade_50" type="color" />
+    <public name="charcoal_white_fade_60" type="color" />
+    <!-- endregion -->
+
+    <!-- region attr -->
+    <public name="colorCharcoalBrand" type="attr" />
+    <public name="colorCharcoalBrandDark" type="attr" />
+    <public name="colorCharcoalAssertive" type="attr" />
+    <public name="colorCharcoalWarning" type="attr" />
+    <public name="colorCharcoalSuccess" type="attr" />
+    <public name="colorCharcoalUpdatedItem" type="attr" />
+    <public name="colorCharcoalLike" type="attr" />
+    <public name="colorCharcoalPremium" type="attr" />
+    <public name="colorCharcoalMarker" type="attr" />
+    <public name="colorCharcoalBackground1" type="attr" />
+    <public name="colorCharcoalBackground2" type="attr" />
+    <public name="colorCharcoalSurface1" type="attr" />
+    <public name="colorCharcoalSurface2" type="attr" />
+    <public name="colorCharcoalSurface3" type="attr" />
+    <public name="colorCharcoalSurface4" type="attr" />
+    <public name="colorCharcoalSurface6" type="attr" />
+    <public name="colorCharcoalSurface9" type="attr" />
+    <public name="colorCharcoalSurface10" type="attr" />
+    <public name="colorCharcoalLink1" type="attr" />
+    <public name="colorCharcoalText1" type="attr" />
+    <public name="colorCharcoalText2" type="attr" />
+    <public name="colorCharcoalText3" type="attr" />
+    <public name="colorCharcoalText4" type="attr" />
+    <public name="colorCharcoalText5" type="attr" />
+    <public name="colorCharcoalIcon6" type="attr" />
+    <public name="colorCharcoalBorder" type="attr" />
+    <!-- endregion -->
+
+    <!-- region Theme -->
+    <public name="Theme.Charcoal.Light" type="style" />
+    <public name="Theme.Charcoal.Light.NoActionBar" type="style" />
+    <public name="Theme.Charcoal.Light.Bridge" type="style" />
+    <public name="Theme.Charcoal.Light.NoActionBar.Bridge" type="style" />
+    <public name="Theme.Charcoal.Dark" type="style" />
+    <public name="Theme.Charcoal.Dark.NoActionBar" type="style" />
+    <public name="Theme.Charcoal.Dark.Bridge" type="style" />
+    <public name="Theme.Charcoal.Dark.NoActionBar.Bridge" type="style" />
+    <public name="Theme.Charcoal.DayNight" type="style" />
+    <public name="Theme.Charcoal.DayNight.NoActionBar" type="style" />
+    <public name="Theme.Charcoal.DayNight.Bridge" type="style" />
+    <public name="Theme.Charcoal.DayNight.NoActionBar.Bridge" type="style" />
+    <!-- endregion -->
+
+    <!-- region ThemeOverlay -->
+    <public name="ThemeOverlay.Charcoal.BottomSheetDialog" type="style" />
+    <public name="ThemeOverlay.Charcoal.Dialog" type="style" />
+    <public name="ThemeOverlay.Charcoal.Dialog.Alert" type="style" />
+    <public name="ThemeOverlay.Charcoal.Dialog.CharcoalDialog" type="style" />
+    <public name="ThemeOverlay.Charcoal.Toolbar" type="style" />
+    <public name="ThemeOverlay.Charcoal.Toolbar.Overlay" type="style" />
+    <public name="ThemeOverlay.Charcoal.Toolbar.OverflowMenu" type="style" />
+    <!-- endregion -->
+
+    <!-- region TextAppearance -->
+    <public name="TextAppearance.Charcoal.Regular.10" type="style" />
+    <public name="TextAppearance.Charcoal.Bold.10" type="style" />
+    <public name="TextAppearance.Charcoal.Mono.10" type="style" />
+    <public name="TextAppearance.Charcoal.BoldMono.10" type="style" />
+    <public name="TextAppearance.Charcoal.Regular.12" type="style" />
+    <public name="TextAppearance.Charcoal.Bold.12" type="style" />
+    <public name="TextAppearance.Charcoal.Mono.12" type="style" />
+    <public name="TextAppearance.Charcoal.BoldMono.12" type="style" />
+    <public name="TextAppearance.Charcoal.Regular.14" type="style" />
+    <public name="TextAppearance.Charcoal.Bold.14" type="style" />
+    <public name="TextAppearance.Charcoal.Mono.14" type="style" />
+    <public name="TextAppearance.Charcoal.BoldMono.14" type="style" />
+    <public name="TextAppearance.Charcoal.Regular.16" type="style" />
+    <public name="TextAppearance.Charcoal.Bold.16" type="style" />
+    <public name="TextAppearance.Charcoal.Mono.16" type="style" />
+    <public name="TextAppearance.Charcoal.BoldMono.16" type="style" />
+    <public name="TextAppearance.Charcoal.Regular.20" type="style" />
+    <public name="TextAppearance.Charcoal.Bold.20" type="style" />
+    <public name="TextAppearance.Charcoal.Mono.20" type="style" />
+    <public name="TextAppearance.Charcoal.BoldMono.20" type="style" />
+    <!-- endregion -->
+
+    <!-- region Style -->
+    <public name="Widget.Charcoal.CompoundButton.RadioButton" type="style" />
+    <public name="Widget.Charcoal.CompoundButton.CheckBox" type="style" />
+    <public name="Widget.Charcoal.Button.Primary.M" type="style" />
+    <public name="Widget.Charcoal.Button.Primary.S" type="style" />
+    <public name="Widget.Charcoal.Button.Default.M" type="style" />
+    <public name="Widget.Charcoal.Button.Default.S" type="style" />
+    <public name="Widget.Charcoal.Button.DefaultOverlay.M" type="style" />
+    <public name="Widget.Charcoal.Button.DefaultOverlay.S" type="style" />
+    <public name="Widget.Charcoal.Button.Navigation.M" type="style" />
+    <public name="Widget.Charcoal.Button.Navigation.S" type="style" />
+    <public name="Widget.Charcoal.Button.Link" type="style" />
+    <public name="Widget.Charcoal.Toolbar" type="style" />
+    <public name="Widget.Charcoal.Toolbar.Overlay" type="style" />
+    <public name="Widget.Charcoal.TabLayout" type="style" />
+    <!-- endregion -->
+
+    <!-- region font -->
+    <public name="charcoal_roboto_mono" type="font" />
+    <public name="charcoal_roboto_mono_bold" type="font" />
+    <!-- endregion -->
+
+    <!-- region dimens -->
+    <public name="charcoal_disabled_state_alpha" type="dimen" />
+    <public name="charcoal_background_dim_amount" type="dimen" />
+
+    <public name="charcoal_border_radius_4" type="dimen" />
+    <public name="charcoal_border_radius_8" type="dimen" />
+    <public name="charcoal_border_radius_16" type="dimen" />
+    <public name="charcoal_border_radius_24" type="dimen" />
+    <public name="charcoal_border_radius_oval" type="dimen" />
+    <!-- endregion -->
+
+    <!-- region drawable -->
+    <public name="shape_charcoal_dialog_background" type="drawable" />
+    <public name="shape_charcoal_charcoal_dialog_background" type="drawable" />
+    <public name="shape_charcoal_divider" type="drawable" />
+    <!-- endregion -->
+</resources>

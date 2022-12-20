@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Charcoal.DayNight" parent="Theme.Charcoal.Dark" />
+
+    <style name="Theme.Charcoal.DayNight.NoActionBar" parent="Theme.Charcoal.Dark.NoActionBar" />
+</resources>

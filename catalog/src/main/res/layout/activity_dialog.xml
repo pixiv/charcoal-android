@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@android:id/list"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_1"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示1"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_2"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示2"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_3"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示3"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_4"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示4"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_5"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示5"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_6"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示6"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_7"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示7"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_8"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示8"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_9"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示9"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_10"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示10"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_charcoal_dialog_11"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CharcoalDialog 表示11"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_alert_dialog_1"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="AlertDialog 表示1"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_dialog_fragment_1"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="DialogFragment 表示1"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <net.pixiv.charcoal.android.view.button.CharcoalButton
+                    android:id="@+id/button_bottom_sheet_dialog_fragment_1"
+                    style="@style/Widget.Charcoal.Button.Primary.M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="BottomSheetDialogFragment 表示1"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

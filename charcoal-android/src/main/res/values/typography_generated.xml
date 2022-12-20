@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="charcoal_typography_12_font_size">12sp</dimen>
+    <dimen name="charcoal_typography_12_line_height">20sp</dimen>
+    <dimen name="charcoal_typography_14_font_size">14sp</dimen>
+    <dimen name="charcoal_typography_14_line_height">22sp</dimen>
+    <dimen name="charcoal_typography_16_font_size">16sp</dimen>
+    <dimen name="charcoal_typography_16_line_height">24sp</dimen>
+    <dimen name="charcoal_typography_20_font_size">20sp</dimen>
+    <dimen name="charcoal_typography_20_line_height">28sp</dimen>
+    <dimen name="charcoal_typography_32_font_size">32sp</dimen>
+    <dimen name="charcoal_typography_32_line_height">40sp</dimen>
+</resources>
