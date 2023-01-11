@@ -9,6 +9,7 @@
   "type": "module",
   "author": "pixiv",
   "dependencies": {
+    "lodash": "^4.17.21",
     "quicktype-core": "^7.0.38",
     "yargs": "^17.6.2"
   }
