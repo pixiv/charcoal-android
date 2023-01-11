@@ -9,7 +9,7 @@
   "type": "module",
   "author": "pixiv",
   "dependencies": {
-    "quicktype-core": "^6.0.70",
+    "quicktype-core": "^7.0.38",
     "yargs": "^17.6.2"
   }
 }
