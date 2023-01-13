@@ -1,343 +1,421 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>CharcoalColorToken</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
-  <body>
-    <div class="navigation-wrapper" id="navigation-wrapper">
-      <div id="leftToggler"><span class="icon-toggler"></span></div>
-      <div class="library-name"><a href="../../../index.html">charcoal-android</a></div>
-      <div></div>
-      <div class="pull-right d-flex"><button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-      </div>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>charcoal-android</span>
+            </a>
     </div>
-    <div id="container">
-      <div id="leftColumn">
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main"><script type="text/javascript" src="../../../scripts/main.js"></script>
-        <div class="main-content" id="content" pageIds="charcoal-android::net.pixiv.charcoal.android.view.color/CharcoalColorToken///PointingToDeclaration//1204169793">
-          <div class="breadcrumbs"><a href="../../../index.html">charcoal-android</a>/<a href="../index.html">net.pixiv.charcoal.android.view.color</a>/<a href="index.html">CharcoalColorToken</a></div>
-          <div class="cover ">
-            <h1 class="cover"><span>Charcoal</span><wbr></wbr><span>Color</span><wbr></wbr><span><span>Token</span></span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">CharcoalColorToken</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Charcoal の色トークンに関連する色を取得する実装をまとめた object</p><p class="paragraph">Charcoal Theme を利用していないなど、属性に値が割り当てられていない場合は IllegalStateException が発生する</p></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="-1781870166%2FFunctions%2F1204169793" anchor-label="getAssertive" id="-1781870166%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-assertive.html"><span>get</span><wbr></wbr><span><span>Assertive</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1781870166%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-assertive.html"><span class="token function">getAssertive</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-2125168357%2FFunctions%2F1204169793" anchor-label="getBackground1" id="-2125168357%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-background1.html"><span>get</span><wbr></wbr><span><span>Background1</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2125168357%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-background1.html"><span class="token function">getBackground1</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-2132927716%2FFunctions%2F1204169793" anchor-label="getBackground2" id="-2132927716%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-background2.html"><span>get</span><wbr></wbr><span><span>Background2</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2132927716%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-background2.html"><span class="token function">getBackground2</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="691179103%2FFunctions%2F1204169793" anchor-label="getBrand" id="691179103%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-brand.html"><span>get</span><wbr></wbr><span><span>Brand</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="691179103%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-brand.html"><span class="token function">getBrand</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-2053543051%2FFunctions%2F1204169793" anchor-label="getBrandDark" id="-2053543051%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-brand-dark.html"><span>get</span><wbr></wbr><span>Brand</span><wbr></wbr><span><span>Dark</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2053543051%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-brand-dark.html"><span class="token function">getBrandDark</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="486429109%2FFunctions%2F1204169793" anchor-label="getIcon6" id="486429109%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-icon6.html"><span>get</span><wbr></wbr><span><span>Icon6</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="486429109%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-icon6.html"><span class="token function">getIcon6</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1195303725%2FFunctions%2F1204169793" anchor-label="getLike" id="-1195303725%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-like.html"><span>get</span><wbr></wbr><span><span>Like</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1195303725%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-like.html"><span class="token function">getLike</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1047924145%2FFunctions%2F1204169793" anchor-label="getLink1" id="-1047924145%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-link1.html"><span>get</span><wbr></wbr><span><span>Link1</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1047924145%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-link1.html"><span class="token function">getLink1</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1118911754%2FFunctions%2F1204169793" anchor-label="getMarker" id="-1118911754%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-marker.html"><span>get</span><wbr></wbr><span><span>Marker</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1118911754%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-marker.html"><span class="token function">getMarker</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="151383471%2FFunctions%2F1204169793" anchor-label="getPremium" id="151383471%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-premium.html"><span>get</span><wbr></wbr><span><span>Premium</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="151383471%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-premium.html"><span class="token function">getPremium</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-98314405%2FFunctions%2F1204169793" anchor-label="getSuccess" id="-98314405%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-success.html"><span>get</span><wbr></wbr><span><span>Success</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-98314405%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-success.html"><span class="token function">getSuccess</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1070886752%2FFunctions%2F1204169793" anchor-label="getSurface1" id="1070886752%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-surface1.html"><span>get</span><wbr></wbr><span><span>Surface1</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1070886752%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface1.html"><span class="token function">getSurface1</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1063127393%2FFunctions%2F1204169793" anchor-label="getSurface2" id="1063127393%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-surface2.html"><span>get</span><wbr></wbr><span><span>Surface2</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1063127393%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface2.html"><span class="token function">getSurface2</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1055368034%2FFunctions%2F1204169793" anchor-label="getSurface3" id="1055368034%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-surface3.html"><span>get</span><wbr></wbr><span><span>Surface3</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1055368034%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface3.html"><span class="token function">getSurface3</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1047608675%2FFunctions%2F1204169793" anchor-label="getSurface4" id="1047608675%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-surface4.html"><span>get</span><wbr></wbr><span><span>Surface4</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1047608675%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface4.html"><span class="token function">getSurface4</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1032089957%2FFunctions%2F1204169793" anchor-label="getSurface6" id="1032089957%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-surface6.html"><span>get</span><wbr></wbr><span><span>Surface6</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1032089957%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface6.html"><span class="token function">getSurface6</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1008811880%2FFunctions%2F1204169793" anchor-label="getSurface9" id="1008811880%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-surface9.html"><span>get</span><wbr></wbr><span><span>Surface9</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1008811880%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface9.html"><span class="token function">getSurface9</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1771891332%2FFunctions%2F1204169793" anchor-label="getText1" id="-1771891332%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-text1.html"><span>get</span><wbr></wbr><span><span>Text1</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1771891332%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text1.html"><span class="token function">getText1</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1779650691%2FFunctions%2F1204169793" anchor-label="getText2" id="-1779650691%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-text2.html"><span>get</span><wbr></wbr><span><span>Text2</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1779650691%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text2.html"><span class="token function">getText2</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1787410050%2FFunctions%2F1204169793" anchor-label="getText3" id="-1787410050%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-text3.html"><span>get</span><wbr></wbr><span><span>Text3</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1787410050%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text3.html"><span class="token function">getText3</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1795169409%2FFunctions%2F1204169793" anchor-label="getText4" id="-1795169409%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-text4.html"><span>get</span><wbr></wbr><span><span>Text4</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1795169409%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text4.html"><span class="token function">getText4</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1802928768%2FFunctions%2F1204169793" anchor-label="getText5" id="-1802928768%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-text5.html"><span>get</span><wbr></wbr><span><span>Text5</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1802928768%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text5.html"><span class="token function">getText5</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="796348660%2FFunctions%2F1204169793" anchor-label="getWarning" id="796348660%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-warning.html"><span>get</span><wbr></wbr><span><span>Warning</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="796348660%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-warning.html"><span class="token function">getWarning</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="charcoal-android::net.pixiv.charcoal.android.view.color/CharcoalColorToken///PointingToDeclaration//1204169793">
+  <div class="breadcrumbs"><a href="../../../index.html">charcoal-android</a><span class="delimiter">/</span><a href="../index.html">net.pixiv.charcoal.android.view.color</a><span class="delimiter">/</span><span class="current">CharcoalColorToken</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Charcoal</span><wbr></wbr><span>Color</span><wbr></wbr><span><span>Token</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">CharcoalColorToken</a></div><p class="paragraph">Charcoal の色トークンに関連する色を取得する実装をまとめた object</p><p class="paragraph">Charcoal Theme を利用していないなど、属性に値が割り当てられていない場合は IllegalStateException が発生する</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1781870166%2FFunctions%2F1204169793" anchor-label="getAssertive" id="-1781870166%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-assertive.html"><span>get</span><wbr></wbr><span><span>Assertive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1781870166%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-assertive.html"><span class="token function">getAssertive</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+<a data-name="-2125168357%2FFunctions%2F1204169793" anchor-label="getBackground1" id="-2125168357%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-background1.html"><span>get</span><wbr></wbr><span><span>Background1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2125168357%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-background1.html"><span class="token function">getBackground1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2132927716%2FFunctions%2F1204169793" anchor-label="getBackground2" id="-2132927716%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-background2.html"><span>get</span><wbr></wbr><span><span>Background2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2132927716%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-background2.html"><span class="token function">getBackground2</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="691179103%2FFunctions%2F1204169793" anchor-label="getBrand" id="691179103%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-brand.html"><span>get</span><wbr></wbr><span><span>Brand</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="691179103%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-brand.html"><span class="token function">getBrand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2053543051%2FFunctions%2F1204169793" anchor-label="getBrandDark" id="-2053543051%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-brand-dark.html"><span>get</span><wbr></wbr><span>Brand</span><wbr></wbr><span><span>Dark</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2053543051%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-brand-dark.html"><span class="token function">getBrandDark</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="486429109%2FFunctions%2F1204169793" anchor-label="getIcon6" id="486429109%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-icon6.html"><span>get</span><wbr></wbr><span><span>Icon6</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="486429109%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-icon6.html"><span class="token function">getIcon6</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1195303725%2FFunctions%2F1204169793" anchor-label="getLike" id="-1195303725%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-like.html"><span>get</span><wbr></wbr><span><span>Like</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1195303725%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-like.html"><span class="token function">getLike</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1047924145%2FFunctions%2F1204169793" anchor-label="getLink1" id="-1047924145%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-link1.html"><span>get</span><wbr></wbr><span><span>Link1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1047924145%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-link1.html"><span class="token function">getLink1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1118911754%2FFunctions%2F1204169793" anchor-label="getMarker" id="-1118911754%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-marker.html"><span>get</span><wbr></wbr><span><span>Marker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1118911754%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-marker.html"><span class="token function">getMarker</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="151383471%2FFunctions%2F1204169793" anchor-label="getPremium" id="151383471%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-premium.html"><span>get</span><wbr></wbr><span><span>Premium</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="151383471%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-premium.html"><span class="token function">getPremium</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-98314405%2FFunctions%2F1204169793" anchor-label="getSuccess" id="-98314405%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-success.html"><span>get</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-98314405%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-success.html"><span class="token function">getSuccess</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1070886752%2FFunctions%2F1204169793" anchor-label="getSurface1" id="1070886752%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-surface1.html"><span>get</span><wbr></wbr><span><span>Surface1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1070886752%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface1.html"><span class="token function">getSurface1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1063127393%2FFunctions%2F1204169793" anchor-label="getSurface2" id="1063127393%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-surface2.html"><span>get</span><wbr></wbr><span><span>Surface2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1063127393%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface2.html"><span class="token function">getSurface2</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1055368034%2FFunctions%2F1204169793" anchor-label="getSurface3" id="1055368034%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-surface3.html"><span>get</span><wbr></wbr><span><span>Surface3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1055368034%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface3.html"><span class="token function">getSurface3</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1047608675%2FFunctions%2F1204169793" anchor-label="getSurface4" id="1047608675%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-surface4.html"><span>get</span><wbr></wbr><span><span>Surface4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1047608675%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface4.html"><span class="token function">getSurface4</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1032089957%2FFunctions%2F1204169793" anchor-label="getSurface6" id="1032089957%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-surface6.html"><span>get</span><wbr></wbr><span><span>Surface6</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1032089957%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface6.html"><span class="token function">getSurface6</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1008811880%2FFunctions%2F1204169793" anchor-label="getSurface9" id="1008811880%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-surface9.html"><span>get</span><wbr></wbr><span><span>Surface9</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1008811880%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-surface9.html"><span class="token function">getSurface9</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1771891332%2FFunctions%2F1204169793" anchor-label="getText1" id="-1771891332%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-text1.html"><span>get</span><wbr></wbr><span><span>Text1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1771891332%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text1.html"><span class="token function">getText1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1779650691%2FFunctions%2F1204169793" anchor-label="getText2" id="-1779650691%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-text2.html"><span>get</span><wbr></wbr><span><span>Text2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1779650691%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text2.html"><span class="token function">getText2</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1787410050%2FFunctions%2F1204169793" anchor-label="getText3" id="-1787410050%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-text3.html"><span>get</span><wbr></wbr><span><span>Text3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1787410050%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text3.html"><span class="token function">getText3</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1795169409%2FFunctions%2F1204169793" anchor-label="getText4" id="-1795169409%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-text4.html"><span>get</span><wbr></wbr><span><span>Text4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1795169409%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text4.html"><span class="token function">getText4</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1802928768%2FFunctions%2F1204169793" anchor-label="getText5" id="-1802928768%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-text5.html"><span>get</span><wbr></wbr><span><span>Text5</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1802928768%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-text5.html"><span class="token function">getText5</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="796348660%2FFunctions%2F1204169793" anchor-label="getWarning" id="796348660%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-warning.html"><span>get</span><wbr></wbr><span><span>Warning</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="796348660%2FFunctions%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-warning.html"><span class="token function">getWarning</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-

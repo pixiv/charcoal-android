@@ -1,111 +1,153 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>TwoButtons</title>
-<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
-<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../../styles/style.css" rel="Stylesheet"><link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../../styles/main.css" rel="Stylesheet"><link href="../../../../styles/prism.css" rel="Stylesheet"><link href="../../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../../scripts/main.js" async="async"></script><script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>  </head>
-  <body>
-    <div class="navigation-wrapper" id="navigation-wrapper">
-      <div id="leftToggler"><span class="icon-toggler"></span></div>
-      <div class="library-name"><a href="../../../../index.html">charcoal-android</a></div>
-      <div></div>
-      <div class="pull-right d-flex"><button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-      </div>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../index.html">
+                    <span>charcoal-android</span>
+            </a>
     </div>
-    <div id="container">
-      <div id="leftColumn">
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main"><script type="text/javascript" src="../../../../scripts/main.js"></script>
-        <div class="main-content" id="content" pageIds="charcoal-android::net.pixiv.charcoal.android.view.dialog/CharcoalDialogButtonSettings.TwoButtons///PointingToDeclaration//1204169793">
-          <div class="breadcrumbs"><a href="../../../../index.html">charcoal-android</a>/<a href="../../index.html">net.pixiv.charcoal.android.view.dialog</a>/<a href="../index.html">CharcoalDialogButtonSettings</a>/<a href="index.html">TwoButtons</a></div>
-          <div class="cover ">
-            <h1 class="cover"><span>Two</span><wbr></wbr><span><span>Buttons</span></span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">TwoButtons</a><span class="token punctuation">(</span>primaryButtonText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>primaryButtonEvent<span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token punctuation">, </span>secondaryButtonText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>secondaryButtonEvent<span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token punctuation">)</span> : <a href="../index.html">CharcoalDialogButtonSettings</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">ボタンを2つ表示したい場合に利用する。</p></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
-            <div class="tabs-section-body">
-              <h2 class="tabbedcontent">Constructors</h2>
-              <div class="table" data-togglable="Constructors"><a data-name="-2015557664%2FConstructors%2F1204169793" anchor-label="TwoButtons" id="-2015557664%2FConstructors%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-two-buttons.html">TwoButtons</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2015557664%2FConstructors%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-two-buttons.html"><span class="token function">TwoButtons</span></a><span class="token punctuation">(</span>primaryButtonText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>primaryButtonEvent<span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span>secondaryButtonText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>secondaryButtonEvent<span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Properties</h2>
-              <div class="table" data-togglable="Properties"><a data-name="-1257010922%2FProperties%2F1204169793" anchor-label="primaryButtonEvent" id="-1257010922%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="primary-button-event.html">primaryButtonEvent</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1257010922%2FProperties%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><a data-name="-1257010922%2FProperties%2F1204169793" anchor-label="primaryButtonEvent" id="-1257010922%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="primary-button-event.html">primaryButtonEvent</a><span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1257010922%2FProperties%2F1204169793" anchor-label="primaryButtonEvent" id="-1257010922%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><p class="paragraph">1つ目のボタンが押下されたときに取得できる <a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a> を実装したクラス</p></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1364419101%2FProperties%2F1204169793" anchor-label="primaryButtonText" id="1364419101%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="primary-button-text.html">primaryButtonText</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1364419101%2FProperties%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><a data-name="1364419101%2FProperties%2F1204169793" anchor-label="primaryButtonText" id="1364419101%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="primary-button-text.html">primaryButtonText</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1364419101%2FProperties%2F1204169793" anchor-label="primaryButtonText" id="1364419101%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><p class="paragraph">1つ目のボタンに表示する文言</p></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1658771512%2FProperties%2F1204169793" anchor-label="secondaryButtonEvent" id="-1658771512%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="secondary-button-event.html">secondaryButtonEvent</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1658771512%2FProperties%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><a data-name="-1658771512%2FProperties%2F1204169793" anchor-label="secondaryButtonEvent" id="-1658771512%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="secondary-button-event.html">secondaryButtonEvent</a><span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1658771512%2FProperties%2F1204169793" anchor-label="secondaryButtonEvent" id="-1658771512%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><p class="paragraph">2つ目のボタンが押下されたときに取得できる <a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a> を実装したクラス</p></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1835129557%2FProperties%2F1204169793" anchor-label="secondaryButtonText" id="-1835129557%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="secondary-button-text.html">secondaryButtonText</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1835129557%2FProperties%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><a data-name="-1835129557%2FProperties%2F1204169793" anchor-label="secondaryButtonText" id="-1835129557%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="secondary-button-text.html">secondaryButtonText</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1835129557%2FProperties%2F1204169793" anchor-label="secondaryButtonText" id="-1835129557%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><p class="paragraph">2つ目のボタンに表示する文言</p></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="charcoal-android::net.pixiv.charcoal.android.view.dialog/CharcoalDialogButtonSettings.TwoButtons///PointingToDeclaration//1204169793">
+  <div class="breadcrumbs"><a href="../../../../index.html">charcoal-android</a><span class="delimiter">/</span><a href="../../index.html">net.pixiv.charcoal.android.view.dialog</a><span class="delimiter">/</span><a href="../index.html">CharcoalDialogButtonSettings</a><span class="delimiter">/</span><span class="current">TwoButtons</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Two</span><wbr></wbr><span><span>Buttons</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">TwoButtons</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>primaryButtonText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>primaryButtonEvent<span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>secondaryButtonText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>secondaryButtonEvent<span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../index.html">CharcoalDialogButtonSettings</a></div><p class="paragraph">ボタンを2つ表示したい場合に利用する。</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-2015557664%2FConstructors%2F1204169793" anchor-label="TwoButtons" id="-2015557664%2FConstructors%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-two-buttons.html"><span>Two</span><wbr></wbr><span><span>Buttons</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2015557664%2FConstructors%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-two-buttons.html"><span class="token function">TwoButtons</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">primaryButtonText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">primaryButtonEvent<span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">secondaryButtonText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">secondaryButtonEvent<span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-1257010922%2FProperties%2F1204169793" anchor-label="primaryButtonEvent" id="-1257010922%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="primary-button-event.html"><span>primary</span><wbr></wbr><span>Button</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1257010922%2FProperties%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><a data-name="-1257010922%2FProperties%2F1204169793" anchor-label="primaryButtonEvent" id="-1257010922%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="primary-button-event.html">primaryButtonEvent</a><span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="-1257010922%2FProperties%2F1204169793" anchor-label="primaryButtonEvent" id="-1257010922%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><p class="paragraph">1つ目のボタンが押下されたときに取得できる <a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a> を実装したクラス</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1364419101%2FProperties%2F1204169793" anchor-label="primaryButtonText" id="1364419101%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="primary-button-text.html"><span>primary</span><wbr></wbr><span>Button</span><wbr></wbr><span><span>Text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1364419101%2FProperties%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><a data-name="1364419101%2FProperties%2F1204169793" anchor-label="primaryButtonText" id="1364419101%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="primary-button-text.html">primaryButtonText</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="1364419101%2FProperties%2F1204169793" anchor-label="primaryButtonText" id="1364419101%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><p class="paragraph">1つ目のボタンに表示する文言</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1658771512%2FProperties%2F1204169793" anchor-label="secondaryButtonEvent" id="-1658771512%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="secondary-button-event.html"><span>secondary</span><wbr></wbr><span>Button</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1658771512%2FProperties%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><a data-name="-1658771512%2FProperties%2F1204169793" anchor-label="secondaryButtonEvent" id="-1658771512%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="secondary-button-event.html">secondaryButtonEvent</a><span class="token operator">: </span><a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="-1658771512%2FProperties%2F1204169793" anchor-label="secondaryButtonEvent" id="-1658771512%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><p class="paragraph">2つ目のボタンが押下されたときに取得できる <a href="../../-charcoal-dialog-event/index.html">CharcoalDialogEvent</a> を実装したクラス</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1835129557%2FProperties%2F1204169793" anchor-label="secondaryButtonText" id="-1835129557%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="secondary-button-text.html"><span>secondary</span><wbr></wbr><span>Button</span><wbr></wbr><span><span>Text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1835129557%2FProperties%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><a data-name="-1835129557%2FProperties%2F1204169793" anchor-label="secondaryButtonText" id="-1835129557%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="secondary-button-text.html">secondaryButtonText</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="-1835129557%2FProperties%2F1204169793" anchor-label="secondaryButtonText" id="-1835129557%2FProperties%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a><p class="paragraph">2つ目のボタンに表示する文言</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-

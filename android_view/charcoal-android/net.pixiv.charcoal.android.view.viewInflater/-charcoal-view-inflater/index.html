@@ -1,241 +1,91 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>CharcoalViewInflater</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
-  <body>
-    <div class="navigation-wrapper" id="navigation-wrapper">
-      <div id="leftToggler"><span class="icon-toggler"></span></div>
-      <div class="library-name"><a href="../../../index.html">charcoal-android</a></div>
-      <div></div>
-      <div class="pull-right d-flex"><button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-      </div>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>charcoal-android</span>
+            </a>
     </div>
-    <div id="container">
-      <div id="leftColumn">
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main"><script type="text/javascript" src="../../../scripts/main.js"></script>
-        <div class="main-content" id="content" pageIds="charcoal-android::net.pixiv.charcoal.android.view.viewInflater/CharcoalViewInflater///PointingToDeclaration//1204169793">
-          <div class="breadcrumbs"><a href="../../../index.html">charcoal-android</a>/<a href="../index.html">net.pixiv.charcoal.android.view.viewInflater</a>/<a href="index.html">CharcoalViewInflater</a></div>
-          <div class="cover ">
-            <h1 class="cover"><span>Charcoal</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Inflater</span></span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CharcoalViewInflater</a> : <span data-unresolved-link="com.google.android.material.theme/MaterialComponentsViewInflater///PointingToDeclaration/">MaterialComponentsViewInflater</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Charcoal Theme が利用されている場合に、 inflate 時に一部の View を Charcoal のコンポーネントを置き換えます。 MaterialComponentsViewInflater を拡張して実装しています。</p></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button></div>
-            <div class="tabs-section-body">
-              <h2 class="tabbedcontent">Constructors</h2>
-              <div class="table" data-togglable="Constructors"><a data-name="-1985748431%2FConstructors%2F1204169793" anchor-label="CharcoalViewInflater" id="-1985748431%2FConstructors%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-charcoal-view-inflater.html">CharcoalViewInflater</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1985748431%2FConstructors%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-charcoal-view-inflater.html"><span class="token function">CharcoalViewInflater</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="1899437079%2FFunctions%2F1204169793" anchor-label="createAutoCompleteTextView" id="1899437079%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#1899437079%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Auto</span><wbr></wbr><span>Complete</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>View</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1899437079%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1899437079%2FFunctions%2F1204169793"><span class="token function">createAutoCompleteTextView</span></a><span class="token punctuation">(</span><span><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a> </span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span><span><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation">Nullable</span></a> </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatAutoCompleteTextView.html">AppCompatAutoCompleteTextView</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-519031019%2FFunctions%2F1204169793" anchor-label="createCheckBox" id="-519031019%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-519031019%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Check</span><wbr></wbr><span><span>Box</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-519031019%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-519031019%2FFunctions%2F1204169793"><span class="token function">createCheckBox</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatCheckBox.html">AppCompatCheckBox</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1322554851%2FFunctions%2F1204169793" anchor-label="createCheckedTextView" id="-1322554851%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-1322554851%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Checked</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>View</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1322554851%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1322554851%2FFunctions%2F1204169793"><span class="token function">createCheckedTextView</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatCheckedTextView.html">AppCompatCheckedTextView</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="996911271%2FFunctions%2F1204169793" anchor-label="createEditText" id="996911271%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#996911271%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Edit</span><wbr></wbr><span><span>Text</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="996911271%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#996911271%2FFunctions%2F1204169793"><span class="token function">createEditText</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatEditText.html">AppCompatEditText</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-208218031%2FFunctions%2F1204169793" anchor-label="createImageButton" id="-208218031%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-208218031%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Image</span><wbr></wbr><span><span>Button</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-208218031%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-208218031%2FFunctions%2F1204169793"><span class="token function">createImageButton</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatImageButton.html">AppCompatImageButton</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-965991100%2FFunctions%2F1204169793" anchor-label="createImageView" id="-965991100%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-965991100%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Image</span><wbr></wbr><span><span>View</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-965991100%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-965991100%2FFunctions%2F1204169793"><span class="token function">createImageView</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatImageView.html">AppCompatImageView</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-819637417%2FFunctions%2F1204169793" anchor-label="createMultiAutoCompleteTextView" id="-819637417%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-819637417%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Multi</span><wbr></wbr><span>Auto</span><wbr></wbr><span>Complete</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>View</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-819637417%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-819637417%2FFunctions%2F1204169793"><span class="token function">createMultiAutoCompleteTextView</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatMultiAutoCompleteTextView.html">AppCompatMultiAutoCompleteTextView</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1031433103%2FFunctions%2F1204169793" anchor-label="createRadioButton" id="1031433103%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#1031433103%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Radio</span><wbr></wbr><span><span>Button</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1031433103%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1031433103%2FFunctions%2F1204169793"><span class="token function">createRadioButton</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatRadioButton.html">AppCompatRadioButton</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1649700774%2FFunctions%2F1204169793" anchor-label="createRatingBar" id="-1649700774%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-1649700774%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Rating</span><wbr></wbr><span><span>Bar</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1649700774%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1649700774%2FFunctions%2F1204169793"><span class="token function">createRatingBar</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatRatingBar.html">AppCompatRatingBar</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-594048545%2FFunctions%2F1204169793" anchor-label="createSeekBar" id="-594048545%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-594048545%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Seek</span><wbr></wbr><span><span>Bar</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-594048545%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-594048545%2FFunctions%2F1204169793"><span class="token function">createSeekBar</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatSeekBar.html">AppCompatSeekBar</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-108078083%2FFunctions%2F1204169793" anchor-label="createSpinner" id="-108078083%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-108078083%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span><span>Spinner</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-108078083%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-108078083%2FFunctions%2F1204169793"><span class="token function">createSpinner</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatSpinner.html">AppCompatSpinner</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1778943452%2FFunctions%2F1204169793" anchor-label="createTextView" id="-1778943452%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-1778943452%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>View</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1778943452%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1778943452%2FFunctions%2F1204169793"><span class="token function">createTextView</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatTextView.html">AppCompatTextView</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1565707318%2FFunctions%2F1204169793" anchor-label="createToggleButton" id="1565707318%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#1565707318%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span>Toggle</span><wbr></wbr><span><span>Button</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1565707318%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1565707318%2FFunctions%2F1204169793"><span class="token function">createToggleButton</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/AppCompatToggleButton.html">AppCompatToggleButton</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1778893408%2FFunctions%2F1204169793" anchor-label="createView" id="1778893408%2FFunctions%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#1872435802%2FFunctions%2F1204169793"><span>create</span><wbr></wbr><span><span>View</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1778893408%2FFunctions%2F1204169793"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation">Nullable</span></a></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1872435802%2FFunctions%2F1204169793"><span class="token function">createView</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>p2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1450870546%2FFunctions%2F1204169793"><span class="token function">createView</span></a><span class="token punctuation">(</span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span>p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a> </span>p2<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span><span><span class="token annotation">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation">NonNull</span></a> </span>p3<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token punctuation">, </span>p4<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>p5<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>p6<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>p7<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="charcoal-android::net.pixiv.charcoal.android.view.viewInflater/CharcoalViewInflater///PointingToDeclaration//1204169793">
+  <div class="breadcrumbs"><a href="../../../index.html">charcoal-android</a><span class="delimiter">/</span><a href="../index.html">net.pixiv.charcoal.android.view.viewInflater</a><span class="delimiter">/</span><span class="current">CharcoalViewInflater</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Charcoal</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Inflater</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CharcoalViewInflater</a> : <span data-unresolved-link="com.google.android.material.theme/MaterialComponentsViewInflater///PointingToDeclaration/">MaterialComponentsViewInflater</span></div><p class="paragraph">Charcoal Theme が利用されている場合に、 inflate 時に一部の View を Charcoal のコンポーネントを置き換えます。 MaterialComponentsViewInflater を拡張して実装しています。</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-1985748431%2FConstructors%2F1204169793" anchor-label="CharcoalViewInflater" id="-1985748431%2FConstructors%2F1204169793" data-filterable-set=":charcoal-android:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":charcoal-android:dokkaHtml/release" data-filterable-set=":charcoal-android:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-charcoal-view-inflater.html"><span>Charcoal</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Inflater</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1985748431%2FConstructors%2F1204169793"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-charcoal-view-inflater.html"><span class="token function">CharcoalViewInflater</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-
