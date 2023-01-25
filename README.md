@@ -18,6 +18,27 @@
     android:text="OK" />
 ```
 
+## Installation
+
+```groovy
+repositories {
+    mavenCentral()
+}
+```
+
+```groovy
+ext {
+    charcoal_version = "1.0.1"
+}
+
+dependencies {
+    // Android View
+    implementation "net.pixiv:charcoal-android:$charcoal_version"
+    // Compose(Experimental)
+    implementation "net.pixiv:charcoal-android-compose:$charcoal_version"
+}
+```
+
 ## Requirements
 
 - minSdk 23+
