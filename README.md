@@ -33,9 +33,9 @@ ext {
 
 dependencies {
     // Android View
-    implementation "net.pixiv:charcoal-android:$charcoal_version"
+    implementation "net.pixiv.charcoal:charcoal-android-view:$charcoal_version"
     // Compose(Experimental)
-    implementation "net.pixiv:charcoal-android-compose:$charcoal_version"
+    implementation "net.pixiv:charcoal:charcoal-compose:$charcoal_version"
 }
 ```
 
