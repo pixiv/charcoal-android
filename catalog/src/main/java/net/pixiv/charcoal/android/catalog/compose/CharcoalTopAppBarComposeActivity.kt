@@ -67,7 +67,7 @@ private fun TopAppBarCatalog(
                 )
             },
             backgroundColor = CharcoalTheme.colorToken.background2
-        ) {
+        ) { innerPadding ->
             val states = mutableListOf(
                 TopAppBarSampleSetting(
                     titleText = "Default",
@@ -79,14 +79,20 @@ private fun TopAppBarCatalog(
                     background = CharcoalTheme.colorToken.surface3
                 ),
             )
-            TopAppBarList(topAppBarSettings = states)
+            TopAppBarList(
+                modifier = Modifier.padding(innerPadding),
+                topAppBarSettings = states
+            )
         }
     }
 }
 
 @Composable
-private fun TopAppBarList(topAppBarSettings: List<TopAppBarSampleSetting>) {
-    LazyColumn {
+private fun TopAppBarList(
+    modifier: Modifier = Modifier,
+    topAppBarSettings: List<TopAppBarSampleSetting>
+) {
+    LazyColumn(modifier = modifier) {
         items(topAppBarSettings) {
             CharcoalTopAppBarSample(topAppBarSetting = it)
         }
