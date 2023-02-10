@@ -63,6 +63,7 @@ dependencies {
 
     implementation deps.androidX.appCompat
     implementation deps.androidX.activity.compose
+    implementation platform(deps.androidX.compose.bom)
     implementation deps.androidX.compose.ui
     implementation deps.androidX.compose.uiTooling
     implementation deps.androidX.compose.material

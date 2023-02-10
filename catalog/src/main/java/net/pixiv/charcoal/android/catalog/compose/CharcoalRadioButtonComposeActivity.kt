@@ -5,13 +5,12 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.GridCells
-import androidx.compose.foundation.lazy.LazyVerticalGrid
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
@@ -71,23 +70,30 @@ private fun RadioButtonCatalog(
                     }
                 )
             }
-        ) {
+        ) { innerPadding ->
             val states = mutableListOf(
                 RadioButtonState(enabled = true, selected = false),
                 RadioButtonState(enabled = true, selected = true),
                 RadioButtonState(enabled = false, selected = false),
                 RadioButtonState(enabled = false, selected = true),
             )
-            RadioButtonGrid(radioButtonStates = states)
+
+            RadioButtonGrid(
+                modifier = Modifier.padding(innerPadding),
+                radioButtonStates = states
+            )
         }
     }
 }
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
-private fun RadioButtonGrid(radioButtonStates: List<RadioButtonState>) {
+private fun RadioButtonGrid(
+    modifier: Modifier = Modifier,
+    radioButtonStates: List<RadioButtonState>
+) {
     LazyVerticalGrid(
-        cells = GridCells.Fixed(2)
+        modifier = modifier,
+        columns = GridCells.Fixed(2),
     ) {
         items(radioButtonStates) {
             CharcoalRadioButtonSample(radioButtonState = it)
@@ -100,12 +106,14 @@ private fun CharcoalRadioButtonSample(radioButtonState: RadioButtonState) {
     var selectedState by remember { mutableStateOf(radioButtonState.selected) }
 
     Row(
-        modifier = Modifier.toggleable(
-            value = selectedState,
-            role = Role.RadioButton,
-            enabled = radioButtonState.enabled,
-            onValueChange = { selectedState = !selectedState }
-        ).padding(8.dp),
+        modifier = Modifier
+            .toggleable(
+                value = selectedState,
+                role = Role.RadioButton,
+                enabled = radioButtonState.enabled,
+                onValueChange = { selectedState = !selectedState }
+            )
+            .padding(8.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         CharcoalRadioButton(
