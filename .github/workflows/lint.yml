@@ -2,9 +2,6 @@ name: danger
 
 on: pull_request
 
-permissions:
-  pull-requests: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,6 +10,7 @@ jobs:
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
+
     - name: set up JDK 11
       uses: actions/setup-java@v3
       with:
@@ -20,20 +18,5 @@ jobs:
         distribution: 'adopt'
         cache: gradle
 
-    - name: Setup ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
-
-    - name: Install danger
-      run: |
-        gem install bundler
-        bundle install
-
     - name: Run ktlintCheck
       run: ./gradlew ktlintCheck
-
-    - name: Run danger
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: danger
