@@ -16,7 +16,7 @@ ext.deps = [
         ],
         androidX      : [
                 core            : "androidx.core:core-ktx:${androidXCoreVersion}",
-                appCompat       : 'androidx.appcompat:appcompat:1.5.1',
+                appCompat       : 'androidx.appcompat:appcompat:1.6.1',
                 activity        : [
                         core   : "androidx.activity:activity-ktx:${activityVersion}",
                         compose: "androidx.activity:activity-compose:${activityVersion}"
