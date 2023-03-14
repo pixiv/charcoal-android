@@ -117,15 +117,17 @@ class CharcoalDialogFragment : DialogFragment() {
     }
 
     private fun setFragmentResult(dialogEvent: CharcoalDialogEvent) {
+        val requestKey = checkNotNull(requireArguments().getString(ARGUMENTS_REQUEST_KEY))
+
         parentFragmentManager.setFragmentResult(
-            FRAGMENT_REQUEST_KEY,
+            requestKey,
             bundleOf(FRAGMENT_RESULT_KEY_CHARCOAL_DIALOG_EVENT to dialogEvent)
         )
     }
 
     companion object {
         /**
-         * setFragmentResultListener の requestKey に設定する値
+         * setFragmentResultListener の requestKey に設定するデフォルト値
          */
         const val FRAGMENT_REQUEST_KEY = "fragment_request_key_charcoal_dialog_fragment"
 
@@ -148,12 +150,18 @@ class CharcoalDialogFragment : DialogFragment() {
             "arguments_cancel_button_colored_background"
 
         /**
+         * FragmentResultListener に設定する requestKey を保持するための Bundle key
+         */
+        private const val ARGUMENTS_REQUEST_KEY = "arguments_request_key"
+
+        /**
          * CharcoalDialogFragment に arguments を設定したインスタンスを取得する。
          *
          * @param title ポップアップのタイトル
          * @param message ポップアップのメッセージ
          * @param buttonSettings [CharcoalDialogButtonSettings] を利用したボタン表示設定
          * @param isCancelable ダイアログをキャンセルできるか。キャンセルできる場合は閉じるボタンを表示する。
+         * @param requestKey Fragment Result Listener で利用する requestKey
          * @return arguments が設定された CharcoalDialogFragment のインスタンス
          */
         fun newInstance(
@@ -163,6 +171,7 @@ class CharcoalDialogFragment : DialogFragment() {
             buttonSettings: CharcoalDialogButtonSettings,
             isCancelable: Boolean = true,
             cancelButtonColoredBackground: Boolean = false,
+            requestKey: String = FRAGMENT_REQUEST_KEY
         ): CharcoalDialogFragment {
             return CharcoalDialogFragment().also { fragment ->
                 fragment.arguments = Bundle().also { bundle ->
@@ -177,6 +186,7 @@ class CharcoalDialogFragment : DialogFragment() {
                         ARGUMENTS_CANCEL_BUTTON_COLORED_BACKGROUND,
                         cancelButtonColoredBackground
                     )
+                    bundle.putString(ARGUMENTS_REQUEST_KEY, requestKey)
                 }
             }
         }

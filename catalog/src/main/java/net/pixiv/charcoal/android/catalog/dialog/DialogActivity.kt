@@ -47,7 +47,10 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
             SampleBottomSheetDialogFragment().showNow(supportFragmentManager, DIALOG_TAG)
         }
 
-        supportFragmentManager.setFragmentResultListener(CharcoalDialogFragment.FRAGMENT_REQUEST_KEY, this) { _, result ->
+        supportFragmentManager.setFragmentResultListener(
+            CharcoalDialogFragment.FRAGMENT_REQUEST_KEY,
+            this
+        ) { _, result ->
             when (result.getParcelable<DialogActivityEvent>(CharcoalDialogFragment.FRAGMENT_RESULT_KEY_CHARCOAL_DIALOG_EVENT)) {
                 DialogActivityEvent.SelectPrimaryButton -> {
                     Toast.makeText(this, "select primary button", Toast.LENGTH_SHORT).show()
