@@ -18,5 +18,8 @@ jobs:
           distribution: 'adopt'
           cache: gradle
 
+      - name: Build catalog app
+        run: ./gradlew :catalog:assembleDebug
+
       - name: Run ktlintCheck
         run: ./gradlew ktlintCheck
