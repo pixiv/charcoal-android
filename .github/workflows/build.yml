@@ -1,0 +1,25 @@
+name: build
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+          cache: gradle
+
+      - name: Build catalog app
+        run: ./gradlew :catalog:assembleDebug
+
+      - name: Run ktlintCheck
+        run: ./gradlew ktlintCheck
