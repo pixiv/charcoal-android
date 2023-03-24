@@ -21,7 +21,7 @@ plugins {
 }
 
 ext.versions = [
-        compileSdk: 32,
+        compileSdk: 33,
         targetSdk : 30,
         minSdk    : 23,
 ]
