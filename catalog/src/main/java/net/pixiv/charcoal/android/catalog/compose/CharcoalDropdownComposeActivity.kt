@@ -5,8 +5,10 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -17,6 +19,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import net.pixiv.charcoal.android.compose.component.dropdown.CharcoalDropdown1
 import net.pixiv.charcoal.android.compose.component.dropdown.CharcoalDropdown2
 import net.pixiv.charcoal.android.compose.component.textfield.CharcoalTextField
@@ -45,7 +48,7 @@ private fun DropdownCatalog(
     onNavigationClick: (() -> Unit),
 ) {
     var selectedOption by remember { mutableStateOf("Apple") }
-    var options by remember { mutableStateOf(mutableListOf("Apple", "Orange", "Banana")) }
+    val options = listOf("Apple", "Orange", "Banana")
 
     var text by remember { mutableStateOf("Hoge") }
 
@@ -65,7 +68,10 @@ private fun DropdownCatalog(
                 )
             }
         ) {
-            Column {
+            Column(
+                modifier = Modifier.padding(8.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
                 CharcoalDropdown1(
                     selectedOption = selectedOption,
                     options = options,
@@ -85,7 +91,7 @@ private fun DropdownCatalog(
                         .fillMaxWidth()
                         .weight(1.0f),
                     value = text,
-                    onValueChange = { value -> text = value},
+                    onValueChange = { value -> text = value },
                     textStyle = CharcoalTheme.typography.regular14,
                     colors = TextFieldDefaults.textFieldColors(backgroundColor = CharcoalTheme.colorToken.surface3)
                 )
@@ -94,7 +100,9 @@ private fun DropdownCatalog(
                         .fillMaxWidth()
                         .weight(1.0f),
                     value = text,
-                    onValueChange = { value -> text = value}
+                    onValueChange = { value -> text = value },
+                    textStyle = CharcoalTheme.typography.regular14,
+                    colors = TextFieldDefaults.textFieldColors(backgroundColor = CharcoalTheme.colorToken.surface3)
                 )
             }
         }
