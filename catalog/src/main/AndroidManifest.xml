@@ -55,6 +55,9 @@
         <activity
             android:name=".compose.CharcoalTypographyComposeActivity"
             android:exported="false" />
+        <activity
+            android:name=".compose.CharcoalDropdownComposeActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
