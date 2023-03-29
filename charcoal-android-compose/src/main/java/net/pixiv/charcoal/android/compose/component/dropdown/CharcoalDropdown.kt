@@ -1,7 +1,6 @@
 package net.pixiv.charcoal.android.compose.component.dropdown
 
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.material.DropdownMenuItem
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.ExposedDropdownMenuBox
@@ -18,7 +17,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.unit.dp
 import net.pixiv.charcoal.android.compose.component.textfield.CharcoalTextField
 import net.pixiv.charcoal.android.compose.theme.CharcoalTheme
 
@@ -94,7 +92,7 @@ fun CharcoalDropdown2(
             }
         ) {
             CharcoalTextField(
-                modifier = Modifier.fillMaxWidth().height(40.dp),
+                modifier = Modifier.fillMaxWidth(),
                 readOnly = true,
                 value = selectedOption,
                 onValueChange = { },

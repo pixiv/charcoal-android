@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.defaultMinSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.ZeroCornerSize
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
@@ -45,6 +46,7 @@ fun CharcoalTextField(
         MaterialTheme.shapes.small.copy(bottomEnd = ZeroCornerSize, bottomStart = ZeroCornerSize),
     colors: TextFieldColors = TextFieldDefaults.textFieldColors()
 ) {
+    val internalModifier = if (singleLine) modifier.height(40.dp) else modifier
     val internalTextStyle by remember {
         mutableStateOf(textStyle.copy(color = textColor))
     }
@@ -52,7 +54,7 @@ fun CharcoalTextField(
     @OptIn(ExperimentalMaterialApi::class)
     BasicTextField(
         value = value,
-        modifier = modifier
+        modifier = internalModifier
             .background(colors.backgroundColor(enabled).value, shape)
             .indicatorLine(enabled, isError, interactionSource, colors)
             .defaultMinSize(
