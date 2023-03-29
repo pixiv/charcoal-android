@@ -1,11 +1,12 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'signing'
     id 'maven-publish'
     id 'org.jetbrains.dokka'
 }
 
-group = "net.pixiv.charcoal-android"
+group = "net.pixiv.charcoal"
 version = findProperty('CHARCOAL_RELEASE_VERSION') ?: System.getenv('CHARCOAL_RELEASE_VERSION') ?: ""
 
 android {
@@ -63,20 +64,6 @@ dependencies {
     androidTestImplementation deps.androidX.test.espresso
 }
 
-def getRepositoryUrl() {
-    def releasesRepoUrl = findProperty('NEXUS_MAVEN_RELEASE_REPOSITORY') ?: System.getenv('NEXUS_MAVEN_RELEASE_REPOSITORY') ?: ""
-    def snapshotsRepoUrl = findProperty('NEXUS_MAVEN_SNAPSHOT_REPOSITORY') ?: System.getenv('NEXUS_MAVEN_SNAPSHOT_REPOSITORY') ?: ""
-    return uri(version.toString().endsWith("SNAPSHOT") ? snapshotsRepoUrl : releasesRepoUrl)
-}
-
-def getRepositoryUsername() {
-    return findProperty('NEXUS_MAVEN_USERNAME') ?: System.getenv('NEXUS_MAVEN_USERNAME') ?: ""
-}
-
-def getRepositoryPassword() {
-    return findProperty('NEXUS_MAVEN_PASSWORD') ?: System.getenv('NEXUS_MAVEN_PASSWORD') ?: ""
-}
-
 afterEvaluate {
     publishing {
         publications {
@@ -84,22 +71,43 @@ afterEvaluate {
                 from components.release
                 artifact androidSourcesJar
 
-                groupId = "net.pixiv.charcoal-android"
-                artifactId = "charcoal-android-compose"
-                version = version
-            }
-        }
-        repositories {
-            maven {
-                url = getRepositoryUrl()
+                groupId group
+                artifactId "charcoal-compose"
+                version version
 
-                credentials {
-                    username = getRepositoryUsername()
-                    password = getRepositoryPassword()
+                pom {
+                    name = "charcoal-android-compose"
+                    description = "Design system library by pixiv"
+                    url = "https://github.com/pixiv/charcoal-android"
+
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id = 'kwzr'
+                            name = 'Kazumasa Kawazure'
+                            email = "kwzr@pixiv.co.jp"
+                        }
+                    }
+
+                    scm {
+                        connection = 'scm:git:github.com/pixiv/charcoal-android.git'
+                        developerConnection = 'scm:git:ssh://github.com/pixiv/charcoal-android.git'
+                        url = 'https://github.com/pixiv/charcoal-android/tree/main'
+                    }
                 }
             }
         }
     }
+}
+
+signing {
+    sign publishing.publications
 }
 
 task androidSourcesJar(type: Jar) {
