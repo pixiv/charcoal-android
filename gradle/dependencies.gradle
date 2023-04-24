@@ -27,7 +27,7 @@ ext.deps = [
                         uiTooling: "androidx.compose.ui:ui-tooling",
                         material : "androidx.compose.material:material"
                 ],
-                fragment        : 'androidx.fragment:fragment-ktx:1.4.1',
+                fragment        : 'androidx.fragment:fragment-ktx:1.5.7',
                 material        : 'com.google.android.material:material:1.6.1',
                 recyclerView    : 'androidx.recyclerview:recyclerview:1.2.1',
                 constraintLayout: 'androidx.constraintlayout:constraintlayout:2.1.4',
