@@ -51,6 +51,7 @@ android {
             keyPassword 'android'
         }
     }
+    namespace 'net.pixiv.charcoal.android.catalog'
 }
 
 repositories {
