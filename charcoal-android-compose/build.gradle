@@ -45,6 +45,7 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion "${composeCompilerVersion}"
     }
+    namespace 'net.pixiv.charcoal.android.compose'
 }
 
 dependencies {
