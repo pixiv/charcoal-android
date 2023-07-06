@@ -18,8 +18,11 @@
         app:layout_constraintTop_toBottomOf="@id/tool_bar">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAppearance="@style/TextAppearance.Charcoal.Bold.16"
+            android:textColor="?attr/colorCharcoalText1"
             android:text='app:tabMode="fixed"' />
 
         <FrameLayout
@@ -52,9 +55,11 @@
         </FrameLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:textAppearance="@style/TextAppearance.Charcoal.Bold.16"
+            android:textColor="?attr/colorCharcoalText1"
             android:text='app:tabMode="scrollable"' />
 
         <FrameLayout
