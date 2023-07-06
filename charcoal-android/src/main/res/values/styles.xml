@@ -89,6 +89,7 @@
         <item name="android:layout_gravity">bottom|center_horizontal</item>
         <item name="android:background">?attr/colorCharcoalSurface1</item>
         <item name="tabIndicatorColor">?attr/colorCharcoalBrand</item>
+        <item name="tabIndicatorFullWidth">false</item>
         <item name="tabIndicatorHeight">2dp</item>
         <item name="tabSelectedTextColor">?attr/colorCharcoalText1</item>
         <item name="tabTextAppearance">@style/TextAppearance.Charcoal.Regular.14</item>
