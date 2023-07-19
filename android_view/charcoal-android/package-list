@@ -38,6 +38,10 @@ $dokka.location:net.pixiv.charcoal.android.view.color/CharcoalColorToken/getText
 $dokka.location:net.pixiv.charcoal.android.view.color/CharcoalColorToken/getText4/#android.content.Context/PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.color/-charcoal-color-token/get-text4.html
 $dokka.location:net.pixiv.charcoal.android.view.color/CharcoalColorToken/getText5/#android.content.Context/PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.color/-charcoal-color-token/get-text5.html
 $dokka.location:net.pixiv.charcoal.android.view.color/CharcoalColorToken/getWarning/#android.content.Context/PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.color/-charcoal-color-token/get-warning.html
+$dokka.location:net.pixiv.charcoal.android.view.constant////PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.constant/index.html
+$dokka.location:net.pixiv.charcoal.android.view.constant/CharcoalTabLayout///PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.constant/-charcoal-tab-layout/index.html
+$dokka.location:net.pixiv.charcoal.android.view.constant/CharcoalTabLayout/CharcoalTabLayout/#android.content.Context#android.util.AttributeSet?/PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.constant/-charcoal-tab-layout/-charcoal-tab-layout.html
+$dokka.location:net.pixiv.charcoal.android.view.constant/CharcoalTabLayout/addTab/#com.google.android.material.tabs.TabLayout.Tab#kotlin.Int#kotlin.Boolean/PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.constant/-charcoal-tab-layout/add-tab.html
 $dokka.location:net.pixiv.charcoal.android.view.dialog////PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.dialog/index.html
 $dokka.location:net.pixiv.charcoal.android.view.dialog/CharcoalDialogButtonSettings.OneButton///PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.dialog/-charcoal-dialog-button-settings/-one-button/index.html
 $dokka.location:net.pixiv.charcoal.android.view.dialog/CharcoalDialogButtonSettings.OneButton/OneButton/#kotlin.String#net.pixiv.charcoal.android.view.dialog.CharcoalDialogEvent?/PointingToDeclaration/charcoal-android/net.pixiv.charcoal.android.view.dialog/-charcoal-dialog-button-settings/-one-button/-one-button.html
@@ -79,6 +83,7 @@ net.pixiv.charcoal.android
 net.pixiv.charcoal.android.view.button
 net.pixiv.charcoal.android.view.charcoalSwitch
 net.pixiv.charcoal.android.view.color
+net.pixiv.charcoal.android.view.constant
 net.pixiv.charcoal.android.view.dialog
 net.pixiv.charcoal.android.view.viewInflater
 
