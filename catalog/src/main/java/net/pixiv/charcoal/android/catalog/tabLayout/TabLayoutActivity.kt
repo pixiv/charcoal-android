@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.tabs.TabLayout
 import com.wada811.viewbinding.viewBinding
 import net.pixiv.charcoal.android.catalog.R
 import net.pixiv.charcoal.android.catalog.databinding.ActivityTabLayoutBinding
@@ -22,24 +21,12 @@ class TabLayoutActivity : AppCompatActivity(R.layout.activity_tab_layout) {
             toolbar = binding.toolBar,
             title = "TabLayout"
         )
-
-        binding.tabLayoutS.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-            }
-        })
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
                 return true
             }
         }
