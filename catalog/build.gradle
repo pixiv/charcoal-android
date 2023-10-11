@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    compileSdk versions.compileSdk
+    compileSdk libs.versions.android.compileSdk.get().toInteger()
 
     buildFeatures {
         viewBinding true
@@ -15,8 +15,8 @@ android {
 
     defaultConfig {
         applicationId "net.pixiv.charcoal.android.catalog"
-        minSdk versions.minSdk
-        targetSdk versions.targetSdk
+        minSdk libs.versions.android.minSdk.get().toInteger()
+        targetSdk libs.versions.android.targetSdk.get().toInteger()
         versionCode 1
         versionName "1.0"
 

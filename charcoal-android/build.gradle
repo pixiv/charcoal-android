@@ -10,11 +10,11 @@ group = "net.pixiv.charcoal"
 version = findProperty('CHARCOAL_RELEASE_VERSION') ?: System.getenv('CHARCOAL_RELEASE_VERSION') ?: ""
 
 android {
-    compileSdkVersion versions.compileSdk
+    compileSdk libs.versions.android.compileSdk.get().toInteger()
 
     defaultConfig {
-        minSdkVersion versions.minSdk
-        targetSdkVersion versions.targetSdk
+        minSdk libs.versions.android.minSdk.get().toInteger()
+        targetSdk libs.versions.android.targetSdk.get().toInteger()
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
