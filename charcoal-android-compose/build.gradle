@@ -43,7 +43,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion "${composeCompilerVersion}"
+        kotlinCompilerExtensionVersion "${libs.versions.composeCompiler.get()}"
     }
     namespace 'net.pixiv.charcoal.android.compose'
 }
@@ -52,11 +52,11 @@ dependencies {
     api project(":charcoal-android")
 
     implementation deps.androidX.activity.compose
-    implementation deps.androidX.compose.compiler
-    implementation platform(deps.androidX.compose.bom)
-    implementation deps.androidX.compose.ui
-    implementation deps.androidX.compose.uiTooling
-    implementation deps.androidX.compose.material
+    implementation libs.androidx.compose.compiler
+    implementation platform(libs.androidx.compose.bom)
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.compose.ui.tooling
+    implementation libs.androidx.compose.material
     implementation deps.kotlinX.serialization
 
     testImplementation deps.junit
