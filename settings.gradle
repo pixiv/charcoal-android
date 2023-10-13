@@ -1,3 +1,11 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
 rootProject.name = "charcoal-android"
 include ':charcoal-android'
 include ':charcoal-android-compose'

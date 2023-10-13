@@ -1,6 +1,6 @@
 plugins {
-    id 'com.android.library'
-    id 'kotlin-android'
+    alias libs.plugins.android.library
+    alias libs.plugins.kotlin
     id 'signing'
     id 'maven-publish'
     id 'org.jetbrains.dokka'
@@ -10,11 +10,11 @@ group = "net.pixiv.charcoal"
 version = findProperty('CHARCOAL_RELEASE_VERSION') ?: System.getenv('CHARCOAL_RELEASE_VERSION') ?: ""
 
 android {
-    compileSdkVersion versions.compileSdk
+    compileSdk libs.versions.android.compileSdk.get().toInteger()
 
     defaultConfig {
-        minSdkVersion versions.minSdk
-        targetSdkVersion versions.targetSdk
+        minSdk libs.versions.android.minSdk.get().toInteger()
+        targetSdk libs.versions.android.targetSdk.get().toInteger()
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -40,7 +40,6 @@ dependencies {
     implementation deps.androidX.fragment
     implementation deps.androidX.material
     implementation deps.androidX.core
-    implementation deps.kotlin.stdlib
 
     testImplementation deps.junit
 

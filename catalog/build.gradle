@@ -1,11 +1,11 @@
 plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-    id 'kotlin-parcelize'
+    alias libs.plugins.android.application
+    alias libs.plugins.kotlin
+    alias libs.plugins.kotlin.parcelize
 }
 
 android {
-    compileSdk versions.compileSdk
+    compileSdk libs.versions.android.compileSdk.get().toInteger()
 
     buildFeatures {
         viewBinding true
@@ -15,8 +15,8 @@ android {
 
     defaultConfig {
         applicationId "net.pixiv.charcoal.android.catalog"
-        minSdk versions.minSdk
-        targetSdk versions.targetSdk
+        minSdk libs.versions.android.minSdk.get().toInteger()
+        targetSdk libs.versions.android.targetSdk.get().toInteger()
         versionCode 1
         versionName "1.0"
 
@@ -40,7 +40,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion "${composeCompilerVersion}"
+        kotlinCompilerExtensionVersion "${libs.versions.composeCompiler.get()}"
     }
 
     signingConfigs {
@@ -64,10 +64,10 @@ dependencies {
 
     implementation deps.androidX.appCompat
     implementation deps.androidX.activity.compose
-    implementation platform(deps.androidX.compose.bom)
-    implementation deps.androidX.compose.ui
-    implementation deps.androidX.compose.uiTooling
-    implementation deps.androidX.compose.material
+    implementation platform(libs.androidx.compose.bom)
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.compose.ui.tooling
+    implementation libs.androidx.compose.material
     implementation deps.androidX.recyclerView
     implementation deps.androidX.material
     implementation deps.androidX.constraintLayout

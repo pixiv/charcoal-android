@@ -1,6 +1,6 @@
 plugins {
-    id 'com.android.library'
-    id 'kotlin-android'
+    alias libs.plugins.android.library
+    alias libs.plugins.kotlin
     id 'signing'
     id 'maven-publish'
     id 'org.jetbrains.dokka'
@@ -10,7 +10,7 @@ group = "net.pixiv.charcoal"
 version = findProperty('CHARCOAL_RELEASE_VERSION') ?: System.getenv('CHARCOAL_RELEASE_VERSION') ?: ""
 
 android {
-    compileSdkVersion versions.compileSdk
+    compileSdk libs.versions.android.compileSdk.get().toInteger()
 
     buildFeatures {
         buildConfig false
@@ -18,8 +18,8 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion versions.minSdk
-        targetSdkVersion versions.targetSdk
+        minSdk libs.versions.android.minSdk.get().toInteger()
+        targetSdk libs.versions.android.targetSdk.get().toInteger()
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -43,7 +43,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion "${composeCompilerVersion}"
+        kotlinCompilerExtensionVersion "${libs.versions.composeCompiler.get()}"
     }
     namespace 'net.pixiv.charcoal.android.compose'
 }
@@ -52,11 +52,11 @@ dependencies {
     api project(":charcoal-android")
 
     implementation deps.androidX.activity.compose
-    implementation deps.androidX.compose.compiler
-    implementation platform(deps.androidX.compose.bom)
-    implementation deps.androidX.compose.ui
-    implementation deps.androidX.compose.uiTooling
-    implementation deps.androidX.compose.material
+    implementation libs.androidx.compose.compiler
+    implementation platform(libs.androidx.compose.bom)
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.compose.ui.tooling
+    implementation libs.androidx.compose.material
     implementation deps.kotlinX.serialization
 
     testImplementation deps.junit
