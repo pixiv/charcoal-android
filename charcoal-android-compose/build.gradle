@@ -46,6 +46,13 @@ android {
         kotlinCompilerExtensionVersion "${libs.versions.composeCompiler.get()}"
     }
     namespace 'net.pixiv.charcoal.android.compose'
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {

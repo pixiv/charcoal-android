@@ -31,6 +31,13 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'net.pixiv.charcoal.android'
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
