@@ -35,7 +35,6 @@ android {
     publishing {
         singleVariant('release') {
             withSourcesJar()
-            withJavadocJar()
         }
     }
 }
@@ -59,21 +58,20 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                artifact androidSourcesJar
 
                 groupId group
                 artifactId "charcoal-android-view"
                 version version
 
                 pom {
-                    name = "charcoal-android"
+                    name = "charcoal-android-view"
                     description = "Design system library by pixiv"
                     url = "https://github.com/pixiv/charcoal-android"
 
                     licenses {
                         license {
                             name = 'The Apache License, Version 2.0'
-                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
                         }
                     }
 
@@ -98,11 +96,6 @@ afterEvaluate {
 
 signing {
     sign publishing.publications
-}
-
-task androidSourcesJar(type: Jar) {
-    archiveClassifier.set('sources')
-    from android.sourceSets.main.java.srcDirs
 }
 
 dokkaHtml.configure {

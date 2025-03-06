@@ -50,7 +50,3 @@ subprojects {
 
 apply plugin: 'io.github.gradle-nexus.publish-plugin'
 apply from: "${rootDir}/scripts/publish/publish-root.gradle"
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
