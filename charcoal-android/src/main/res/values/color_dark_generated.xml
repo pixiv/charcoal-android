@@ -11,7 +11,7 @@
     <color name="charcoal_color_surface3_dark">#1fffffff</color>
     <color name="charcoal_color_surface4_dark">#52000000</color>
     <color name="charcoal_color_surface6_dark">#1fffffff</color>
-    <color name="charcoal_color_surface7_dark">#05000000</color>
+    <color name="charcoal_color_surface7_dark">#00000000</color>
     <color name="charcoal_color_surface8_dark">#e0000000</color>
     <color name="charcoal_color_surface9_dark">#ff333333</color>
     <color name="charcoal_color_surface10_dark">#33ffffff</color>
