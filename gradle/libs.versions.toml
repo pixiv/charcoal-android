@@ -1,14 +1,14 @@
 [versions]
-android-compileSdk = "33"
+android-compileSdk = "35"
 android-targetSdk = "30"
 android-minSdk = "23"
 android-gradle = "8.8.0"
-composeCompiler = "1.3.2"
-kotlin = "1.7.20"
+composeCompiler = "1.5.15"
+kotlin = "1.9.25"
 
 [libraries]
 androidx-compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "composeCompiler" }
-androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2023.01.00" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2025.05.01" }
 androidx-compose-ui = { module = "androidx.compose.ui:ui" }
 androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 androidx-compose-material = { module = "androidx.compose.material:material" }
