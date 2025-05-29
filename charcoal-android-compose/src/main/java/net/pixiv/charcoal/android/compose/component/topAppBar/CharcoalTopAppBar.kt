@@ -1,6 +1,7 @@
 package net.pixiv.charcoal.android.compose.component.topAppBar
 
 import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.material.LocalContentAlpha
 import androidx.compose.material.LocalContentColor
 import androidx.compose.material.LocalTextStyle
@@ -8,6 +9,7 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import net.pixiv.charcoal.android.compose.theme.CharcoalContentAlpha
 import net.pixiv.charcoal.android.compose.theme.CharcoalTheme
 
@@ -23,6 +25,7 @@ fun CharcoalTopAppBar(
     navigationIcon: @Composable (() -> Unit)? = null,
     actions: @Composable RowScope.() -> Unit = {},
     style: CharcoalTopAppBarStyle = CharcoalTopAppBarStyle.default(),
+    windowInsets: WindowInsets = WindowInsets(0.dp)
 ) {
     val titleInternal: @Composable () -> Unit = {
         CompositionLocalProvider(
@@ -49,7 +52,8 @@ fun CharcoalTopAppBar(
         actions = actions,
         backgroundColor = style.getBackgroundColor(),
         contentColor = style.getContentColor(),
-        elevation = style.getElevation()
+        elevation = style.getElevation(),
+        windowInsets = windowInsets
     )
 }
 
