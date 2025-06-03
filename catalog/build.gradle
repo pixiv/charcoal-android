@@ -35,7 +35,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_17
         freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
     }
 
@@ -68,6 +68,7 @@ dependencies {
     implementation libs.androidx.compose.ui
     implementation libs.androidx.compose.ui.tooling
     implementation libs.androidx.compose.material
+    implementation libs.androidx.compose.material.icons
     implementation deps.androidX.recyclerView
     implementation deps.androidX.material
     implementation deps.androidX.constraintLayout
