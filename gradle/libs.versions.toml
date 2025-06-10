@@ -4,6 +4,7 @@ android-targetSdk = "30"
 android-minSdk = "23"
 android-gradle = "8.8.0"
 composeCompiler = "1.5.15"
+dokka = "1.9.20"
 kotlin = "1.9.25"
 
 [libraries]
@@ -17,5 +18,6 @@ androidx-compose-material-icons = { module = "androidx.compose.material:material
 [plugins]
 android-application = { id = "com.android.application", version.ref = "android-gradle" }
 android-library = { id = "com.android.library", version.ref = "android-gradle" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }

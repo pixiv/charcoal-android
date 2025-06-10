@@ -2,7 +2,6 @@ ext {
     androidXCoreVersion = '1.7.0'
     activityVersion = '1.5.1'
     groupieVersion = "2.9.0"
-    dokkaVersion = '1.7.20'
 }
 ext.deps = [
         kotlinX       : [

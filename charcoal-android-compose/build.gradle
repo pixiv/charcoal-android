@@ -1,9 +1,9 @@
 plugins {
     alias libs.plugins.android.library
+    alias libs.plugins.dokka
     alias libs.plugins.kotlin
     id 'signing'
     id 'maven-publish'
-    id 'org.jetbrains.dokka'
 }
 
 group = "net.pixiv.charcoal"
