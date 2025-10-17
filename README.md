@@ -28,7 +28,7 @@ repositories {
 
 ```groovy
 ext {
-    charcoal_version = "1.0.1"
+    charcoal_version = "1.0.4"
 }
 
 dependencies {
