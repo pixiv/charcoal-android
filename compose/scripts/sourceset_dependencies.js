@@ -1,1 +1,1 @@
-sourceset_dependencies='{":charcoal-android-compose:dokkaHtml/androidTestRelease":[],":charcoal-android-compose:dokkaHtml/debug":[],":charcoal-android-compose:dokkaHtml/main":[],":charcoal-android-compose:dokkaHtml/release":[],":charcoal-android-compose:dokkaHtml/testFixtures":[],":charcoal-android-compose:dokkaHtml/testFixturesDebug":[],":charcoal-android-compose:dokkaHtml/testFixturesRelease":[]}'
+sourceset_dependencies='{":charcoal-android-compose:dokkaHtml/debug":[],":charcoal-android-compose:dokkaHtml/main":[],":charcoal-android-compose:dokkaHtml/release":[]}'

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>CharcoalColorPalette</title>
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -18,12 +19,13 @@
         }
     }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
 <script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
@@ -32,631 +34,641 @@
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="../../../index.html">
-                    <span>charcoal-android-compose</span>
-            </a>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            charcoal-android-compose
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":charcoal-android-compose:dokkaHtml/release">androidJvm</button>
+        </div>
     </div>
-    <div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
     </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-    </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" id="content" pageIds="charcoal-android-compose::net.pixiv.charcoal.android.compose.theme/CharcoalColorPalette///PointingToDeclaration//292810886">
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="charcoal-android-compose::net.pixiv.charcoal.android.compose.theme/CharcoalColorPalette///PointingToDeclaration//292810886">
   <div class="breadcrumbs"><a href="../../../index.html">charcoal-android-compose</a><span class="delimiter">/</span><a href="../index.html">net.pixiv.charcoal.android.compose.theme</a><span class="delimiter">/</span><span class="current">CharcoalColorPalette</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Charcoal</span><wbr></wbr><span>Color</span><wbr></wbr><span><span>Palette</span></span></h1>
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">CharcoalColorPalette</a></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="-776320538%2FProperties%2F292810886" anchor-label="assertive" id="-776320538%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="assertive.html"><span><span>assertive</span></span></a></div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-776320538%2FProperties%2F292810886" anchor-label="assertive" id="-776320538%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="assertive.html"><span><span>assertive</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-776320538%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-776320538%2FProperties%2F292810886" anchor-label="assertive" id="-776320538%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="assertive.html">assertive</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="assertive.html">assertive</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-44071975%2FProperties%2F292810886" anchor-label="black" id="-44071975%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black.html"><span><span>black</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black.html"><span><span>black</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-44071975%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-44071975%2FProperties%2F292810886" anchor-label="black" id="-44071975%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black.html">black</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black.html">black</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1876536509%2FProperties%2F292810886" anchor-label="blackFade00" id="1876536509%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black-fade00.html"><span>black</span><wbr></wbr><span><span>Fade00</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black-fade00.html"><span>black</span><wbr></wbr><span><span>Fade00</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1876536509%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1876536509%2FProperties%2F292810886" anchor-label="blackFade00" id="1876536509%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black-fade00.html">blackFade00</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black-fade00.html">blackFade00</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1456816770%2FProperties%2F292810886" anchor-label="blackFade10" id="-1456816770%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black-fade10.html"><span>black</span><wbr></wbr><span><span>Fade10</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black-fade10.html"><span>black</span><wbr></wbr><span><span>Fade10</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1456816770%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-1456816770%2FProperties%2F292810886" anchor-label="blackFade10" id="-1456816770%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black-fade10.html">blackFade10</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black-fade10.html">blackFade10</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-495202753%2FProperties%2F292810886" anchor-label="blackFade20" id="-495202753%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black-fade20.html"><span>black</span><wbr></wbr><span><span>Fade20</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black-fade20.html"><span>black</span><wbr></wbr><span><span>Fade20</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-495202753%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-495202753%2FProperties%2F292810886" anchor-label="blackFade20" id="-495202753%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black-fade20.html">blackFade20</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black-fade20.html">blackFade20</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="466411264%2FProperties%2F292810886" anchor-label="blackFade30" id="466411264%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black-fade30.html"><span>black</span><wbr></wbr><span><span>Fade30</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black-fade30.html"><span>black</span><wbr></wbr><span><span>Fade30</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="466411264%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="466411264%2FProperties%2F292810886" anchor-label="blackFade30" id="466411264%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black-fade30.html">blackFade30</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black-fade30.html">blackFade30</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1428025281%2FProperties%2F292810886" anchor-label="blackFade40" id="1428025281%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black-fade40.html"><span>black</span><wbr></wbr><span><span>Fade40</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black-fade40.html"><span>black</span><wbr></wbr><span><span>Fade40</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1428025281%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1428025281%2FProperties%2F292810886" anchor-label="blackFade40" id="1428025281%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black-fade40.html">blackFade40</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black-fade40.html">blackFade40</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1905327998%2FProperties%2F292810886" anchor-label="blackFade50" id="-1905327998%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black-fade50.html"><span>black</span><wbr></wbr><span><span>Fade50</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black-fade50.html"><span>black</span><wbr></wbr><span><span>Fade50</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1905327998%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-1905327998%2FProperties%2F292810886" anchor-label="blackFade50" id="-1905327998%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black-fade50.html">blackFade50</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black-fade50.html">blackFade50</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-943713981%2FProperties%2F292810886" anchor-label="blackFade60" id="-943713981%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black-fade60.html"><span>black</span><wbr></wbr><span><span>Fade60</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black-fade60.html"><span>black</span><wbr></wbr><span><span>Fade60</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-943713981%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-943713981%2FProperties%2F292810886" anchor-label="blackFade60" id="-943713981%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black-fade60.html">blackFade60</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black-fade60.html">blackFade60</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="979514053%2FProperties%2F292810886" anchor-label="blackFade80" id="979514053%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black-fade80.html"><span>black</span><wbr></wbr><span><span>Fade80</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black-fade80.html"><span>black</span><wbr></wbr><span><span>Fade80</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="979514053%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="979514053%2FProperties%2F292810886" anchor-label="blackFade80" id="979514053%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black-fade80.html">blackFade80</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black-fade80.html">blackFade80</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1941128070%2FProperties%2F292810886" anchor-label="blackFade90" id="1941128070%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="black-fade90.html"><span>black</span><wbr></wbr><span><span>Fade90</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black-fade90.html"><span>black</span><wbr></wbr><span><span>Fade90</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1941128070%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1941128070%2FProperties%2F292810886" anchor-label="blackFade90" id="1941128070%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="black-fade90.html">blackFade90</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="black-fade90.html">blackFade90</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1710716268%2FProperties%2F292810886" anchor-label="callToActionEnd" id="1710716268%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="call-to-action-end.html"><span>call</span><wbr></wbr><span>To</span><wbr></wbr><span>Action</span><wbr></wbr><span><span>End</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="call-to-action-end.html"><span>call</span><wbr></wbr><span>To</span><wbr></wbr><span>Action</span><wbr></wbr><span><span>End</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1710716268%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1710716268%2FProperties%2F292810886" anchor-label="callToActionEnd" id="1710716268%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="call-to-action-end.html">callToActionEnd</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="call-to-action-end.html">callToActionEnd</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1757056325%2FProperties%2F292810886" anchor-label="callToActionStart" id="1757056325%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="call-to-action-start.html"><span>call</span><wbr></wbr><span>To</span><wbr></wbr><span>Action</span><wbr></wbr><span><span>Start</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="call-to-action-start.html"><span>call</span><wbr></wbr><span>To</span><wbr></wbr><span>Action</span><wbr></wbr><span><span>Start</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1757056325%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1757056325%2FProperties%2F292810886" anchor-label="callToActionStart" id="1757056325%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="call-to-action-start.html">callToActionStart</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="call-to-action-start.html">callToActionStart</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="2028671391%2FProperties%2F292810886" anchor-label="gray00" id="2028671391%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray00.html"><span><span>gray00</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray00.html"><span><span>gray00</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2028671391%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="2028671391%2FProperties%2F292810886" anchor-label="gray00" id="2028671391%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray00.html">gray00</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray00.html">gray00</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1304681888%2FProperties%2F292810886" anchor-label="gray10" id="-1304681888%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray10.html"><span><span>gray10</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray10.html"><span><span>gray10</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1304681888%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-1304681888%2FProperties%2F292810886" anchor-label="gray10" id="-1304681888%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray10.html">gray10</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray10.html">gray10</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-343067871%2FProperties%2F292810886" anchor-label="gray20" id="-343067871%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray20.html"><span><span>gray20</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray20.html"><span><span>gray20</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-343067871%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-343067871%2FProperties%2F292810886" anchor-label="gray20" id="-343067871%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray20.html">gray20</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray20.html">gray20</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="618546146%2FProperties%2F292810886" anchor-label="gray30" id="618546146%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray30.html"><span><span>gray30</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray30.html"><span><span>gray30</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="618546146%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="618546146%2FProperties%2F292810886" anchor-label="gray30" id="618546146%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray30.html">gray30</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray30.html">gray30</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1580160163%2FProperties%2F292810886" anchor-label="gray40" id="1580160163%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray40.html"><span><span>gray40</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray40.html"><span><span>gray40</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1580160163%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1580160163%2FProperties%2F292810886" anchor-label="gray40" id="1580160163%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray40.html">gray40</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray40.html">gray40</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1753193116%2FProperties%2F292810886" anchor-label="gray50" id="-1753193116%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray50.html"><span><span>gray50</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray50.html"><span><span>gray50</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1753193116%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-1753193116%2FProperties%2F292810886" anchor-label="gray50" id="-1753193116%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray50.html">gray50</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray50.html">gray50</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-791579099%2FProperties%2F292810886" anchor-label="gray60" id="-791579099%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray60.html"><span><span>gray60</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray60.html"><span><span>gray60</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-791579099%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-791579099%2FProperties%2F292810886" anchor-label="gray60" id="-791579099%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray60.html">gray60</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray60.html">gray60</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="170034918%2FProperties%2F292810886" anchor-label="gray70" id="170034918%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray70.html"><span><span>gray70</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray70.html"><span><span>gray70</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="170034918%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="170034918%2FProperties%2F292810886" anchor-label="gray70" id="170034918%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray70.html">gray70</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray70.html">gray70</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1131648935%2FProperties%2F292810886" anchor-label="gray80" id="1131648935%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray80.html"><span><span>gray80</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray80.html"><span><span>gray80</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1131648935%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1131648935%2FProperties%2F292810886" anchor-label="gray80" id="1131648935%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray80.html">gray80</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray80.html">gray80</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="2093262952%2FProperties%2F292810886" anchor-label="gray90" id="2093262952%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="gray90.html"><span><span>gray90</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gray90.html"><span><span>gray90</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2093262952%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="2093262952%2FProperties%2F292810886" anchor-label="gray90" id="2093262952%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="gray90.html">gray90</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="gray90.html">gray90</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-681687701%2FProperties%2F292810886" anchor-label="like" id="-681687701%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="like.html"><span><span>like</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="like.html"><span><span>like</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-681687701%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-681687701%2FProperties%2F292810886" anchor-label="like" id="-681687701%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="like.html">like</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="like.html">like</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1566378673%2FProperties%2F292810886" anchor-label="linkEnabled" id="1566378673%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="link-enabled.html"><span>link</span><wbr></wbr><span><span>Enabled</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="link-enabled.html"><span>link</span><wbr></wbr><span><span>Enabled</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1566378673%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1566378673%2FProperties%2F292810886" anchor-label="linkEnabled" id="1566378673%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="link-enabled.html">linkEnabled</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="link-enabled.html">linkEnabled</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1107567067%2FProperties%2F292810886" anchor-label="linkEnabledDark" id="1107567067%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="link-enabled-dark.html"><span>link</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Dark</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="link-enabled-dark.html"><span>link</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Dark</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1107567067%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1107567067%2FProperties%2F292810886" anchor-label="linkEnabledDark" id="1107567067%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="link-enabled-dark.html">linkEnabledDark</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="link-enabled-dark.html">linkEnabledDark</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-711456536%2FProperties%2F292810886" anchor-label="marker" id="-711456536%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="marker.html"><span><span>marker</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="marker.html"><span><span>marker</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-711456536%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-711456536%2FProperties%2F292810886" anchor-label="marker" id="-711456536%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="marker.html">marker</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="marker.html">marker</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-922215961%2FProperties%2F292810886" anchor-label="pixivBrand" id="-922215961%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="pixiv-brand.html"><span>pixiv</span><wbr></wbr><span><span>Brand</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pixiv-brand.html"><span>pixiv</span><wbr></wbr><span><span>Brand</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-922215961%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-922215961%2FProperties%2F292810886" anchor-label="pixivBrand" id="-922215961%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="pixiv-brand.html">pixivBrand</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="pixiv-brand.html">pixivBrand</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1232558575%2FProperties%2F292810886" anchor-label="pixivBrandDark" id="-1232558575%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="pixiv-brand-dark.html"><span>pixiv</span><wbr></wbr><span>Brand</span><wbr></wbr><span><span>Dark</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pixiv-brand-dark.html"><span>pixiv</span><wbr></wbr><span>Brand</span><wbr></wbr><span><span>Dark</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1232558575%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-1232558575%2FProperties%2F292810886" anchor-label="pixivBrandDark" id="-1232558575%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="pixiv-brand-dark.html">pixivBrandDark</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="pixiv-brand-dark.html">pixivBrandDark</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-456870463%2FProperties%2F292810886" anchor-label="premium" id="-456870463%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="premium.html"><span><span>premium</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="premium.html"><span><span>premium</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-456870463%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-456870463%2FProperties%2F292810886" anchor-label="premium" id="-456870463%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="premium.html">premium</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="premium.html">premium</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-221692523%2FProperties%2F292810886" anchor-label="success" id="-221692523%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="success.html"><span><span>success</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="success.html"><span><span>success</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-221692523%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-221692523%2FProperties%2F292810886" anchor-label="success" id="-221692523%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="success.html">success</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="success.html">success</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-798598116%2FProperties%2F292810886" anchor-label="warning" id="-798598116%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="warning.html"><span><span>warning</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="warning.html"><span><span>warning</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-798598116%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-798598116%2FProperties%2F292810886" anchor-label="warning" id="-798598116%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="warning.html">warning</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="warning.html">warning</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1340314897%2FProperties%2F292810886" anchor-label="white" id="-1340314897%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="white.html"><span><span>white</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="white.html"><span><span>white</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1340314897%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-1340314897%2FProperties%2F292810886" anchor-label="white" id="-1340314897%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="white.html">white</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="white.html">white</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1893100371%2FProperties%2F292810886" anchor-label="whiteFade00" id="1893100371%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="white-fade00.html"><span>white</span><wbr></wbr><span><span>Fade00</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="white-fade00.html"><span>white</span><wbr></wbr><span><span>Fade00</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1893100371%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1893100371%2FProperties%2F292810886" anchor-label="whiteFade00" id="1893100371%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="white-fade00.html">whiteFade00</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="white-fade00.html">whiteFade00</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1440252908%2FProperties%2F292810886" anchor-label="whiteFade10" id="-1440252908%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="white-fade10.html"><span>white</span><wbr></wbr><span><span>Fade10</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="white-fade10.html"><span>white</span><wbr></wbr><span><span>Fade10</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1440252908%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-1440252908%2FProperties%2F292810886" anchor-label="whiteFade10" id="-1440252908%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="white-fade10.html">whiteFade10</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="white-fade10.html">whiteFade10</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-478638891%2FProperties%2F292810886" anchor-label="whiteFade20" id="-478638891%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="white-fade20.html"><span>white</span><wbr></wbr><span><span>Fade20</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="white-fade20.html"><span>white</span><wbr></wbr><span><span>Fade20</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-478638891%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-478638891%2FProperties%2F292810886" anchor-label="whiteFade20" id="-478638891%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="white-fade20.html">whiteFade20</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="white-fade20.html">whiteFade20</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="482975126%2FProperties%2F292810886" anchor-label="whiteFade30" id="482975126%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="white-fade30.html"><span>white</span><wbr></wbr><span><span>Fade30</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="white-fade30.html"><span>white</span><wbr></wbr><span><span>Fade30</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="482975126%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="482975126%2FProperties%2F292810886" anchor-label="whiteFade30" id="482975126%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="white-fade30.html">whiteFade30</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="white-fade30.html">whiteFade30</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1444589143%2FProperties%2F292810886" anchor-label="whiteFade40" id="1444589143%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="white-fade40.html"><span>white</span><wbr></wbr><span><span>Fade40</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="white-fade40.html"><span>white</span><wbr></wbr><span><span>Fade40</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1444589143%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="1444589143%2FProperties%2F292810886" anchor-label="whiteFade40" id="1444589143%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="white-fade40.html">whiteFade40</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="white-fade40.html">whiteFade40</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1888764136%2FProperties%2F292810886" anchor-label="whiteFade50" id="-1888764136%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="white-fade50.html"><span>white</span><wbr></wbr><span><span>Fade50</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="white-fade50.html"><span>white</span><wbr></wbr><span><span>Fade50</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1888764136%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-1888764136%2FProperties%2F292810886" anchor-label="whiteFade50" id="-1888764136%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="white-fade50.html">whiteFade50</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="white-fade50.html">whiteFade50</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-927150119%2FProperties%2F292810886" anchor-label="whiteFade60" id="-927150119%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="white-fade60.html"><span>white</span><wbr></wbr><span><span>Fade60</span></span></a></div>
+          <div class="table-row" data-filterable-current=":charcoal-android-compose:dokkaHtml/release" data-filterable-set=":charcoal-android-compose:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="white-fade60.html"><span>white</span><wbr></wbr><span><span>Fade60</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-927150119%2FProperties%2F292810886"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><a data-name="-927150119%2FProperties%2F292810886" anchor-label="whiteFade60" id="-927150119%2FProperties%2F292810886" data-filterable-set=":charcoal-android-compose:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="white-fade60.html">whiteFade60</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":charcoal-android-compose:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">val </span><a href="white-fade60.html">whiteFade60</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
@@ -670,7 +682,8 @@
                 class="pull-right"><span>Generated by </span><a
                 href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>
