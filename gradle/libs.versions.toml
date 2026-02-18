@@ -1,8 +1,8 @@
 [versions]
-android-compileSdk = "35"
+android-compileSdk = "36"
 android-targetSdk = "30"
 android-minSdk = "23"
-android-gradle = "8.8.0"
+android-gradle = "8.13.2"
 composeCompiler = "1.5.15"
 dokka = "1.9.20"
 kotlin = "1.9.25"
