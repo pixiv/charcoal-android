@@ -22,7 +22,10 @@ class ToolbarActivity : AppCompatActivity(R.layout.activity_toolbar) {
         binding.toolBarDefault.let {
             it.title = "Default"
             it.subtitle = "subtitle"
-            it.navigationIcon = AppCompatResources.getDrawable(it.context, R.drawable.abc_ic_ab_back_material)
+            it.navigationIcon = AppCompatResources.getDrawable(
+                it.context,
+                androidx.appcompat.R.drawable.abc_ic_ab_back_material,
+            )
             it.setNavigationOnClickListener { }
             it.inflateMenu(R.menu.topappbar_catalog_menu_default)
         }
@@ -30,7 +33,10 @@ class ToolbarActivity : AppCompatActivity(R.layout.activity_toolbar) {
         binding.toolBarOverlay.let {
             it.title = "Overlay"
             it.subtitle = "subtitle"
-            it.navigationIcon = AppCompatResources.getDrawable(it.context, R.drawable.abc_ic_ab_back_material)
+            it.navigationIcon = AppCompatResources.getDrawable(
+                it.context,
+                androidx.appcompat.R.drawable.abc_ic_ab_back_material,
+            )
             it.setNavigationOnClickListener { }
             it.inflateMenu(R.menu.topappbar_catalog_menu_overlay)
         }
