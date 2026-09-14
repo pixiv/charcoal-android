@@ -3,14 +3,12 @@ android-compileSdk = "36"
 android-targetSdk = "30"
 android-minSdk = "23"
 android-gradle = "8.13.2"
-composeCompiler = "1.5.15"
 dokka = "2.2.0"
-kotlin = "1.9.25"
+kotlin = "2.4.20"
 ktlint = "1.8.0"
 ktlintGradle = "14.2.0"
 
 [libraries]
-androidx-compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "composeCompiler" }
 androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2025.05.01" }
 androidx-compose-ui = { module = "androidx.compose.ui:ui" }
 androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
@@ -23,4 +21,5 @@ android-application = { id = "com.android.application", version.ref = "android-g
 android-library = { id = "com.android.library", version.ref = "android-gradle" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
