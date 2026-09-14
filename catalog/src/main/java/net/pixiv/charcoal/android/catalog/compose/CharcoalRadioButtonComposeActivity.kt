@@ -64,12 +64,12 @@ private fun RadioButtonCatalog(
                         IconButton(onClick = { onNavigationClick() }) {
                             Icon(
                                 imageVector = Icons.Filled.ArrowBack,
-                                contentDescription = null
+                                contentDescription = null,
                             )
                         }
-                    }
+                    },
                 )
-            }
+            },
         ) { innerPadding ->
             val states = mutableListOf(
                 RadioButtonState(enabled = true, selected = false),
@@ -80,7 +80,7 @@ private fun RadioButtonCatalog(
 
             RadioButtonGrid(
                 modifier = Modifier.padding(innerPadding),
-                radioButtonStates = states
+                radioButtonStates = states,
             )
         }
     }
@@ -89,7 +89,7 @@ private fun RadioButtonCatalog(
 @Composable
 private fun RadioButtonGrid(
     modifier: Modifier = Modifier,
-    radioButtonStates: List<RadioButtonState>
+    radioButtonStates: List<RadioButtonState>,
 ) {
     LazyVerticalGrid(
         modifier = modifier,
@@ -111,15 +111,15 @@ private fun CharcoalRadioButtonSample(radioButtonState: RadioButtonState) {
                 value = selectedState,
                 role = Role.RadioButton,
                 enabled = radioButtonState.enabled,
-                onValueChange = { selectedState = !selectedState }
+                onValueChange = { selectedState = !selectedState },
             )
             .padding(8.dp),
-        verticalAlignment = Alignment.CenterVertically
+        verticalAlignment = Alignment.CenterVertically,
     ) {
         CharcoalRadioButton(
             selected = selectedState,
             enabled = radioButtonState.enabled,
-            onClick = null
+            onClick = null,
         )
         Spacer(modifier = Modifier.padding(8.dp))
         Text(text = radioButtonState.displayString())
@@ -134,10 +134,10 @@ private fun RadioButtonState.displayString(): String =
 private fun RadioButtonSamplePreview() {
     CharcoalTheme {
         Surface(
-            color = CharcoalTheme.colorToken.background1
+            color = CharcoalTheme.colorToken.background1,
         ) {
             CharcoalRadioButtonSample(
-                RadioButtonState(enabled = true, selected = false)
+                RadioButtonState(enabled = true, selected = false),
             )
         }
     }
@@ -146,7 +146,7 @@ private fun RadioButtonSamplePreview() {
 @Immutable
 private data class RadioButtonState(
     val enabled: Boolean,
-    val selected: Boolean
+    val selected: Boolean,
 )
 
 @Preview

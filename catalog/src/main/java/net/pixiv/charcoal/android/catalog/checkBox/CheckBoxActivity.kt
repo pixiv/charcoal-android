@@ -26,7 +26,7 @@ open class CheckBoxActivity : AppCompatActivity(R.layout.activity_catalog_common
 
         setSupportActionBarWithHomeButtonAndTitle(
             toolbar = binding.toolBar,
-            title = "CheckBox"
+            title = "CheckBox",
         )
 
         adapter = GroupieAdapter()

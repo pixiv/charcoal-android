@@ -25,14 +25,14 @@ fun CharcoalTopAppBar(
     navigationIcon: @Composable (() -> Unit)? = null,
     actions: @Composable RowScope.() -> Unit = {},
     style: CharcoalTopAppBarStyle = CharcoalTopAppBarStyle.default(),
-    windowInsets: WindowInsets = WindowInsets(0.dp)
+    windowInsets: WindowInsets = WindowInsets(0.dp),
 ) {
     val titleInternal: @Composable () -> Unit = {
         CompositionLocalProvider(
             LocalContentColor provides style.getTitleContentColor(),
             LocalContentAlpha provides CharcoalContentAlpha.normal,
             LocalTextStyle provides CharcoalTheme.typography.regular20,
-            content = title
+            content = title,
         )
     }
 
@@ -40,7 +40,7 @@ fun CharcoalTopAppBar(
         {
             CompositionLocalProvider(
                 LocalContentAlpha provides CharcoalContentAlpha.normal,
-                content = it
+                content = it,
             )
         }
     }
@@ -53,7 +53,7 @@ fun CharcoalTopAppBar(
         backgroundColor = style.getBackgroundColor(),
         contentColor = style.getContentColor(),
         elevation = style.getElevation(),
-        windowInsets = windowInsets
+        windowInsets = windowInsets,
     )
 }
 

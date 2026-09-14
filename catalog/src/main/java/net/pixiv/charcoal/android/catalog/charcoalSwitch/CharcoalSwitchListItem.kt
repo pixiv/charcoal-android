@@ -8,7 +8,7 @@ import net.pixiv.charcoal.android.catalog.databinding.ViewHolderCharcoalSwitchLi
 import net.pixiv.charcoal.android.catalog.extension.applyState
 
 class CharcoalSwitchListItem(
-    private val compoundButtonState: CompoundButtonState
+    private val compoundButtonState: CompoundButtonState,
 ) : BindableItem<ViewHolderCharcoalSwitchListItemBinding>() {
     override fun bind(viewBinding: ViewHolderCharcoalSwitchListItemBinding, position: Int) {
         viewBinding.switcher.applyState(compoundButtonState)

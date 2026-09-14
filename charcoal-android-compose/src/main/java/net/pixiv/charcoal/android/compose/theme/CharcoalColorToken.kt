@@ -26,5 +26,5 @@ data class CharcoalColorToken(
     val text3: Color,
     val text4: Color,
     val text5: Color,
-    val border: Color
+    val border: Color,
 )

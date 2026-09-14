@@ -10,6 +10,6 @@ fun View.applyPressedStateDelayed(isPressed: Boolean = true, delay: Long = 100) 
         {
             this.isPressed = isPressed
         },
-        delay
+        delay,
     )
 }

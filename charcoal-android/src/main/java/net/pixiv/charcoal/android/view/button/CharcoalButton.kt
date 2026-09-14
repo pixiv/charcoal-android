@@ -21,13 +21,13 @@ class CharcoalButton : MaterialButton {
     constructor(context: Context, attrs: AttributeSet?) : this(
         context,
         attrs,
-        R.attr.materialButtonStyle
+        R.attr.materialButtonStyle,
     )
 
     constructor(context: Context, attrs: AttributeSet?, @AttrRes defStyleAttr: Int) : super(
         context,
         attrs,
-        defStyleAttr
+        defStyleAttr,
     )
 
     init {
@@ -46,7 +46,7 @@ class CharcoalButton : MaterialButton {
         buttonTextColorList[1] = MaterialColors.layer(
             colorSurface,
             textColor,
-            CharcoalColorConstant.DISABLED_STATE_ALPHA
+            CharcoalColorConstant.DISABLED_STATE_ALPHA,
         )
 
         return ColorStateList(ENABLED_STATES, buttonTextColorList)
@@ -55,7 +55,7 @@ class CharcoalButton : MaterialButton {
     companion object {
         private val ENABLED_STATES = arrayOf(
             intArrayOf(android.R.attr.state_enabled),
-            intArrayOf(-android.R.attr.state_enabled)
+            intArrayOf(-android.R.attr.state_enabled),
         )
     }
 }

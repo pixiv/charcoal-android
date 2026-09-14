@@ -60,28 +60,28 @@ private fun TopAppBarCatalog(
                         IconButton(onClick = { onNavigationClick() }) {
                             Icon(
                                 imageVector = Icons.Filled.ArrowBack,
-                                contentDescription = null
+                                contentDescription = null,
                             )
                         }
-                    }
+                    },
                 )
             },
-            backgroundColor = CharcoalTheme.colorToken.background2
+            backgroundColor = CharcoalTheme.colorToken.background2,
         ) { innerPadding ->
             val states = mutableListOf(
                 TopAppBarSampleSetting(
                     titleText = "Default",
-                    style = CharcoalTopAppBarStyle.default()
+                    style = CharcoalTopAppBarStyle.default(),
                 ),
                 TopAppBarSampleSetting(
                     titleText = "Overlay",
                     style = CharcoalTopAppBarStyle.overlay(),
-                    background = CharcoalTheme.colorToken.surface3
+                    background = CharcoalTheme.colorToken.surface3,
                 ),
             )
             TopAppBarList(
                 modifier = Modifier.padding(innerPadding),
-                topAppBarSettings = states
+                topAppBarSettings = states,
             )
         }
     }
@@ -90,7 +90,7 @@ private fun TopAppBarCatalog(
 @Composable
 private fun TopAppBarList(
     modifier: Modifier = Modifier,
-    topAppBarSettings: List<TopAppBarSampleSetting>
+    topAppBarSettings: List<TopAppBarSampleSetting>,
 ) {
     LazyColumn(modifier = modifier) {
         items(topAppBarSettings) {
@@ -127,7 +127,7 @@ private fun CharcoalTopAppBarSample(topAppBarSetting: TopAppBarSampleSetting) {
                     Icon(imageVector = Icons.Filled.Share, contentDescription = null)
                 }
             },
-            style = topAppBarSetting.style
+            style = topAppBarSetting.style,
         )
     }
 }
@@ -137,13 +137,13 @@ private fun CharcoalTopAppBarSample(topAppBarSetting: TopAppBarSampleSetting) {
 private fun CharcoalTopAppBarSamplePreview() {
     CharcoalTheme {
         Surface(
-            color = CharcoalTheme.colorToken.background1
+            color = CharcoalTheme.colorToken.background1,
         ) {
             CharcoalTopAppBarSample(
                 TopAppBarSampleSetting(
                     titleText = "Default",
-                    style = CharcoalTopAppBarStyle.default()
-                )
+                    style = CharcoalTopAppBarStyle.default(),
+                ),
             )
         }
     }
@@ -153,7 +153,7 @@ private fun CharcoalTopAppBarSamplePreview() {
 private data class TopAppBarSampleSetting(
     val background: Color? = null,
     val titleText: String,
-    val style: CharcoalTopAppBarStyle
+    val style: CharcoalTopAppBarStyle,
 )
 
 @Preview

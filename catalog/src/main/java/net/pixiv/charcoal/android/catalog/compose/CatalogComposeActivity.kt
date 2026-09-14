@@ -34,7 +34,7 @@ class CatalogComposeActivity : AppCompatActivity() {
         setContent {
             CatalogCompose(
                 onNavigationClick = { finish() },
-                onRedirect = { redirect(it) }
+                onRedirect = { redirect(it) },
             )
         }
     }
@@ -43,14 +43,16 @@ class CatalogComposeActivity : AppCompatActivity() {
         when (pattern) {
             RedirectPattern.TopAppBar -> startActivity(
                 CharcoalTopAppBarComposeActivity.createIntent(
-                    this
-                )
+                    this,
+                ),
             )
+
             RedirectPattern.RadioButton -> startActivity(
-                CharcoalRadioButtonComposeActivity.createIntent(this)
+                CharcoalRadioButtonComposeActivity.createIntent(this),
             )
+
             RedirectPattern.Typography -> startActivity(
-                CharcoalTypographyComposeActivity.createIntent(this)
+                CharcoalTypographyComposeActivity.createIntent(this),
             )
         }
     }
@@ -71,7 +73,7 @@ private sealed class RedirectPattern {
 @Composable
 private fun CatalogCompose(
     onNavigationClick: (() -> Unit),
-    onRedirect: ((RedirectPattern) -> Unit)
+    onRedirect: ((RedirectPattern) -> Unit),
 ) {
     CharcoalTheme {
         Scaffold(
@@ -82,16 +84,16 @@ private fun CatalogCompose(
                         IconButton(onClick = { onNavigationClick() }) {
                             Icon(
                                 imageVector = Icons.Filled.ArrowBack,
-                                contentDescription = null
+                                contentDescription = null,
                             )
                         }
-                    }
+                    },
                 )
-            }
+            },
         ) { innerPadding ->
             BodyContent(
                 modifier = Modifier.padding(innerPadding),
-                onRedirect = onRedirect
+                onRedirect = onRedirect,
             )
         }
     }
@@ -100,13 +102,13 @@ private fun CatalogCompose(
 @Composable
 private fun BodyContent(
     modifier: Modifier = Modifier,
-    onRedirect: (RedirectPattern) -> Unit
+    onRedirect: (RedirectPattern) -> Unit,
 ) {
     Column(
         modifier = modifier
             .fillMaxWidth()
             .fillMaxHeight()
-            .verticalScroll(rememberScrollState())
+            .verticalScroll(rememberScrollState()),
     ) {
         ContentColumn(text = "TopAppBar", onClick = { onRedirect(RedirectPattern.TopAppBar) })
         ContentColumn(text = "RadioButton", onClick = { onRedirect(RedirectPattern.RadioButton) })
@@ -117,7 +119,7 @@ private fun BodyContent(
 @Composable
 private fun ContentColumn(
     text: String,
-    onClick: () -> Unit
+    onClick: () -> Unit,
 ) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
@@ -125,11 +127,11 @@ private fun ContentColumn(
             .clickable { onClick() }
             .fillMaxWidth()
             .height(56.dp)
-            .padding(start = 16.dp)
+            .padding(start = 16.dp),
     ) {
         Text(
             text = text,
-            color = CharcoalTheme.colorToken.text1
+            color = CharcoalTheme.colorToken.text1,
         )
     }
 }

@@ -25,7 +25,7 @@ open class ButtonActivity : AppCompatActivity(R.layout.activity_catalog_common) 
 
         setSupportActionBarWithHomeButtonAndTitle(
             toolbar = binding.toolBar,
-            title = "Button"
+            title = "Button",
         )
 
         adapter = GroupieAdapter()

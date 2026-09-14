@@ -25,7 +25,7 @@ class CharcoalDialogFragment : DialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         return inflater.inflate(R.layout.fragment_charcoal_dialog, container, false)
     }
@@ -121,7 +121,7 @@ class CharcoalDialogFragment : DialogFragment() {
 
         parentFragmentManager.setFragmentResult(
             requestKey,
-            bundleOf(FRAGMENT_RESULT_KEY_CHARCOAL_DIALOG_EVENT to dialogEvent)
+            bundleOf(FRAGMENT_RESULT_KEY_CHARCOAL_DIALOG_EVENT to dialogEvent),
         )
     }
 
@@ -171,7 +171,7 @@ class CharcoalDialogFragment : DialogFragment() {
             buttonSettings: CharcoalDialogButtonSettings,
             isCancelable: Boolean = true,
             cancelButtonColoredBackground: Boolean = false,
-            requestKey: String = FRAGMENT_REQUEST_KEY
+            requestKey: String = FRAGMENT_REQUEST_KEY,
         ): CharcoalDialogFragment {
             return CharcoalDialogFragment().also { fragment ->
                 fragment.arguments = Bundle().also { bundle ->
@@ -184,7 +184,7 @@ class CharcoalDialogFragment : DialogFragment() {
                     bundle.putBoolean(ARGUMENTS_IS_CANCELABLE, isCancelable)
                     bundle.putBoolean(
                         ARGUMENTS_CANCEL_BUTTON_COLORED_BACKGROUND,
-                        cancelButtonColoredBackground
+                        cancelButtonColoredBackground,
                     )
                     bundle.putString(ARGUMENTS_REQUEST_KEY, requestKey)
                 }
@@ -197,44 +197,46 @@ class CharcoalDialogFragment : DialogFragment() {
                     this.putString(ARGUMENTS_PRIMARY_BUTTON_TEXT, buttonSettings.primaryButtonText)
                     buttonSettings.primaryButtonEvent?.let {
                         this.putParcelable(
-                            ARGUMENTS_PRIMARY_BUTTON_EVENT, it
+                            ARGUMENTS_PRIMARY_BUTTON_EVENT, it,
                         )
                     }
                 }
+
                 is CharcoalDialogButtonSettings.TwoButtons -> {
                     this.putString(ARGUMENTS_PRIMARY_BUTTON_TEXT, buttonSettings.primaryButtonText)
                     buttonSettings.primaryButtonEvent?.let {
                         this.putParcelable(
-                            ARGUMENTS_PRIMARY_BUTTON_EVENT, it
+                            ARGUMENTS_PRIMARY_BUTTON_EVENT, it,
                         )
                     }
                     this.putString(ARGUMENTS_SECOND_BUTTON_TEXT, buttonSettings.secondaryButtonText)
                     buttonSettings.secondaryButtonEvent?.let {
                         this.putParcelable(
-                            ARGUMENTS_SECOND_BUTTON_EVENT, it
+                            ARGUMENTS_SECOND_BUTTON_EVENT, it,
                         )
                     }
                 }
+
                 is CharcoalDialogButtonSettings.ThreeButtons -> {
                     this.putString(ARGUMENTS_PRIMARY_BUTTON_TEXT, buttonSettings.primaryButtonText)
                     buttonSettings.primaryButtonEvent?.let {
                         this.putParcelable(
-                            ARGUMENTS_PRIMARY_BUTTON_EVENT, it
+                            ARGUMENTS_PRIMARY_BUTTON_EVENT, it,
                         )
                     }
                     this.putString(ARGUMENTS_SECOND_BUTTON_TEXT, buttonSettings.secondaryButtonText)
                     buttonSettings.secondaryButtonEvent?.let {
                         this.putParcelable(
-                            ARGUMENTS_SECOND_BUTTON_EVENT, it
+                            ARGUMENTS_SECOND_BUTTON_EVENT, it,
                         )
                     }
                     this.putString(
                         ARGUMENTS_TERTIARY_BUTTON_TEXT,
-                        buttonSettings.tertiaryButtonText
+                        buttonSettings.tertiaryButtonText,
                     )
                     buttonSettings.tertiaryButtonEvent?.let {
                         this.putParcelable(
-                            ARGUMENTS_TERTIARY_BUTTON_EVENT, it
+                            ARGUMENTS_TERTIARY_BUTTON_EVENT, it,
                         )
                     }
                 }

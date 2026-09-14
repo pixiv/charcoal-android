@@ -13,12 +13,12 @@ fun CharcoalDivider(
     modifier: Modifier = Modifier,
     color: Color = CharcoalTheme.colorToken.border,
     thickness: Dp = 1.dp,
-    startIndent: Dp = 0.dp
+    startIndent: Dp = 0.dp,
 ) {
     Divider(
         modifier = modifier,
         color = color,
         thickness = thickness,
-        startIndent = startIndent
+        startIndent = startIndent,
     )
 }

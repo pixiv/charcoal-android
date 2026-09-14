@@ -15,7 +15,7 @@ import androidx.compose.runtime.staticCompositionLocalOf
 fun CharcoalTheme(
     isDarkTheme: Boolean = isSystemInDarkTheme(),
     colorToken: CharcoalColorToken = if (isDarkTheme) darkColorToken() else lightColorToken(),
-    content: @Composable () -> Unit
+    content: @Composable () -> Unit,
 ) {
     val materialColors = if (isDarkTheme) {
         darkMaterialColors(colorToken = colorToken)
@@ -24,12 +24,12 @@ fun CharcoalTheme(
     }
 
     MaterialTheme(
-        colors = materialColors
+        colors = materialColors,
     ) {
         CompositionLocalProvider(
             LocalCharcoalColorToken provides colorToken,
             LocalCharcoalTypography provides CharcoalTypography(),
-            LocalElevationOverlay provides null
+            LocalElevationOverlay provides null,
         ) {
             content()
         }
@@ -76,7 +76,7 @@ private fun lightColorToken(): CharcoalColorToken {
         text3 = CharcoalColorPalette.gray50,
         text4 = CharcoalColorPalette.gray40,
         text5 = CharcoalColorPalette.white,
-        border = CharcoalColorPalette.blackFade20
+        border = CharcoalColorPalette.blackFade20,
     )
 }
 
@@ -105,7 +105,7 @@ private fun darkColorToken(): CharcoalColorToken {
         text3 = CharcoalColorPalette.gray50,
         text4 = CharcoalColorPalette.gray60,
         text5 = CharcoalColorPalette.gray10,
-        border = CharcoalColorPalette.whiteFade00
+        border = CharcoalColorPalette.whiteFade00,
     )
 }
 
@@ -121,7 +121,7 @@ private fun lightMaterialColors(colorToken: CharcoalColorToken): Colors {
         onSecondary = colorToken.text5,
         onBackground = colorToken.text2,
         onSurface = colorToken.text2,
-        onError = colorToken.text5
+        onError = colorToken.text5,
     )
 }
 
@@ -137,7 +137,7 @@ private fun darkMaterialColors(colorToken: CharcoalColorToken): Colors {
         onSecondary = colorToken.text5,
         onBackground = colorToken.text2,
         onSurface = colorToken.text2,
-        onError = colorToken.text5
+        onError = colorToken.text5,
     )
 }
 
