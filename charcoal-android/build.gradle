@@ -106,7 +106,7 @@ signing {
 }
 
 dokka {
-    dokkaSourceSets.named("main") {
+    dokkaSourceSets.configureEach {
         enableAndroidDocumentationLink.set(true)
     }
 }
