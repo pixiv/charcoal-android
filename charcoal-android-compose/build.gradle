@@ -16,7 +16,6 @@ android {
     compileSdk libs.versions.android.compileSdk.get().toInteger()
 
     buildFeatures {
-        buildConfig false
         compose true
     }
 
