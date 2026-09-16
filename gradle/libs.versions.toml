@@ -6,6 +6,8 @@ android-gradle = "8.13.2"
 composeCompiler = "1.5.15"
 dokka = "1.9.20"
 kotlin = "1.9.25"
+ktlint = "1.8.0"
+ktlintGradle = "14.2.0"
 
 [libraries]
 androidx-compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "composeCompiler" }
@@ -16,6 +18,7 @@ androidx-compose-material = { module = "androidx.compose.material:material" }
 androidx-compose-material-icons = { module = "androidx.compose.material:material-icons-core" }
 
 [plugins]
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlintGradle" }
 android-application = { id = "com.android.application", version.ref = "android-gradle" }
 android-library = { id = "com.android.library", version.ref = "android-gradle" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
