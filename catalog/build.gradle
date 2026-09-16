@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias libs.plugins.android.application
     alias libs.plugins.kotlin
@@ -35,10 +37,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17
-    }
-
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
@@ -48,6 +46,12 @@ android {
         }
     }
     namespace 'net.pixiv.charcoal.android.catalog'
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = JvmTarget.JVM_17
+    }
 }
 
 repositories {
