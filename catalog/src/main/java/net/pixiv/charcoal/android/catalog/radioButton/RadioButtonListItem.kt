@@ -7,7 +7,9 @@ import net.pixiv.charcoal.android.catalog.common.model.CompoundButtonState
 import net.pixiv.charcoal.android.catalog.databinding.ViewHolderRadioButtonListItemBinding
 import net.pixiv.charcoal.android.catalog.extension.applyState
 
-class RadioButtonListItem(private val compoundButtonState: CompoundButtonState) : BindableItem<ViewHolderRadioButtonListItemBinding>() {
+class RadioButtonListItem(
+    private val compoundButtonState: CompoundButtonState,
+) : BindableItem<ViewHolderRadioButtonListItemBinding>() {
     override fun bind(viewBinding: ViewHolderRadioButtonListItemBinding, position: Int) {
         viewBinding.radiobutton.applyState(compoundButtonState)
     }

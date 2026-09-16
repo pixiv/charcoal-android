@@ -12,7 +12,7 @@ sealed class CharcoalDialogButtonSettings {
      */
     data class OneButton(
         val primaryButtonText: String,
-        val primaryButtonEvent: CharcoalDialogEvent? = null
+        val primaryButtonEvent: CharcoalDialogEvent? = null,
     ) : CharcoalDialogButtonSettings()
 
     /**
@@ -27,7 +27,7 @@ sealed class CharcoalDialogButtonSettings {
         val primaryButtonText: String,
         val primaryButtonEvent: CharcoalDialogEvent? = null,
         val secondaryButtonText: String,
-        val secondaryButtonEvent: CharcoalDialogEvent? = null
+        val secondaryButtonEvent: CharcoalDialogEvent? = null,
     ) : CharcoalDialogButtonSettings()
 
     /**
@@ -46,6 +46,6 @@ sealed class CharcoalDialogButtonSettings {
         val secondaryButtonText: String,
         val secondaryButtonEvent: CharcoalDialogEvent? = null,
         val tertiaryButtonText: String,
-        val tertiaryButtonEvent: CharcoalDialogEvent? = null
+        val tertiaryButtonEvent: CharcoalDialogEvent? = null,
     ) : CharcoalDialogButtonSettings()
 }

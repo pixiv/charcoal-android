@@ -58,12 +58,12 @@ private fun TypographyCatalog(
                         IconButton(onClick = { onNavigationClick() }) {
                             Icon(
                                 imageVector = Icons.Filled.ArrowBack,
-                                contentDescription = null
+                                contentDescription = null,
                             )
                         }
-                    }
+                    },
                 )
-            }
+            },
         ) { innerPadding ->
             BodyContent(
                 modifier = Modifier.padding(innerPadding),
@@ -80,7 +80,7 @@ private fun BodyContent(
         modifier = modifier
             .fillMaxWidth()
             .fillMaxHeight()
-            .verticalScroll(rememberScrollState())
+            .verticalScroll(rememberScrollState()),
     ) {
         TypographyDisplay(label = "Regular 20", textStyle = CharcoalTheme.typography.regular20)
         CharcoalDivider()
@@ -132,28 +132,28 @@ private fun BodyContent(
 @Composable
 private fun TypographyDisplay(
     label: String,
-    textStyle: TextStyle
+    textStyle: TextStyle,
 ) {
     Column {
         Spacer(modifier = Modifier.size(16.dp))
         Text(
             text = label,
             style = textStyle,
-            color = CharcoalTheme.colorToken.text2
+            color = CharcoalTheme.colorToken.text2,
         )
         Spacer(modifier = Modifier.size(16.dp))
         Text(
             text = "$label multi line Lorem ipsum dolor sit amet, consectetur adipisicing elit," +
                 " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             style = textStyle,
-            color = CharcoalTheme.colorToken.text2
+            color = CharcoalTheme.colorToken.text2,
         )
         Spacer(modifier = Modifier.size(16.dp))
         Text(
             text = "$label 日本語 親譲りの無鉄砲で小供の時から損ばかりしている。" +
                 "小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。",
             style = textStyle,
-            color = CharcoalTheme.colorToken.text2
+            color = CharcoalTheme.colorToken.text2,
         )
         Spacer(modifier = Modifier.size(16.dp))
     }

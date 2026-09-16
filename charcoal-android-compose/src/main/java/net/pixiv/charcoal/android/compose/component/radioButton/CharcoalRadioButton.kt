@@ -20,6 +20,6 @@ fun CharcoalRadioButton(
         modifier = modifier,
         enabled = enabled,
         interactionSource = interactionSource,
-        colors = CharcoalRadioButtonColors.createInstance()
+        colors = CharcoalRadioButtonColors.createInstance(),
     )
 }

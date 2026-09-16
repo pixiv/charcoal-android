@@ -19,7 +19,7 @@ class TabLayoutActivity : AppCompatActivity(R.layout.activity_tab_layout) {
 
         setSupportActionBarWithHomeButtonAndTitle(
             toolbar = binding.toolBar,
-            title = "TabLayout"
+            title = "TabLayout",
         )
     }
 

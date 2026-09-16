@@ -45,13 +45,13 @@ class CharcoalSwitch : SwitchMaterial {
         switchThumbColorsList[2] = MaterialColors.layer(
             colorSurface,
             colorControlActivated,
-            CharcoalColorConstant.DISABLED_STATE_ALPHA
+            CharcoalColorConstant.DISABLED_STATE_ALPHA,
         )
         switchThumbColorsList[3] =
             MaterialColors.layer(
                 colorSurface,
                 colorOnSurface,
-                CharcoalColorConstant.DISABLED_STATE_ALPHA
+                CharcoalColorConstant.DISABLED_STATE_ALPHA,
             )
         return ColorStateList(ENABLED_CHECKED_STATES, switchThumbColorsList)
     }
@@ -65,20 +65,20 @@ class CharcoalSwitch : SwitchMaterial {
         switchTrackColorsList[0] = MaterialColors.layer(
             colorSurface,
             colorControlActivated,
-            CharcoalColorConstant.DISABLED_STATE_ALPHA
+            CharcoalColorConstant.DISABLED_STATE_ALPHA,
         )
         switchTrackColorsList[1] = MaterialColors.layer(colorSurface, colorOnSurface)
         switchTrackColorsList[2] =
             MaterialColors.layer(
                 colorSurface,
                 switchTrackColorsList[0],
-                CharcoalColorConstant.DISABLED_STATE_ALPHA
+                CharcoalColorConstant.DISABLED_STATE_ALPHA,
             )
         switchTrackColorsList[3] =
             MaterialColors.layer(
                 colorSurface,
                 switchTrackColorsList[1],
-                CharcoalColorConstant.DISABLED_STATE_ALPHA
+                CharcoalColorConstant.DISABLED_STATE_ALPHA,
             )
         return ColorStateList(ENABLED_CHECKED_STATES, switchTrackColorsList)
     }
@@ -88,7 +88,7 @@ class CharcoalSwitch : SwitchMaterial {
             intArrayOf(android.R.attr.state_enabled, android.R.attr.state_checked),
             intArrayOf(android.R.attr.state_enabled, -android.R.attr.state_checked),
             intArrayOf(-android.R.attr.state_enabled, android.R.attr.state_checked),
-            intArrayOf(-android.R.attr.state_enabled, -android.R.attr.state_checked)
+            intArrayOf(-android.R.attr.state_enabled, -android.R.attr.state_checked),
         )
     }
 }

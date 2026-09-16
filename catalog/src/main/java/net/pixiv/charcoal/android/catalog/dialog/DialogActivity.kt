@@ -25,7 +25,7 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
 
         setSupportActionBarWithHomeButtonAndTitle(
             toolbar = binding.toolBar,
-            title = "Dialog"
+            title = "Dialog",
         )
 
         setupCharcoalDialog()
@@ -49,18 +49,21 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
 
         supportFragmentManager.setFragmentResultListener(
             CharcoalDialogFragment.FRAGMENT_REQUEST_KEY,
-            this
+            this,
         ) { _, result ->
             when (result.getParcelable<DialogActivityEvent>(CharcoalDialogFragment.FRAGMENT_RESULT_KEY_CHARCOAL_DIALOG_EVENT)) {
                 DialogActivityEvent.SelectPrimaryButton -> {
                     Toast.makeText(this, "select primary button", Toast.LENGTH_SHORT).show()
                 }
+
                 DialogActivityEvent.SelectSecondaryButton -> {
                     Toast.makeText(this, "select secondary button", Toast.LENGTH_SHORT).show()
                 }
+
                 DialogActivityEvent.SelectTertiaryButton -> {
                     Toast.makeText(this, "select tertiary button", Toast.LENGTH_SHORT).show()
                 }
+
                 null -> {}
             }
         }
@@ -74,21 +77,21 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
                 title = DIALOG_TITLE,
                 message = DIALOG_DESCRIPTION,
                 buttonSettings = buttonSettings,
-                isCancelable = false
+                isCancelable = false,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
 
         binding.buttonCharcoalDialog2.setOnClickListener {
             val buttonSettings = CharcoalDialogButtonSettings.OneButton(
                 primaryButtonText = getString(android.R.string.ok),
-                primaryButtonEvent = DialogActivityEvent.SelectPrimaryButton
+                primaryButtonEvent = DialogActivityEvent.SelectPrimaryButton,
             )
 
             CharcoalDialogFragment.newInstance(
                 title = "1つ目のボタンを押したことを検出する",
                 message = "1つ目のボタンを押すと Toast が表示される",
                 buttonSettings = buttonSettings,
-                isCancelable = false
+                isCancelable = false,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
 
@@ -98,20 +101,20 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
             CharcoalDialogFragment.newInstance(
                 title = "description がない場合",
                 buttonSettings = buttonSettings,
-                isCancelable = false
+                isCancelable = false,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
 
         binding.buttonCharcoalDialog4.setOnClickListener {
             val buttonSettings = CharcoalDialogButtonSettings.TwoButtons(
                 primaryButtonText = getString(android.R.string.ok),
-                secondaryButtonText = "second"
+                secondaryButtonText = "second",
             )
 
             CharcoalDialogFragment.newInstance(
                 title = "2つめのボタンが存在する場合",
                 buttonSettings = buttonSettings,
-                isCancelable = false
+                isCancelable = false,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
 
@@ -119,14 +122,14 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
             val buttonSettings = CharcoalDialogButtonSettings.TwoButtons(
                 primaryButtonText = getString(android.R.string.ok),
                 secondaryButtonText = "second",
-                secondaryButtonEvent = DialogActivityEvent.SelectSecondaryButton
+                secondaryButtonEvent = DialogActivityEvent.SelectSecondaryButton,
             )
 
             CharcoalDialogFragment.newInstance(
                 title = "2つ目のボタンを押したことを検出する",
                 message = "2つ目のボタンを押すと Toast が表示される",
                 buttonSettings = buttonSettings,
-                isCancelable = false
+                isCancelable = false,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
 
@@ -134,13 +137,13 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
             val buttonSettings = CharcoalDialogButtonSettings.ThreeButtons(
                 primaryButtonText = getString(android.R.string.ok),
                 secondaryButtonText = "second",
-                tertiaryButtonText = "third"
+                tertiaryButtonText = "third",
             )
 
             CharcoalDialogFragment.newInstance(
                 title = "3つめのボタンが存在する場合",
                 buttonSettings = buttonSettings,
-                isCancelable = false
+                isCancelable = false,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
 
@@ -149,14 +152,14 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
                 primaryButtonText = getString(android.R.string.ok),
                 secondaryButtonText = "second",
                 tertiaryButtonText = "third",
-                tertiaryButtonEvent = DialogActivityEvent.SelectTertiaryButton
+                tertiaryButtonEvent = DialogActivityEvent.SelectTertiaryButton,
             )
 
             CharcoalDialogFragment.newInstance(
                 title = "3つ目のボタンを押したことを検出する",
                 message = "3つ目のボタンを押すと Toast が表示される",
                 buttonSettings = buttonSettings,
-                isCancelable = false
+                isCancelable = false,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
 
@@ -164,21 +167,21 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
             val buttonSettings = CharcoalDialogButtonSettings.ThreeButtons(
                 primaryButtonText = getString(android.R.string.ok),
                 secondaryButtonText = "second",
-                tertiaryButtonText = "third"
+                tertiaryButtonText = "third",
             )
 
             CharcoalDialogFragment.newInstance(
                 title = "キャンセル可能",
                 message = "×ボタン、もしくはダイアログの外側の選択するとダイアログが消える",
                 buttonSettings = buttonSettings,
-                isCancelable = true
+                isCancelable = true,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
 
         binding.buttonCharcoalDialog9.setOnClickListener {
             val buttonSettings = CharcoalDialogButtonSettings.TwoButtons(
                 primaryButtonText = getString(android.R.string.ok),
-                secondaryButtonText = "second"
+                secondaryButtonText = "second",
             )
 
             CharcoalDialogFragment.newInstance(
@@ -186,14 +189,14 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
                 message = "画像つきダイアログ",
                 imageRes = R.drawable.dialog_sample_image,
                 buttonSettings = buttonSettings,
-                isCancelable = false
+                isCancelable = false,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
 
         binding.buttonCharcoalDialog10.setOnClickListener {
             val buttonSettings = CharcoalDialogButtonSettings.TwoButtons(
                 primaryButtonText = getString(android.R.string.ok),
-                secondaryButtonText = "second"
+                secondaryButtonText = "second",
             )
 
             CharcoalDialogFragment.newInstance(
@@ -208,7 +211,7 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
         binding.buttonCharcoalDialog11.setOnClickListener {
             val buttonSettings = CharcoalDialogButtonSettings.TwoButtons(
                 primaryButtonText = getString(android.R.string.ok),
-                secondaryButtonText = "second"
+                secondaryButtonText = "second",
             )
 
             CharcoalDialogFragment.newInstance(
@@ -217,7 +220,7 @@ class DialogActivity : AppCompatActivity(R.layout.activity_dialog) {
                 imageRes = R.drawable.dialog_sample_image,
                 buttonSettings = buttonSettings,
                 isCancelable = true,
-                cancelButtonColoredBackground = true
+                cancelButtonColoredBackground = true,
             ).showNow(supportFragmentManager, DIALOG_TAG)
         }
     }

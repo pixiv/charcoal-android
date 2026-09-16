@@ -1,0 +1,36 @@
+root = true
+
+[*.{kt,kts}]
+ktlint_code_style = android_studio
+max_line_length = 130
+
+# 折り返し系: 既存コードの書き方を尊重し、機械的な再配置はしない
+ktlint_standard_argument-list-wrapping = disabled
+ktlint_standard_function-signature = disabled
+ktlint_standard_class-signature = disabled
+ktlint_standard_statement-wrapping = disabled
+ktlint_standard_property-wrapping = disabled
+ktlint_standard_multiline-if-else = disabled
+ktlint_standard_function-expression-body = disabled
+
+# 命名系: @Composable の PascalCase など既存の慣習を許容する
+ktlint_standard_function-naming = disabled
+ktlint_standard_property-naming = disabled
+ktlint_standard_filename = disabled
+
+# 末尾カンマは宣言側・呼び出し側とも有効にする
+ij_kotlin_allow_trailing_comma = true
+ij_kotlin_allow_trailing_comma_on_call_site = true
+ktlint_standard_trailing-comma-on-call-site = enabled
+ktlint_standard_trailing-comma-on-declaration-site = enabled
+
+# その他
+ktlint_standard_import-ordering = disabled
+ktlint_standard_final-newline = disabled
+ktlint_standard_string-template = disabled
+ktlint_standard_spacing-between-declarations-with-comments = disabled
+ktlint_standard_spacing-between-declarations-with-annotations = disabled
+ktlint_standard_no-semi = disabled
+ktlint_standard_no-empty-first-line-in-method-block = disabled
+ktlint_standard_annotation = disabled
+ktlint_standard_mixed-condition-operators = disabled

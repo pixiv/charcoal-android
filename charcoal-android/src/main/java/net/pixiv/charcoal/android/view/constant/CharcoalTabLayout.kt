@@ -6,7 +6,8 @@ import com.google.android.material.tabs.TabLayout
 import net.pixiv.charcoal.android.R
 
 class CharcoalTabLayout @JvmOverloads constructor(
-    context: Context, attrs: AttributeSet? = null
+    context: Context,
+    attrs: AttributeSet? = null,
 ) : TabLayout(context, attrs) {
 
     override fun addTab(tab: Tab, position: Int, setSelected: Boolean) {

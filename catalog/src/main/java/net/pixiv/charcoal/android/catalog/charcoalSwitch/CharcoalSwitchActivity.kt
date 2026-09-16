@@ -26,7 +26,7 @@ class CharcoalSwitchActivity : AppCompatActivity(R.layout.activity_catalog_commo
 
         setSupportActionBarWithHomeButtonAndTitle(
             toolbar = binding.toolBar,
-            title = "CharcoalSwitch"
+            title = "CharcoalSwitch",
         )
 
         adapter = GroupieAdapter()

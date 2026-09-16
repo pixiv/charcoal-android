@@ -9,7 +9,7 @@ import androidx.compose.ui.unit.sp
 
 val charcoalFontFamilyRobotoMono = FontFamily(
     Font(net.pixiv.charcoal.android.R.font.charcoal_roboto_mono),
-    Font(net.pixiv.charcoal.android.R.font.charcoal_roboto_mono_bold, FontWeight.Bold)
+    Font(net.pixiv.charcoal.android.R.font.charcoal_roboto_mono_bold, FontWeight.Bold),
 )
 
 private val charcoalTextStyle10FontSize = 10.sp

@@ -56,7 +56,7 @@ internal class CharcoalRadioButtonColors(
                 selectedColor,
                 unselectedColor,
                 disabledSelectedColor,
-                disabledUnselectedColor
+                disabledUnselectedColor,
             )
         }
     }

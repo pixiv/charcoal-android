@@ -57,19 +57,27 @@ class CatalogMainActivity : AppCompatActivity(R.layout.activity_catalog_main) {
                 CatalogPageListItem(CatalogPage.Toolbar),
                 CatalogPageListItem(CatalogPage.TabLayout),
                 CatalogPageListItem(CatalogPage.Compose),
-            )
+            ),
         )
 
         adapter.setOnItemClickListener { item, _ ->
             when ((item as CatalogPageListItem).catalogPage) {
                 CatalogPage.Typography -> startActivity(TypographyActivity.createIntent(this))
+
                 CatalogPage.RadioButton -> startActivity(RadioButtonActivity.createIntent(this))
+
                 CatalogPage.CheckBox -> startActivity(CheckBoxActivity.createIntent(this))
+
                 CatalogPage.CharcoalSwitch -> startActivity(CharcoalSwitchActivity.createIntent(this))
+
                 CatalogPage.Button -> startActivity(ButtonActivity.createIntent(this))
+
                 CatalogPage.Dialog -> startActivity(DialogActivity.createIntent(this))
+
                 CatalogPage.Toolbar -> startActivity(ToolbarActivity.createIntent(this))
+
                 CatalogPage.TabLayout -> startActivity(TabLayoutActivity.createIntent(this))
+
                 CatalogPage.Compose -> {
                     startActivity(CatalogComposeActivity.createIntent(this))
                 }

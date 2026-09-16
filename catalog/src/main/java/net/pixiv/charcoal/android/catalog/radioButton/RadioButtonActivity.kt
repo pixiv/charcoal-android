@@ -26,7 +26,7 @@ open class RadioButtonActivity : AppCompatActivity(R.layout.activity_catalog_com
 
         setSupportActionBarWithHomeButtonAndTitle(
             toolbar = binding.toolBar,
-            title = "RadioButton"
+            title = "RadioButton",
         )
 
         adapter = GroupieAdapter()

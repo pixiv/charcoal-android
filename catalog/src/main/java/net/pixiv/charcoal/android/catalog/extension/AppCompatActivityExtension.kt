@@ -5,7 +5,7 @@ import androidx.appcompat.widget.Toolbar
 
 fun AppCompatActivity.setSupportActionBarWithHomeButtonAndTitle(
     toolbar: Toolbar,
-    title: CharSequence
+    title: CharSequence,
 ) {
     this.setSupportActionBar(toolbar)
 
