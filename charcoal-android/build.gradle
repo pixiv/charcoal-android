@@ -3,7 +3,6 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     alias libs.plugins.android.library
     alias libs.plugins.dokka
-    alias libs.plugins.kotlin
     id 'signing'
     id 'maven-publish'
 }
