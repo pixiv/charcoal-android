@@ -44,7 +44,7 @@ dependencies {
 - minSdk 23+
 - compileSdk
     - `charcoal-android-view`: 33+
-    - `charcoal-compose`: 34+
+    - `charcoal-compose`: 37+
 
 ## Documentation
 

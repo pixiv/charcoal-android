@@ -22,7 +22,7 @@ androidx-test-junit = "1.1.5"
 androidx-test-espresso = "3.5.1"
 
 [libraries]
-androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2025.05.01" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2026.09.00" }
 androidx-compose-ui = { module = "androidx.compose.ui:ui" }
 androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 androidx-compose-material = { module = "androidx.compose.material:material" }
