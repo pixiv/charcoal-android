@@ -116,10 +116,8 @@ signing {
     sign publishing.publications
 }
 
-dokkaHtml.configure {
-    dokkaSourceSets {
-        named("main") {
-            noAndroidSdkLink.set(false)
-        }
+dokka {
+    dokkaSourceSets.named("main") {
+        enableAndroidDocumentationLink.set(true)
     }
 }
