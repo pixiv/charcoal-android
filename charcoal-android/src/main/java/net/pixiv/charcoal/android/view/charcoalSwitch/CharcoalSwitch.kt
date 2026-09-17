@@ -6,7 +6,6 @@ import android.util.AttributeSet
 import androidx.annotation.AttrRes
 import com.google.android.material.color.MaterialColors
 import com.google.android.material.switchmaterial.SwitchMaterial
-import net.pixiv.charcoal.android.R
 import net.pixiv.charcoal.android.view.color.CharcoalColorToken
 import net.pixiv.charcoal.android.view.constant.CharcoalColorConstant
 
@@ -17,7 +16,11 @@ import net.pixiv.charcoal.android.view.constant.CharcoalColorConstant
  */
 class CharcoalSwitch : SwitchMaterial {
     constructor(context: Context) : this(context, null)
-    constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, R.attr.switchStyle)
+    constructor(context: Context, attrs: AttributeSet?) : this(
+        context,
+        attrs,
+        androidx.appcompat.R.attr.switchStyle,
+    )
     constructor(context: Context, attrs: AttributeSet?, @AttrRes defStyleAttr: Int) : super(
         context,
         attrs,

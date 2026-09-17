@@ -6,7 +6,6 @@ import android.util.AttributeSet
 import androidx.annotation.AttrRes
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.color.MaterialColors
-import net.pixiv.charcoal.android.R
 import net.pixiv.charcoal.android.view.color.CharcoalColorToken
 import net.pixiv.charcoal.android.view.constant.CharcoalColorConstant
 
@@ -21,7 +20,7 @@ class CharcoalButton : MaterialButton {
     constructor(context: Context, attrs: AttributeSet?) : this(
         context,
         attrs,
-        R.attr.materialButtonStyle,
+        com.google.android.material.R.attr.materialButtonStyle,
     )
 
     constructor(context: Context, attrs: AttributeSet?, @AttrRes defStyleAttr: Int) : super(
