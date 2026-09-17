@@ -1,7 +1,10 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias libs.plugins.android.library
     alias libs.plugins.dokka
     alias libs.plugins.kotlin
+    alias libs.plugins.kotlin.compose
     id 'signing'
     id 'maven-publish'
 }
@@ -37,14 +40,6 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17
-        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion "${libs.versions.composeCompiler.get()}"
-    }
     namespace 'net.pixiv.charcoal.android.compose'
 
     publishing {
@@ -54,11 +49,16 @@ android {
     }
 }
 
+kotlin {
+    compilerOptions {
+        jvmTarget = JvmTarget.JVM_17
+    }
+}
+
 dependencies {
     api project(":charcoal-android")
 
     implementation deps.androidX.activity.compose
-    implementation libs.androidx.compose.compiler
     implementation platform(libs.androidx.compose.bom)
     implementation libs.androidx.compose.ui
     implementation libs.androidx.compose.ui.tooling
