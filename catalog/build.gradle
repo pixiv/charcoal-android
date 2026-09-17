@@ -62,22 +62,22 @@ dependencies {
     implementation project(':charcoal-android')
     implementation project(':charcoal-android-compose')
 
-    implementation deps.androidX.appCompat
-    implementation deps.androidX.activity.compose
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.activity.compose
     implementation platform(libs.androidx.compose.bom)
     implementation libs.androidx.compose.ui
     implementation libs.androidx.compose.ui.tooling
     implementation libs.androidx.compose.material
     implementation libs.androidx.compose.material.icons
-    implementation deps.androidX.recyclerView
-    implementation deps.androidX.material
-    implementation deps.androidX.constraintLayout
-    implementation deps.groupie.core
-    implementation deps.groupie.viewBinding
-    implementation deps.viewBindingKtx
+    implementation libs.androidx.recyclerview
+    implementation libs.material
+    implementation libs.androidx.constraintlayout
+    implementation libs.groupie
+    implementation libs.groupie.viewbinding
+    implementation libs.viewbinding.ktx
 
-    testImplementation deps.junit
+    testImplementation libs.junit
 
-    androidTestImplementation deps.androidX.test.junit
-    androidTestImplementation deps.androidX.test.espresso
+    androidTestImplementation libs.androidx.test.junit
+    androidTestImplementation libs.androidx.test.espresso
 }

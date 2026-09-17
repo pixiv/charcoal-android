@@ -48,17 +48,17 @@ kotlin {
 }
 
 dependencies {
-    implementation deps.androidX.appCompat
-    implementation deps.androidX.activity.core
-    implementation deps.androidX.constraintLayout
-    implementation deps.androidX.fragment
-    implementation deps.androidX.material
-    implementation deps.androidX.core
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.activity.ktx
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.fragment.ktx
+    implementation libs.material
+    implementation libs.androidx.core.ktx
 
-    testImplementation deps.junit
+    testImplementation libs.junit
 
-    androidTestImplementation deps.androidX.test.junit
-    androidTestImplementation deps.androidX.test.espresso
+    androidTestImplementation libs.androidx.test.junit
+    androidTestImplementation libs.androidx.test.espresso
 }
 
 afterEvaluate {

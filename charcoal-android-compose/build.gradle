@@ -58,17 +58,17 @@ kotlin {
 dependencies {
     api project(":charcoal-android")
 
-    implementation deps.androidX.activity.compose
+    implementation libs.androidx.activity.compose
     implementation platform(libs.androidx.compose.bom)
     implementation libs.androidx.compose.ui
     implementation libs.androidx.compose.ui.tooling
     implementation libs.androidx.compose.material
-    implementation deps.kotlinX.serialization
+    implementation libs.kotlinx.serialization.json
 
-    testImplementation deps.junit
+    testImplementation libs.junit
 
-    androidTestImplementation deps.androidX.test.junit
-    androidTestImplementation deps.androidX.test.espresso
+    androidTestImplementation libs.androidx.test.junit
+    androidTestImplementation libs.androidx.test.espresso
 }
 
 afterEvaluate {
