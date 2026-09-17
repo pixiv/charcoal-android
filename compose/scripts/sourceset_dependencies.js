@@ -1,1 +1,1 @@
-sourceset_dependencies='{":charcoal-android-compose:dokkaHtml/debug":[],":charcoal-android-compose:dokkaHtml/main":[],":charcoal-android-compose:dokkaHtml/release":[]}'
+sourceset_dependencies='{":charcoal-android-compose/main":[],":charcoal-android-compose/release":[]}'
