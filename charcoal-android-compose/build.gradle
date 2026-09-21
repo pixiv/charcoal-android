@@ -4,6 +4,7 @@ plugins {
     alias libs.plugins.android.library
     alias libs.plugins.dokka
     alias libs.plugins.kotlin.compose
+    alias libs.plugins.roborazzi
     id 'signing'
     id 'maven-publish'
 }
@@ -43,6 +44,19 @@ android {
 
     namespace 'net.pixiv.charcoal.android.compose'
 
+    testOptions {
+        unitTests {
+            // Robolectric が :charcoal-android のフォントなどのリソースを解決できるようにする
+            includeAndroidResources = true
+            all {
+                // Roborazzi のスクリーンショット描画にはハードウェアレンダリングが必要
+                it.systemProperty("robolectric.graphicsMode", "NATIVE")
+                it.systemProperty("robolectric.pixelCopyRenderMode", "hardware")
+                it.maxHeapSize = "4096m"
+            }
+        }
+    }
+
     publishing {
         singleVariant('release') {
             withSourcesJar()
@@ -62,14 +76,50 @@ dependencies {
     implementation libs.androidx.activity.compose
     implementation platform(libs.androidx.compose.bom)
     implementation libs.androidx.compose.ui
-    implementation libs.androidx.compose.ui.tooling
+    implementation libs.androidx.compose.ui.tooling.preview
+    // Android Studio の Preview 描画用。debug のみなので公開 POM には含まれない
+    debugImplementation libs.androidx.compose.ui.tooling
     implementation libs.androidx.compose.material
     implementation libs.kotlinx.serialization.json
 
     testImplementation libs.junit
 
+    // スクリーンショットテスト（Roborazzi）。詳細は README の「Screenshot test」を参照
+    testImplementation libs.androidx.test.junit
+    testImplementation libs.androidx.compose.ui.test.junit4
+    testImplementation libs.robolectric
+    testImplementation libs.roborazzi.core
+    testImplementation libs.roborazzi.compose
+    testImplementation libs.roborazzi.junit.rule
+    testImplementation libs.roborazzi.preview.scanner
+    testImplementation libs.composable.preview.scanner
+
     androidTestImplementation libs.androidx.test.junit
     androidTestImplementation libs.androidx.test.espresso
+}
+
+roborazzi {
+    generateComposePreviewRobolectricTests.enable = true
+    generateComposePreviewRobolectricTests.includePrivatePreviews = true
+    generateComposePreviewRobolectricTests.packages = [android.namespace]
+    generateComposePreviewRobolectricTests.robolectricConfig = [
+        // Robolectric 4.16.1 が対応する最新の SDK（compileSdk 37 は未対応）
+        "sdk": "[36]",
+        "qualifiers": "RobolectricDeviceQualifiers.Pixel4a",
+    ]
+}
+
+// record / compare / verifyRoborazzi 系タスク以外（通常の testDebugUnitTest など）では、
+// 自動生成された Preview スクリーンショットテストを除外する。Robolectric のテストが毎回走るのを避けるため。
+// Roborazzi 系タスクは専用の Test タスクを作らず testDebugUnitTest を再利用するため、
+// タスク名ではなく CLI で指定されたタスク名から判定する。
+def isRoborazziTask = gradle.startParameter.taskNames.any { it.toLowerCase().contains("roborazzi") }
+if (!isRoborazziTask) {
+    tasks.withType(Test).configureEach {
+        useJUnit {
+            excludeCategories "com.github.takahirom.roborazzi.RoborazziComposePreviewTestCategory"
+        }
+    }
 }
 
 afterEvaluate {
