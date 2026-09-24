@@ -67,6 +67,9 @@ android {
 kotlin {
     compilerOptions {
         jvmTarget = JvmTarget.JVM_17
+        // M3 の Experimental API（TopAppBar 等）をモジュール単位で opt-in する。
+        // 公開 API には Experimental な型を出さないので利用側には伝播しない
+        optIn.add("androidx.compose.material3.ExperimentalMaterial3Api")
     }
 }
 
@@ -80,6 +83,7 @@ dependencies {
     // Android Studio の Preview 描画用。debug のみなので公開 POM には含まれない
     debugImplementation libs.androidx.compose.ui.tooling
     implementation libs.androidx.compose.material
+    implementation libs.androidx.compose.material3
     implementation libs.kotlinx.serialization.json
 
     testImplementation libs.junit
