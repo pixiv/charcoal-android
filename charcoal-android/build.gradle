@@ -17,7 +17,7 @@ android {
         minSdk libs.versions.android.minSdk.get().toInteger()
 
         aarMetadata {
-            minCompileSdk = 33
+            minCompileSdk = 35
         }
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
