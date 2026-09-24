@@ -1,1 +1,1 @@
-sourceset_dependencies='{":charcoal-android-compose/main":[],":charcoal-android-compose/release":[]}'
+sourceset_dependencies='{":charcoal-android-compose/release":[]}'
