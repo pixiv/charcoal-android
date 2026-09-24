@@ -3,7 +3,6 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     alias libs.plugins.android.library
     alias libs.plugins.dokka
-    alias libs.plugins.kotlin
     alias libs.plugins.kotlin.compose
     id 'signing'
     id 'maven-publish'
@@ -16,13 +15,15 @@ android {
     compileSdk libs.versions.android.compileSdk.get().toInteger()
 
     buildFeatures {
-        buildConfig false
         compose true
     }
 
     defaultConfig {
         minSdk libs.versions.android.minSdk.get().toInteger()
-        targetSdk libs.versions.android.targetSdk.get().toInteger()
+
+        aarMetadata {
+            minCompileSdk = 34
+        }
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -117,7 +118,7 @@ signing {
 }
 
 dokka {
-    dokkaSourceSets.named("main") {
+    dokkaSourceSets.configureEach {
         enableAndroidDocumentationLink.set(true)
     }
 }

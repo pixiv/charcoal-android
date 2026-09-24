@@ -11,7 +11,7 @@ class SampleDialogFragment : AppCompatDialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStyle(STYLE_NO_TITLE, R.style.ThemeOverlay_Charcoal_Dialog)
+        setStyle(STYLE_NO_TITLE, net.pixiv.charcoal.android.R.style.ThemeOverlay_Charcoal_Dialog)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
