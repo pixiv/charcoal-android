@@ -14,14 +14,6 @@ private val ErrorContainerDark = Color(0xFF3A201B)
 
 /**
  * Charcoal に未定義で、M3 ColorScheme を組み立てるために補完している調整用カラー
- *
- * いずれも既存トークンの合成（surface3 / surface6 / assertive 12% を surface1 に重ねた不透明色）で再現できる。
- *
- * Charcoal は Tonal Elevation を色で表現しない方針のため、M3 が elevation 計算で生成する
- * surface の段階色を、Charcoal トークンに無い不透明色として明示する必要がある。
- *
- * TODO これらの値は本来 @charcoal-ui/theme 側に定義され、foundation-gen によって
- *  自動生成されるべきもの。デザイン側との調整が済むまでの暫定として internal で持つ。
  */
 internal data class CharcoalM3AdjustmentColor(
     val surface3Solid: Color,

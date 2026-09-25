@@ -10,24 +10,15 @@ import net.pixiv.charcoal.android.compose.theme.CharcoalColorToken
 /**
  * Charcoal のカラートークンから M3 [ColorScheme] を組み立てる
  *
- * ## contentColorFor の解決結果は Charcoal の仕様として扱う
+ * `contentColorFor` は表のとおりの値を返す。
+ * 表と違う文字色にしたい場合は、呼び出し側で contentColor / color を明示する。
  *
- * Charcoal は M3 より色の段階が少ないため、複数の M3 ロールに同じ色を割り当てている
- * （例: background / surface / surfaceContainer 系はすべて surface1）。
- * M3 の `contentColorFor(color)` は色の値で照合し、先に一致したロールの on 色を返すため、
- * 同じ色を持つロール群では「照合順で最初のロールの on 色」だけが返る。
- * この結果を個別に調整することはせず、**「Charcoal のどの色を背景にしたら既定の文字色が何になるか」の対応表**
- * として仕様に固定する。表と違う文字色にしたい場合は、呼び出し側で contentColor / color を明示する。
- *
- * | 背景に使う Charcoal の色 | 一致する M3 ロール（照合順） | 既定の文字色 |
- * |---|---|---|
- * | brand | primary / secondary / tertiary | text5 |
- * | background1 = surface1 | background / primaryContainer / surface / surfaceContainer / surfaceContainerLow / surfaceContainerLowest | text2 |
- * | assertive | error | text5 |
- * | surface3Solid | secondaryContainer / tertiaryContainer / surfaceVariant / surfaceContainerHigh / surfaceContainerHighest（ダークは inverseSurface も同値） | text2 |
- * | errorContainer | errorContainer | assertive |
- * | surface6Solid（ライトのみ別値） | inverseSurface | text5（ダークは surface3Solid と同値のため text2） |
- * | 上記以外 | 一致なし | 親の LocalContentColor を引き継ぐ |
+ * | 背景に使う Charcoal の色 | 既定の文字色 |
+ * |---|---|
+ * | brand | text5 |
+ * | background1, surface1 | text2 |
+ * | assertive | text5 |
+ * | 上記以外 | 親の LocalContentColor を引き継ぐ |
  *
  * @param isDarkTheme true なら未割り当てロールの既定値に [darkColorScheme] を、false なら [lightColorScheme] を使う
  * @param colorToken 元になる Charcoal のカラートークン

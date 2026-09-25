@@ -8,9 +8,6 @@ import net.pixiv.charcoal.android.compose.theme.CharcoalTypography
  *
  * display 系と headlineLarge / headlineMedium は Charcoal に対応サイズがないため M3 既定のまま。
  *
- * M3 の Text は LocalTextStyle と引数の style をマージするため、Charcoal 側で未指定の項目（字間など）は
- * ロールの値ではなく M3 既定の LocalTextStyle（platformStyle / lineHeightStyle）を引き継ぐ。
- *
  * @param typography 元になる Charcoal のタイポグラフィ
  */
 internal fun charcoalM3Typography(typography: CharcoalTypography): Typography {

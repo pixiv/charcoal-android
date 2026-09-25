@@ -71,11 +71,7 @@ fun CharcoalM3Theme(
 
 /**
  * Charcoal の surface10（タッチフィードバック色）で ripple を描く [RippleConfiguration]。
- *
- * M3 の既定は contentColor を状態ごとの不透明度（pressed 0.1 など）で重ねるが、
- * Charcoal はタッチフィードバック専用の半透明トークンを持つため、色を surface10 に固定し、
  * 不透明度はトークンの alpha を pressed / focused / hovered / dragged のすべてに使う。
- * ripple の Indication 自体は MaterialTheme が提供するものをそのまま使い、設定だけを差し替える。
  */
 private fun charcoalRippleConfiguration(colorToken: CharcoalColorToken): RippleConfiguration {
     val touchFeedbackColor = colorToken.surface10
@@ -95,9 +91,7 @@ private const val TEXT_SELECTION_BACKGROUND_ALPHA = 0.4f
 
 /**
  * Charcoal の brand でテキスト選択色を描く [TextSelectionColors]。
- *
- * ハンドルは brand、選択範囲の背景は brand の 40%。MaterialTheme は ColorScheme.primary から
- * 同じ値を作るが、ColorScheme の割り当てに依存させず Charcoal のトークンから明示的に提供する。
+ * ハンドルは brand、選択範囲の背景は brand の 40%。
  * MaterialTheme が提供する値を上書きするため、MaterialTheme の内側で LocalTextSelectionColors に渡す。
  */
 @Composable
