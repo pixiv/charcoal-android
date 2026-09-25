@@ -54,6 +54,9 @@ class CatalogComposeActivity : AppCompatActivity() {
             RedirectPattern.Typography -> startActivity(
                 CharcoalTypographyComposeActivity.createIntent(this),
             )
+            RedirectPattern.Dropdown -> startActivity(
+                CharcoalDropdownComposeActivity.createIntent(this)
+            )
         }
     }
 
@@ -68,6 +71,7 @@ private sealed class RedirectPattern {
     object TopAppBar : RedirectPattern()
     object RadioButton : RedirectPattern()
     object Typography : RedirectPattern()
+    object Dropdown : RedirectPattern()
 }
 
 @Composable
@@ -113,6 +117,7 @@ private fun BodyContent(
         ContentColumn(text = "TopAppBar", onClick = { onRedirect(RedirectPattern.TopAppBar) })
         ContentColumn(text = "RadioButton", onClick = { onRedirect(RedirectPattern.RadioButton) })
         ContentColumn(text = "Typography", onClick = { onRedirect(RedirectPattern.Typography) })
+        ContentColumn(text = "Dropdown", onClick = { onRedirect(RedirectPattern.Dropdown) })
     }
 }
 
