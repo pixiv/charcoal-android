@@ -32,26 +32,31 @@ data class CharcoalTypography(
     val regular10: TextStyle = TextStyle(
         fontSize = charcoalTextStyle10FontSize,
         fontFamily = FontFamily.SansSerif,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle10lineHeight,
     ),
     val regular12: TextStyle = TextStyle(
         fontSize = charcoalTextStyle12FontSize,
         fontFamily = FontFamily.SansSerif,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle12lineHeight,
     ),
     val regular14: TextStyle = TextStyle(
         fontSize = charcoalTextStyle14FontSize,
         fontFamily = FontFamily.SansSerif,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle14lineHeight,
     ),
     val regular16: TextStyle = TextStyle(
         fontSize = charcoalTextStyle16FontSize,
         fontFamily = FontFamily.SansSerif,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle16lineHeight,
     ),
     val regular20: TextStyle = TextStyle(
         fontSize = charcoalTextStyle20FontSize,
         fontFamily = FontFamily.SansSerif,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle20lineHeight,
     ),
     val bold10: TextStyle = TextStyle(
@@ -87,26 +92,31 @@ data class CharcoalTypography(
     val mono10: TextStyle = TextStyle(
         fontSize = charcoalTextStyle10FontSize,
         fontFamily = charcoalFontFamilyRobotoMono,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle10lineHeight,
     ),
     val mono12: TextStyle = TextStyle(
         fontSize = charcoalTextStyle12FontSize,
         fontFamily = charcoalFontFamilyRobotoMono,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle12lineHeight,
     ),
     val mono14: TextStyle = TextStyle(
         fontSize = charcoalTextStyle14FontSize,
         fontFamily = charcoalFontFamilyRobotoMono,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle14lineHeight,
     ),
     val mono16: TextStyle = TextStyle(
         fontSize = charcoalTextStyle16FontSize,
         fontFamily = charcoalFontFamilyRobotoMono,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle16lineHeight,
     ),
     val mono20: TextStyle = TextStyle(
         fontSize = charcoalTextStyle20FontSize,
         fontFamily = charcoalFontFamilyRobotoMono,
+        fontWeight = FontWeight.Normal,
         lineHeight = charcoalTextStyle20lineHeight,
     ),
     val boldMono10: TextStyle = TextStyle(
