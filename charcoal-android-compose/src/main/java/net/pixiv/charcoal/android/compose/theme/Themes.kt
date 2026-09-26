@@ -10,11 +10,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.staticCompositionLocalOf
+import androidx.compose.ui.graphics.Color
 
 @Composable
 fun CharcoalTheme(
     isDarkTheme: Boolean = isSystemInDarkTheme(),
-    colorToken: CharcoalColorToken = if (isDarkTheme) darkColorToken() else lightColorToken(),
+    colorToken: CharcoalColorToken = if (isDarkTheme) charcoalDarkColorToken() else charcoalLightColorToken(),
     content: @Composable () -> Unit,
 ) {
     val materialColors = if (isDarkTheme) {
@@ -51,10 +52,19 @@ object CharcoalTheme {
         get() = LocalCharcoalTypography.current
 }
 
-private fun lightColorToken(): CharcoalColorToken {
+/**
+ * ライトテーマのカラートークン。
+ *
+ * @param brand プロダクトごとに定義するブランドカラー
+ * @param brandDark プロダクトごとに定義するブランドカラーの濃い色。Charcoal の共通定義にはない Android 独自のトークン
+ */
+fun charcoalLightColorToken(
+    brand: Color = CharcoalColorPalette.pixivBrand,
+    brandDark: Color = CharcoalColorPalette.pixivBrandDark,
+): CharcoalColorToken {
     return CharcoalColorToken(
-        brand = CharcoalColorPalette.pixivBrand,
-        brandDark = CharcoalColorPalette.pixivBrandDark,
+        brand = brand,
+        brandDark = brandDark,
         assertive = CharcoalColorPalette.assertive,
         warning = CharcoalColorPalette.warning,
         success = CharcoalColorPalette.success,
@@ -80,10 +90,19 @@ private fun lightColorToken(): CharcoalColorToken {
     )
 }
 
-private fun darkColorToken(): CharcoalColorToken {
+/**
+ * ダークテーマのカラートークン。
+ *
+ * @param brand プロダクトごとに定義するブランドカラー
+ * @param brandDark プロダクトごとに定義するブランドカラーの濃い色。Charcoal の共通定義にはない Android 独自のトークン
+ */
+fun charcoalDarkColorToken(
+    brand: Color = CharcoalColorPalette.pixivBrand,
+    brandDark: Color = CharcoalColorPalette.pixivBrandDark,
+): CharcoalColorToken {
     return CharcoalColorToken(
-        brand = CharcoalColorPalette.pixivBrand,
-        brandDark = CharcoalColorPalette.pixivBrandDark,
+        brand = brand,
+        brandDark = brandDark,
         assertive = CharcoalColorPalette.assertive,
         warning = CharcoalColorPalette.warning,
         success = CharcoalColorPalette.success,
@@ -141,5 +160,5 @@ private fun darkMaterialColors(colorToken: CharcoalColorToken): Colors {
     )
 }
 
-internal val LocalCharcoalColorToken = staticCompositionLocalOf { lightColorToken() }
+internal val LocalCharcoalColorToken = staticCompositionLocalOf { charcoalLightColorToken() }
 internal val LocalCharcoalTypography = staticCompositionLocalOf { CharcoalTypography() }
