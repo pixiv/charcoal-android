@@ -19,7 +19,7 @@ androidx-test-junit = "1.1.5"
 androidx-test-espresso = "3.7.0"
 
 # スクリーンショットテスト（Roborazzi）専用
-robolectric = "4.16.1"
+robolectric = "4.17"
 roborazzi = "1.73.0"
 composable-preview-scanner = "0.9.3"
 
