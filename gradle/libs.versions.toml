@@ -2,7 +2,7 @@
 android-compileSdk = "37"
 android-targetSdk = "30"
 android-minSdk = "23"
-android-gradle = "9.4.0"
+android-gradle = "9.4.1"
 dokka = "2.2.0"
 kotlin = "2.4.20"
 ktlint = "1.8.0"
