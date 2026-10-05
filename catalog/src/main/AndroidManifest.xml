@@ -43,6 +43,30 @@
             android:name=".tabLayout.TabLayoutActivity"
             android:exported="false" />
         <activity
+            android:name=".compose.m3.CatalogComposeM3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3ButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3CheckboxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3SwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3RadioButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3AlertDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3TabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3TopAppBarActivity"
+            android:exported="false" />
+        <activity
             android:name=".compose.m2.CatalogComposeActivity"
             android:exported="false" />
         <activity

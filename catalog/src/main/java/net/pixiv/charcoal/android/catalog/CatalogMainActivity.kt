@@ -13,6 +13,7 @@ import net.pixiv.charcoal.android.catalog.button.ButtonActivity
 import net.pixiv.charcoal.android.catalog.charcoalSwitch.CharcoalSwitchActivity
 import net.pixiv.charcoal.android.catalog.checkBox.CheckBoxActivity
 import net.pixiv.charcoal.android.catalog.compose.m2.CatalogComposeActivity
+import net.pixiv.charcoal.android.catalog.compose.m3.CatalogComposeM3Activity
 import net.pixiv.charcoal.android.catalog.databinding.ActivityCatalogMainBinding
 import net.pixiv.charcoal.android.catalog.databinding.ViewHolderCatalogPageListBinding
 import net.pixiv.charcoal.android.catalog.dialog.DialogActivity
@@ -57,6 +58,7 @@ class CatalogMainActivity : AppCompatActivity(R.layout.activity_catalog_main) {
                 CatalogPageListItem(CatalogPage.Toolbar),
                 CatalogPageListItem(CatalogPage.TabLayout),
                 CatalogPageListItem(CatalogPage.Compose),
+                CatalogPageListItem(CatalogPage.ComposeM3),
             ),
         )
 
@@ -80,6 +82,10 @@ class CatalogMainActivity : AppCompatActivity(R.layout.activity_catalog_main) {
 
                 CatalogPage.Compose -> {
                     startActivity(CatalogComposeActivity.createIntent(this))
+                }
+
+                CatalogPage.ComposeM3 -> {
+                    startActivity(CatalogComposeM3Activity.createIntent(this))
                 }
             }
         }
@@ -120,6 +126,7 @@ class CatalogMainActivity : AppCompatActivity(R.layout.activity_catalog_main) {
         object Toolbar : CatalogPage("Toolbar")
         object Dialog : CatalogPage("Dialog")
         object TabLayout : CatalogPage("TabLayout")
-        object Compose : CatalogPage("Jetpack Compose")
+        object Compose : CatalogPage("Jetpack Compose (Material 2)")
+        object ComposeM3 : CatalogPage("Jetpack Compose (Material 3)")
     }
 }

@@ -79,7 +79,7 @@ private fun CatalogCompose(
         Scaffold(
             topBar = {
                 CharcoalTopAppBar(
-                    title = { Text(text = "Compose Catalog") },
+                    title = { Text(text = "Compose Catalog (Material 2)") },
                     navigationIcon = {
                         IconButton(onClick = { onNavigationClick() }) {
                             Icon(
