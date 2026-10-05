@@ -12,7 +12,7 @@ import com.xwray.groupie.viewbinding.BindableItem
 import net.pixiv.charcoal.android.catalog.button.ButtonActivity
 import net.pixiv.charcoal.android.catalog.charcoalSwitch.CharcoalSwitchActivity
 import net.pixiv.charcoal.android.catalog.checkBox.CheckBoxActivity
-import net.pixiv.charcoal.android.catalog.compose.CatalogComposeActivity
+import net.pixiv.charcoal.android.catalog.compose.m2.CatalogComposeActivity
 import net.pixiv.charcoal.android.catalog.databinding.ActivityCatalogMainBinding
 import net.pixiv.charcoal.android.catalog.databinding.ViewHolderCatalogPageListBinding
 import net.pixiv.charcoal.android.catalog.dialog.DialogActivity

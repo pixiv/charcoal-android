@@ -43,16 +43,16 @@
             android:name=".tabLayout.TabLayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".compose.CatalogComposeActivity"
+            android:name=".compose.m2.CatalogComposeActivity"
             android:exported="false" />
         <activity
-            android:name=".compose.CharcoalTopAppBarComposeActivity"
+            android:name=".compose.m2.CharcoalTopAppBarComposeActivity"
             android:exported="false" />
         <activity
-            android:name=".compose.CharcoalRadioButtonComposeActivity"
+            android:name=".compose.m2.CharcoalRadioButtonComposeActivity"
             android:exported="false" />
         <activity
-            android:name=".compose.CharcoalTypographyComposeActivity"
+            android:name=".compose.m2.CharcoalTypographyComposeActivity"
             android:exported="false" />
     </application>
 
