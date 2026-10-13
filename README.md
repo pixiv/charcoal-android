@@ -18,6 +18,46 @@
     android:text="OK" />
 ```
 
+### Jetpack Compose (Material 3)
+
+`CharcoalM3Theme` を適用すると、素の Material 3 コンポーネントが Charcoal の配色・文字スタイルで描かれる。
+ColorScheme / Typography で表現できない差分は `CharcoalXxxDefaults` を渡して補う。
+
+```kotlin
+CharcoalM3Theme {
+    Surface {
+        Column {
+            Text(
+                text = "Hello",
+                color = CharcoalTheme.colorToken.text1,
+                style = CharcoalTheme.typography.bold14,
+            )
+
+            Checkbox(
+                checked = checked,
+                onCheckedChange = { checked = it },
+                colors = CharcoalCheckboxDefaults.colors(),
+            )
+
+            // M3 コンポーネントで表現できないものは Charcoal の専用コンポーネントを提供する
+            CharcoalButton(
+                onClick = { },
+                colors = CharcoalButtonDefaults.primaryButtonColors(),
+            ) {
+                Text("OK")
+            }
+        }
+    }
+}
+```
+
+- タイポグラフィは M3 のロールにも割り当てているため、`style` を省略してもロールに応じた
+  Charcoal のスタイルが当たる。ロールで表現できないものは配色と同じく Defaults や専用
+  コンポーネント側で供給する（例: `CharcoalButton` のラベルは bold14 固定）
+- `CharcoalM3Theme` と Material 2 版の `CharcoalTheme` は排他。どちらか一方だけを適用する
+- Compose の依存は利用側で宣言する（Compose BOM と `androidx.compose.material3`）
+- 全コンポーネントの実装例は `catalog` の Compose Catalog (Material 3) で確認できる
+
 ## Installation
 
 ```groovy
