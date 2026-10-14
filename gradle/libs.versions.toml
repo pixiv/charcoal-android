@@ -24,7 +24,7 @@ roborazzi = "1.73.0"
 composable-preview-scanner = "0.9.3"
 
 # catalog（デモアプリ）専用
-androidx-recyclerview = "1.2.1"
+androidx-recyclerview = "1.4.0"
 groupie = "2.9.0"
 viewbinding-ktx = "1.2.3"
 
