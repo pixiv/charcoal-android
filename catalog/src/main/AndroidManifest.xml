@@ -43,16 +43,40 @@
             android:name=".tabLayout.TabLayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".compose.CatalogComposeActivity"
+            android:name=".compose.m3.CatalogComposeM3Activity"
             android:exported="false" />
         <activity
-            android:name=".compose.CharcoalTopAppBarComposeActivity"
+            android:name=".compose.m3.CatalogM3ButtonActivity"
             android:exported="false" />
         <activity
-            android:name=".compose.CharcoalRadioButtonComposeActivity"
+            android:name=".compose.m3.CatalogM3CheckboxActivity"
             android:exported="false" />
         <activity
-            android:name=".compose.CharcoalTypographyComposeActivity"
+            android:name=".compose.m3.CatalogM3SwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3RadioButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3AlertDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3TabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m3.CatalogM3TopAppBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m2.CatalogComposeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m2.CharcoalTopAppBarComposeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m2.CharcoalRadioButtonComposeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.m2.CharcoalTypographyComposeActivity"
             android:exported="false" />
     </application>
 

@@ -1,4 +1,4 @@
-package net.pixiv.charcoal.android.catalog.compose
+package net.pixiv.charcoal.android.catalog.compose.m2
 
 import android.content.Context
 import android.content.Intent
@@ -79,7 +79,7 @@ private fun CatalogCompose(
         Scaffold(
             topBar = {
                 CharcoalTopAppBar(
-                    title = { Text(text = "Compose Catalog") },
+                    title = { Text(text = "Compose Catalog (Material 2)") },
                     navigationIcon = {
                         IconButton(onClick = { onNavigationClick() }) {
                             Icon(

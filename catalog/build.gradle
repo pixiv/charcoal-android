@@ -49,6 +49,8 @@ android {
 kotlin {
     compilerOptions {
         jvmTarget = JvmTarget.JVM_17
+        // M3 の Experimental API（TopAppBar 等）をモジュール単位で opt-in する。
+        optIn.add("androidx.compose.material3.ExperimentalMaterial3Api")
     }
 }
 
@@ -66,6 +68,7 @@ dependencies {
     implementation libs.androidx.compose.ui
     implementation libs.androidx.compose.ui.tooling
     implementation libs.androidx.compose.material
+    implementation libs.androidx.compose.material3
     implementation libs.androidx.compose.material.icons
     implementation libs.androidx.recyclerview
     implementation libs.material

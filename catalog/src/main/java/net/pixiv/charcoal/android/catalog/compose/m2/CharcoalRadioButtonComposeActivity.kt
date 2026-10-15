@@ -1,4 +1,4 @@
-package net.pixiv.charcoal.android.catalog.compose
+package net.pixiv.charcoal.android.catalog.compose.m2
 
 import android.content.Context
 import android.content.Intent
