@@ -99,10 +99,18 @@ object CharcoalButtonDefaults {
     /** 通常ボタン (CharcoalButton) のデフォルト形状。CircleShape を使用する。 */
     val shape: Shape @Composable get() = CircleShape
 
-    /** M サイズの最小高さ。 */
+    /**
+     * M サイズの最小高さ。
+     *
+     * これは描画上の高さで、タッチ領域は M3 の `minimumInteractiveComponentSize` により 48dp 確保される。
+     */
     val MinHeight: Dp = 40.dp
 
-    /** S サイズの最小高さ。M3 の [ButtonDefaults.MinHeight]（40dp）より低い Charcoal 固有の値。 */
+    /**
+     * S サイズの最小高さ。M3 の [ButtonDefaults.MinHeight]（40dp）より低い Charcoal 固有の値。
+     *
+     * [MinHeight] と同様、タッチ領域は 48dp 確保される。
+     */
     val SmallMinHeight: Dp = 32.dp
 
     /** M サイズのコンテンツパディング。 */
