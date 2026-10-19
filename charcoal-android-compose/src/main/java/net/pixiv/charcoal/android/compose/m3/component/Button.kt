@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.ButtonElevation
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.runtime.Composable
@@ -221,23 +220,4 @@ object CharcoalButtonDefaults {
                 .compositeOver(CharcoalTheme.colorToken.surface1),
         )
     }
-
-    /**
-     * M3 [ButtonDefaults.buttonElevation] から生成した [ButtonElevation]。
-     * Charcoal Button は通常 Elevation を使わないため全段階 0dp を既定とする。
-     */
-    @Composable
-    fun buttonElevation(
-        defaultElevation: Dp = 0.dp,
-        pressedElevation: Dp = 0.dp,
-        focusedElevation: Dp = 0.dp,
-        hoveredElevation: Dp = 0.dp,
-        disabledElevation: Dp = 0.dp,
-    ): ButtonElevation = ButtonDefaults.buttonElevation(
-        defaultElevation = defaultElevation,
-        pressedElevation = pressedElevation,
-        focusedElevation = focusedElevation,
-        hoveredElevation = hoveredElevation,
-        disabledElevation = disabledElevation,
-    )
 }
