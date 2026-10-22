@@ -12,13 +12,19 @@ import net.pixiv.charcoal.android.compose.theme.CharcoalTheme
  */
 object CharcoalTopAppBarDefaults {
     /**
-     * navigationIcon / actionIcon を text3 にした [TopAppBarColors] を返す。各色は引数で差し替えられる。
+     * 通常の TopAppBar の [TopAppBarColors] を返す。各色は引数で差し替えられる。
      */
     @Composable
     fun defaultColors(
+        containerColor: Color = CharcoalTheme.colorToken.surface1,
+        scrolledContainerColor: Color = CharcoalTheme.colorToken.surface1,
+        titleContentColor: Color = CharcoalTheme.colorToken.text1,
         navigationIconContentColor: Color = CharcoalTheme.colorToken.text3,
         actionIconContentColor: Color = CharcoalTheme.colorToken.text3,
     ): TopAppBarColors = TopAppBarDefaults.topAppBarColors(
+        containerColor = containerColor,
+        scrolledContainerColor = scrolledContainerColor,
+        titleContentColor = titleContentColor,
         navigationIconContentColor = navigationIconContentColor,
         actionIconContentColor = actionIconContentColor,
     )
